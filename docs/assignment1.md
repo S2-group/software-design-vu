@@ -14,7 +14,7 @@ Be creative here!
 
 Don’t forget to mention your references (e.g., the direct link to the Fantasy soccer league you are getting inspiration from, the link to the original video game you are getting inspiration from, etc.), if applicable. 
 
-<span style="color:red">Maximum amount of pages for this section: 2</span>
+Maximum amount of pages for this section: 2
 
 ## Features
 Author(s): `name of the team member(s) responsible for this section`
@@ -24,7 +24,7 @@ Author(s): `name of the team member(s) responsible for this section`
 | ID  | Short name  | Description  |
 |---|---|---|
 | F1  | Tags | Code snippets can be tagged via freely-defined labels called tags  |
-| F2  | Commands  | The player can control the main character by issuing command-line commands following this syntax: `command-name [target-objects]*`  |
+| F2  | Commands  | The player can control the main character by issuing command-line commands following this syntax: `command-name [target-objects]*`. The available `command-names` are the following: <br/> - `move` <br/> - use <br/> - inspect <br/> |
 | F3  | Movements  | The main character shall move freely in the environment according  |
 | F4  | ... | ... |
 
@@ -40,7 +40,7 @@ Author(s): `name of the team member(s) responsible for this section`
 
 Each quality requirement must be tagged with the corresponding quality attribute (see corresponding slides of the first lecture for knowing them).
 
-<span style="color:red">Maximum amount of pages for this section: 2</span>
+Maximum amount of pages for this section: 2
 
 ### Java libraries
 Author(s): `name of the team member(s) responsible for this section`
@@ -51,4 +51,4 @@ Author(s): `name of the team member(s) responsible for this section`
 | [fastjson](https://github.com/alibaba/fastjson) | We will use it for reading and writing JSON configuration files containing the description of the levels of the videogame. We chose it because it is easy to configure and use from Java code and preliminary experiments makes us confident about its correct functioning... |
 | ...  | ... |
 
-<span style="color:red">Maximum amount of pages for this section: 1</span>
+Maximum amount of pages for this section: 1
