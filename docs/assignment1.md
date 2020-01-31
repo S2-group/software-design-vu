@@ -12,14 +12,18 @@ Clearly specify which are the key aspects of your system, such as:
 
 Be creative here!
 
-Don’t forget to mention your references (e.g., the direct link to the Fantasy soccer league you are getting inspiration from, the link to the original video game you are getting inspiration from, etc.), if applicable. 
+Don’t forget to use links to external URLs (e.g., the direct link to the Fantasy soccer league you are getting inspiration from, the link to the original video game you are getting inspiration from, etc.), if applicable. 
 
-Maximum amount of pages for this section: 2
+Maximum number of words for this section: 1000
 
 ## Features
 Author(s): `name of the team member(s) responsible for this section`
 
+<When defining both functional features and quality requirements, remember that you will need to come back to them in Assignments 2 and 3 and explicitly state how specific parts of models/implementation satisfy them.>
+
 ### Functional features
+
+As a preamble to the table, you can discuss the main line of reasoning you applied for defining the functional features provided in the table.
 
 | ID  | Short name  | Description  |
 |---|---|---|
@@ -31,6 +35,8 @@ Author(s): `name of the team member(s) responsible for this section`
 ### Quality requirements
 Author(s): `name of the team member(s) responsible for this section`
 
+As a preamble to the table, you can discuss the main line of reasoning you followed for coming up with the quality requirements listed below.
+
 | ID  | Short name  | Quality aspect | Description  |
 |---|---|---|---|
 | QR1  | Commands sanity checks | Reliability  | When the player issues a command, the syntax of the command shall always validated against the format specified in F2 |
@@ -40,7 +46,7 @@ Author(s): `name of the team member(s) responsible for this section`
 
 Each quality requirement must be tagged with the corresponding quality attribute (see corresponding slides of the first lecture for knowing them).
 
-Maximum amount of pages for this section: 2
+Maximum number of words for this section: 1000
 
 ### Java libraries
 Author(s): `name of the team member(s) responsible for this section`
@@ -51,4 +57,4 @@ Author(s): `name of the team member(s) responsible for this section`
 | [fastjson](https://github.com/alibaba/fastjson) | We will use it for reading and writing JSON configuration files containing the description of the levels of the videogame. We chose it because it is easy to configure and use from Java code and preliminary experiments makes us confident about its correct functioning... |
 | ...  | ... |
 
-Maximum amount of pages for this section: 1
+Maximum number of words for this section: 500
