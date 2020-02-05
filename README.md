@@ -11,9 +11,7 @@ The name of the branch must be `assignment<NUMBER OF THE ASSIGNMENT (1, 2, or 3)
 
 After finalizing your project, a submission can be made by inviting a collaborator to your personal repository (make sure you have the privileges to do that). 
 
-The collaborator should be the TA that has been assigned to your group on the following spreadsheet: 
-
-http://shorturl.at/fjtyQ  
+The collaborator must be the TA that has been assigned to your group on [this spreadsheet](http://shorturl.at/fjtyQ)
 
 You’re expected to submit your project on Canvas as well by providing a URL of your git repository.
 
@@ -51,7 +49,4 @@ How to build a Jar file with Intellij:
 
 You can find your jar file in /out/artifacts/filename.jar.
 
-If you're still having troubles, check out the following link: https://www.jetbrains.com/help/idea/packaging-a-module-into-a-jar-file.html.
-
-## **Slip-days:**  
-Each group has a total of 3 slip days for all the assignments.   
+If you are still having troubles, check out the following link: https://www.jetbrains.com/help/idea/packaging-a-module-into-a-jar-file.html.
