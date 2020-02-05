@@ -1,10 +1,20 @@
 # Software Design 
 This is a project template for the Software Design course at the Vrije Universiteit Amsterdam. 
 
+First step for this course is to fork our repository. All subsequent work would be on the newly forked repository.
+
+Each assignment requires the creation of a branch and all work must be done only on that. The branch will be merged to the master via the pull request eventually. 
+ 
+The name of the branch should be assignment<NUMBER OF THE ASSIGNMENT (1, 2, or 3)>
 
 ## **Submission guidelines:**  
 
-After finalizing your project, a submission can be made by inviting a collaborator to your personal repository (make sure you have the privileges to do that). The collaborator should be the TA that has been assigned to your group on the following spreadsheet: http://shorturl.at/fjtyQ . 
+After finalizing your project, a submission can be made by inviting a collaborator to your personal repository (make sure you have the privileges to do that). 
+
+The collaborator should be the TA that has been assigned to your group on the following spreadsheet: 
+
+http://shorturl.at/fjtyQ  
+
 You’re expected to submit your project on Canvas as well by providing a URL of your git repository.
 
 
