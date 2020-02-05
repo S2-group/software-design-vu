@@ -2,13 +2,13 @@
 This is a project template for the Software Design course at the Vrije Universiteit Amsterdam. 
 
 
-**Submission guidelines:**  
+## **Submission guidelines:**  
 
 After finalizing your project, a submission can be made by inviting a collaborator to your personal repository (make sure you have the privileges to do that). The collaborator should be the TA that has been assigned to your group on the following spreadsheet: http://shorturl.at/fjtyQ . 
 Youâ€™re expected to submit your project on Canvas as well by providing a URL of your git repository.
 
 
-**How to create a Pull request**
+## **How to create a Pull request**
 
 1. Open your git repository
 
@@ -29,7 +29,7 @@ If you've followed the steps correctly, Github will show you a page that says â€
 This is how you create a pull request.
 
 
-**Submission format**
+## **Submission format**
 
 The format of your submision should be a jar. 
 
@@ -43,5 +43,5 @@ You can find your jar file in /out/artifacts/filename.jar.
 
 If you're still having troubles, check out the following link: https://www.jetbrains.com/help/idea/packaging-a-module-into-a-jar-file.html.
 
-**Slip-days:**  
+## **Slip-days:**  
 Each group has a toatal of 3 slip days for all the asignments.   
