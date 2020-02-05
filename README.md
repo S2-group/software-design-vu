@@ -5,7 +5,7 @@ First step for this course is to fork our repository. All subsequent work would 
 
 Each assignment requires the creation of a branch and all work must be done only on that. The branch will be merged to the master via the pull request eventually. 
  
-The name of the branch should be assignment<NUMBER OF THE ASSIGNMENT (1, 2, or 3)>
+The name of the branch must be `assignment<NUMBER OF THE ASSIGNMENT (1, 2, or 3)>`
 
 ## **Submission guidelines:**  
 
