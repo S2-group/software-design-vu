@@ -1,4 +1,4 @@
-# software-design-vu
+# Software Design 
 This is a project template for the Software Design course at the Vrije Universiteit Amsterdam. 
 
 
