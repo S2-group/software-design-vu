@@ -1,22 +1,20 @@
 # Software Design 
-This is a project template for the Software Design course at the Vrije Universiteit Amsterdam. 
+This is the template for the team project of the Software Design course at the Vrije Universiteit Amsterdam. 
 
-First step for this course is to fork our repository. All subsequent work would be on the newly forked repository.
+The first step of your team project is to **fork** this repository. All subsequent work will be on your newly forked repository.
 
-Each assignment requires the creation of a branch and all work must be done only on that. The branch will be merged to the master via the pull request eventually. 
- 
-The name of the branch must be `assignment<NUMBER OF THE ASSIGNMENT (1, 2, or 3)>`
+Each assignment requires the creation of a dedicated branch and all the work must be done only on that branch (in your repository). The name of the branch must be `Assignment<NUMBER OF THE ASSIGNMENT (1, 2, or 3)>`
 
-## **Submission guidelines:**  
-
-After finalizing your project, a submission can be made by inviting a collaborator to your personal repository (make sure you have the privileges to do that). 
-
-The collaborator must be the TA that has been assigned to your group on [this spreadsheet](http://shorturl.at/fjtyQ).
-
-You’re expected to submit your project on Canvas as well by providing a URL of your git repository.
+During the course you will be asked to add an additional contributor to your repository. The collaborator must be the TA that has been assigned to your team on [this spreadsheet](http://shorturl.at/fjtyQ).
 
 
-## **How to create a Pull request**
+## **Submission of an assignment**  
+
+After finalizing your assignment, you can submit it by:
+- creating a single **pull request** from the branch of your assignment to the master branch of your repository;
+- creating a submission in Canvas where you will provide the unique URL of your pull request.
+
+## **How to create a Pull Request**
 
 1. Open your git repository
 
