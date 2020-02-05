@@ -11,7 +11,7 @@ The name of the branch must be `assignment<NUMBER OF THE ASSIGNMENT (1, 2, or 3)
 
 After finalizing your project, a submission can be made by inviting a collaborator to your personal repository (make sure you have the privileges to do that). 
 
-The collaborator must be the TA that has been assigned to your group on [this spreadsheet](http://shorturl.at/fjtyQ)
+The collaborator must be the TA that has been assigned to your group on [this spreadsheet](http://shorturl.at/fjtyQ).
 
 You’re expected to submit your project on Canvas as well by providing a URL of your git repository.
 
@@ -32,8 +32,8 @@ compare: branch you want to merge from (ex. if you worked from master branch, th
 
 4. Once you’ve selected your branches, Github will ask you to write a title and a comment. Write your group number in the title.
 
-You'll see a list of commits that have been made by you.
-If you've followed the steps correctly, Github will show you a page that says “Open a pull request”.
+You will see a list of commits that have been made by you.
+If you have followed the steps correctly, Github will show you a page that says “Open a pull request”.
 This is how you create a pull request.
 
 
@@ -49,4 +49,4 @@ How to build a Jar file with Intellij:
 
 You can find your jar file in /out/artifacts/filename.jar.
 
-If you are still having troubles, check out the following link: https://www.jetbrains.com/help/idea/packaging-a-module-into-a-jar-file.html.
+If you are still having troubles, check out [this link](https://www.jetbrains.com/help/idea/packaging-a-module-into-a-jar-file.html).
