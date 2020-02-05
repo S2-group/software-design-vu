@@ -16,11 +16,11 @@ You’re expected to submit your project on Canvas as well by providing a URL of
 You’ll come to a page that says “Compare changes”.
 
 3. Choose branches.
-To create a pull request, you want to set the base and compare branches to the following:
-base repository: S2-group/software-design-vu
-base: master
-head repository: "yourname"/software-design-vu
-compare: branch you want to merge from (ex. if you worked from master branch, then choose master)
+To create a pull request, you want to set the base and compare branches to the following:  
+base repository: S2-group/software-design-vu  
+base: master  
+head repository: "yourname"/software-design-vu  
+compare: branch you want to merge from (ex. if you worked from master branch, then choose master)  
 
 4. Once you’ve selected your branches, Github will ask you to write a title and a comment. Write your group number in the title.
 
