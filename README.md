@@ -41,9 +41,9 @@ This is how you create a pull request.
 
 ## **Submission format**
 
-The format of your submission should be a jar. 
+Before making the pull request for your assignments 2 and 3, you shall push also a fat Jar in your repository.
 
-How to build a jar file with Intellij:
+How to build a Jar file with Intellij:
 1. Go to File -> Project Structure and click Artifacts. 
 2. Click the Add button (+), point to JAR, and select From modules with dependencies.
 3. To the right of the Main Class field, click the Browse button, select Search By Name and search for your class in the dialog that opens (for example, if the name of your class is Main, then search for Main).
