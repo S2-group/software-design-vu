@@ -2,19 +2,19 @@
 Maximum number of words for this document: 2500
 
 
-## Introduction									
-Author(s): `name of the team member(s) responsible for this section`
+## Introduction
+Author(s): Sofia Konovalova
 
-Write a short description of your version of the system you are going to design and implement in this course. 
+Write a short description of your version of the system you are going to design and implement in this course.
 Clearly specify which are the key aspects of your system, such as:
-- customizations/extensions w.r.t. the project track, 
+- customizations/extensions w.r.t. the project track,
 - main type of user(s)
 - overall idea about how it works
 - ...
 
 Be creative here!
 
-Don’t forget to use links to external URLs (e.g., the direct link to the Fantasy soccer league you are getting inspiration from, the link to the original video game you are getting inspiration from, etc.), if applicable. 
+Don’t forget to use links to external URLs (e.g., the direct link to the Fantasy soccer league you are getting inspiration from, the link to the original video game you are getting inspiration from, etc.), if applicable.
 
 Maximum number of words for this section: 1000
 
@@ -55,7 +55,7 @@ Author(s): `name of the team member(s) responsible for this section`
 
 | Name (with link) | Description  |
 |---|---|
-| [JFoenix](http://www.jfoenix.com/)  | Used for styling the user interface of the system. We chose it among others because ... | 
+| [JFoenix](http://www.jfoenix.com/)  | Used for styling the user interface of the system. We chose it among others because ... |
 | [fastjson](https://github.com/alibaba/fastjson) | We will use it for reading and writing JSON configuration files containing the description of the levels of the videogame. We chose it because it is easy to configure and use from Java code and preliminary experiments makes us confident about its correct functioning... |
 | ...  | ... |
 
