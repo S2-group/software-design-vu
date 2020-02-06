@@ -30,10 +30,7 @@ To create a pull request, you want to set the base and compare branches to the f
 base: `master` 
 compare: the branch where you are currently working (e.g., `Assignment1`)  
 
-4. Once you have selected your branches, GitHub will ask you to write a title and a comment for the Pull Request. The title of the Pull Request should follow the following pattern: `<Team name>-Assignment<Number of assignment>`.
-
-You will see a list of commits that have been made by you.
-If you have followed the steps correctly, GitHub will show a summary of your Pull Request.
+4. Once you have selected your branches, GitHub will ask you to write a title and a comment for the Pull Request. The title of the Pull Request should follow the following pattern: `<Team name>-Assignment<Number of assignment>`. You will see a list of commits that have been made by you. If you have followed the steps correctly, GitHub will show a summary of your Pull Request.
 
 5. Do a submission in Canvas and provide the unique URL of your Pull Request. It has this structure: `https://github.com/<username>/<repo name>/pull/<digit>`. 
 
