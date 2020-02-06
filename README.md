@@ -1,12 +1,16 @@
 # Software Design 
 This is the template for the team project of the Software Design course at the Vrije Universiteit Amsterdam. 
 
-The first step of your team project is to **fork** this repository. All subsequent work will be on your newly forked repository.
+The first steps of your team project are to:
+- create your own private repository
+- invite all team members ase collaborators
+- download all contents of this repository (`software-design-vu`) and copy them into the root folder of your repository
+
+All subsequent work will be on your repository.
 
 Each assignment requires the creation of a dedicated branch and all the work must be done only on that branch (in your repository). The name of the branch must be `Assignment<NUMBER OF THE ASSIGNMENT (1, 2, or 3)>`
 
 During the course you will be asked to add an additional contributor to your repository. The collaborator must be the TA that has been assigned to your team on [this spreadsheet](http://shorturl.at/fjtyQ).
-
 
 ## **Submission of an assignment**  
 
@@ -23,17 +27,15 @@ You’ll come to a page that says “Compare changes”.
 
 3. Choose branches.
 To create a pull request, you want to set the base and compare branches to the following:  
-base repository: S2-group/software-design-vu  
-base: master  
-head repository: "yourname"/software-design-vu  
-compare: branch you want to merge from (ex. if you worked from master branch, then choose master)  
+base: `master` 
+compare: the branch where you are currently working (e.g., `Assignment1`)  
 
-4. Once you’ve selected your branches, Github will ask you to write a title and a comment. Write your group number in the title.
+4. Once you have selected your branches, GitHub will ask you to write a title and a comment for the Pull Request. The title of the Pull Request should follow the following pattern: `<Team name>-Assignment<Number of assignment>`.
 
 You will see a list of commits that have been made by you.
-If you have followed the steps correctly, Github will show you a page that says “Open a pull request”.
-This is how you create a pull request.
+If you have followed the steps correctly, GitHub will show a summary of your Pull Request.
 
+5. Do a submission in Canvas and provide the unique URL of your Pull Request. It has this structure: `https://github.com/<username>/<repo name>/pull/<digit>`. 
 
 ## **Submission format**
 
