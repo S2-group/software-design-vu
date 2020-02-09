@@ -29,10 +29,15 @@ As a preamble to the table, you can discuss the main line of reasoning you appli
 
 | ID  | Short name  | Description  |
 |---|---|---|
-| F1  | Tags | Code snippets can be tagged via freely-defined labels called tags  |
-| F2  | Commands  | The player can control the main character by issuing command-line commands following this syntax: `command-name [target-objects]*`. The available `command-names` are the following: <br/> - move: ... <br/> - use: ... <br/> - inspect: ... <br/> |
-| F3  | Movements  | The main character shall move freely in the environment according  |
-| F4  | ... | ... |
+| F1  | CRUD | Create, read, update and delete snippets  |
+| F2  | Tags | Code snippets can be tagged via freely-defined labels called tags  |
+| F3  | Search |  By title, content |
+| F4  | Filter |  By tag, language, date and contents of [title, content] |
+| F5  | Code highlighting  | Language-specific word coloring |
+| F6  | Historical metadata  | Created, modified, accessed... |
+| F7  | Modification history | Version control (git-like) |
+| F8  | Integrate with Github Gist API | the user can fetch and save code snippets directly as GitHub gists |
+| F9  |...|...|
 
 ### Quality requirements
 Author(s): `name of the team member(s) responsible for this section`
