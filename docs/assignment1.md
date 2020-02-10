@@ -3,7 +3,7 @@ Maximum number of words for this document: 2500
 
 
 ## Introduction
-Author(s): Sofia Konovalova
+Author(s): Sofia Konovalova & Cercel Bogdan-Petre
 
 Write a short description of your version of the system you are going to design and implement in this course.
 Clearly specify which are the key aspects of your system, such as:
