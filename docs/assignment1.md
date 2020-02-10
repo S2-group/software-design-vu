@@ -3,7 +3,7 @@ Maximum number of words for this document: 2500
 
 
 ## Introduction
-Author(s): Sofia Konovalova
+Author(s): Sofia Konovalova & Bogdan Cercel
 
 Ever since Pong was released in 1958, the video game scene has been steadily growing. Over time, technologies improved and the popularity and general interest in games have boomed, especially in the early 2000's.
 Video games are an opportunity to escape the world, and train your brain in various different activities. Games have a wide variety of genres, ranging from full on simulations of physics to simple interactive novels with branching stories.
