@@ -24,6 +24,8 @@ of the game that runs with a GUI, to mimic the second-generation text-based game
 target audience is teenagers and young adults, but as this game will not include anything incredibly explicit and violent like the *Fallout* game series,
 this game may be played at an age.
 
+Word Count: 399
+
 ## Features
 Author(s): Koen van den Burg
 
