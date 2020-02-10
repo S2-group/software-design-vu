@@ -61,8 +61,8 @@ Author(s): `name of the team member(s) responsible for this section`
 
 | Name (with link) | Description  |
 |---|---|
-| [JFoenix](http://www.jfoenix.com/)  | Used for styling the user interface of the system. We chose it among others because ... |
-| [fastjson](https://github.com/alibaba/fastjson) | We will use it for reading and writing JSON configuration files containing the description of the levels of the videogame. We chose it because it is easy to configure and use from Java code and preliminary experiments makes us confident about its correct functioning... |
-| ...  | ... |
+| [TextIO](https://text-io.beryx.org/releases/latest/) | Text-IO is a Java library that is used in making console applications that read interactive input from the user. It by default uses text terminals that are backed by Java's default java.io.Console library. This is perfect for this project as  we are required to use the terminal as the game screen, but using this library we can make the terminal more interactive than the default console. |
+| ... | ... |
+| ... | ... |
 
 Maximum number of words for this section: 500
