@@ -48,9 +48,9 @@ As a preamble to the table, you can discuss the main line of reasoning you follo
 
 | ID  | Short name  | Quality attribute | Description  |
 |---|---|---|---|
-| QR1  | Commands sanity checks | Reliability  | When the player issues a command, the syntax of the command shall always get validated against the format specified in F2 |
-| QR2  | Extensible world | Maintainability  | The video game shall be easilty extendable in terms of levels, worlds, interaction points  |
-| QR3  | Instantaneous results | Responsiveness  | Once the scores of all soccer players are provided by the user, the results of the virtual matches shall be available within 1 second |
+| QR1  | ... | ... | ... |
+| QR2  | ... | ... | ... |
+| QR3  | ... | ... | ... |
 | QR4  | ... | ... | ... |
 
 Each quality requirement must be tagged with the corresponding quality attribute (see corresponding slides of the first lecture for knowing them).
