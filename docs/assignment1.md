@@ -42,7 +42,7 @@ As a preamble to the table, you can discuss the main line of reasoning you appli
 | F4  | ... | ... |
 
 ### Quality requirements
-Author(s): `name of the team member(s) responsible for this section`
+Author(s): Koen vand den Burg
 
 As a preamble to the table, you can discuss the main line of reasoning you followed for coming up with the quality requirements listed below.
 
@@ -58,7 +58,7 @@ Each quality requirement must be tagged with the corresponding quality attribute
 Maximum number of words for this section: 1000
 
 ### Java libraries
-Author(s): `name of the team member(s) responsible for this section`
+Author(s): Wilkin van Roosmalen
 
 | Name (with link) | Description  |
 |---|---|
