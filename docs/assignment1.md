@@ -35,9 +35,9 @@ As a preamble to the table, you can discuss the main line of reasoning you appli
 
 | ID  | Short name  | Description  |
 |---|---|---|
-| F1  | Tags | Code snippets can be tagged via freely-defined labels called tags  |
-| F2  | Commands  | The player can control the main character by issuing command-line commands following this syntax: `command-name [target-objects]*`. The available `command-names` are the following: <br/> - move: ... <br/> - use: ... <br/> - inspect: ... <br/> |
-| F3  | Movements  | The main character shall move freely in the environment according  |
+| F1  | ... | ...  |
+| F2  | ...  | ... |
+| F3  | ... | ... |
 | F4  | ... | ... |
 
 ### Quality requirements
