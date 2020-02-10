@@ -7,15 +7,14 @@ Author(s): Sofia Konovalova
 
 Ever since Pong was released in 1958, the video game scene has been steadily growing. Over time, technologies improved and the popularity and general interest in games have boomed, especially in the early 2000's.
 Video games are an opportunity to escape the world, and train your brain in various different activities. Games have a wide variety of genres, ranging from full on simulations of physics to simple interactive novels with branching stories.
-*Zork* (Ever since Pong was released in 1958, the video game scene has been steadily growing. Over time, technologies improved and the popularity and general interest in games have boomed, especially in the early 2000's.
-Video games are an opportunity to escape the world, and train your brain in various different activities. Games have a wide variety of genres, ranging from full on simulations of physics to simple interactive novels with branching stories.) is one of the first interactive computer games, released in 1980. It is a text adventure game, where the protagonist interacts with the virtual
+[*Zork*](https://en.wikipedia.org/wiki/Zork) is one of the first interactive computer games, released in 1980. It is a text adventure game, where the protagonist interacts with the virtual
 world and other players. These games have evolved from simple text-based games to more complex artistic games of today. Going back to the classics, this project will be a minimal version of Zork, which takes place in a post-apocalyptic world.
 Our protagonist wakes up in the middle of the day, realizing that he had slept through  a missile attack that has flattened his city, but somehow completely missed him.
 He goes on a mission to find his family, encountering violent looters, proud doomsday preppers and others while trying to survive and come to terms with
 his new world.
 
 The minimal game of Zork consists of a protagonist, a virtual world, and objects and virtual characters. We took inspiration from the Black Isle Studios
-game Fallout 2 (https://store.steampowered.com/app/38410/Fallout_2_A_Post_Nuclear_Role_Playing_Game/) with the post-apocalyptic world using simple objects as currency. In the *Fallout* game series, bottle caps are used as currency. In our game,
+game [Fallout 2](https://store.steampowered.com/app/38410/Fallout_2_A_Post_Nuclear_Role_Playing_Game/) with the post-apocalyptic world using simple objects as currency. In the *Fallout* game series, bottle caps are used as currency. In our game,
 sporks are used as the currency (the word rhymes with Zork). Post-apocalyptic genre games became incredibly popular in the mid-2000s to the early 2010s, so it is difficult to
 point to a specific game that inspired that world in our game.
 
