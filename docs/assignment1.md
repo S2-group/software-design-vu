@@ -25,6 +25,9 @@ of the game that runs with a GUI, to mimic the second-generation text-based game
 target audience is teenagers and young adults, but as this game will not include anything incredibly explicit and violent like the *Fallout* game series,
 this game may be played at an age.
 
+Ever since Pong was released in 1958, the video game scene has been steadily growing. Over time, technologies improved and the popularity and general interest in games have boomed, especially in the early 2000's.
+Video games are an opportunity to escape the world, and train your brain in various different activities. Games include 
+
 ## Features
 Author(s): Koen van den Burg
 
