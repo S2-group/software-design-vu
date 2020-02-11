@@ -1,0 +1,1 @@
+This folder will contain the single fat Jar resulting from a full build of your project, one for Assignment 1 and one for Assignment 2.  
