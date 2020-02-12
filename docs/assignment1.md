@@ -19,9 +19,9 @@ point to a specific game that inspired that world in our game.
 
 The project track specifies that our game be loyal to the original Zork, which will run completely in the terminal. The termainal with have color-coded text, in order
 to indicate to the player whether text describes a player, a situation, or the protagonists' health, etc. As an extension, we can create an alternative version
-of the game that runs with a GUI, to mimic the second-generation text-based games. With games such as Zork and various other text-based adventure games, the
-target audience is teenagers and young adults, but as this game will not include anything incredibly explicit and violent like the *Fallout* game series,
-this game may be played at an age.
+of the game that runs with a GUI, to mimic the second-generation text-based games. A "GUI" can even be included within the console that is used to play the game, by using Java libraries such as Text-IO.
+With games such as Zork and various other text-based adventure games, the target audience is teenagers and young adults, but as this game will not
+include anything incredibly explicit and violent like the *Fallout* game series, this game may be played at an age.
 
 This gameplay will be achieved by creating models of the two important factors of the game: the scenes in which the character is in at a given moment,
 and the characters that the player encounters in the scenes. Each of the scenes will be based on the same template, but with different objects, characters
@@ -30,7 +30,7 @@ at points in the game with specific parameters, with some possibly randomized. E
 umbrellas of movement, exploration or interaction. The interaction can be with characters, objects. Interactions can also be of different types, like picking
 up an object or walking in a certain direction. These interactions help the player to reach the goal or to fail and lose the game.
 
-Word Count: 495
+Word Count: 552
 
 ## Features
 Author(s): Koen van den Burg
