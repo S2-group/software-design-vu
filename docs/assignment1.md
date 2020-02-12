@@ -1,6 +1,7 @@
 # Assignment 1
 Maximum number of words for this document: 2500
 
+Word Count: 618
 
 ## Introduction
 Author(s): Sofia Konovalova & Bogdan-Petre Cercel
@@ -74,3 +75,4 @@ Author(s): Wilkin van Roosmalen
 | ... | ... |
 
 Maximum number of words for this section: 500
+Word Count: 66
