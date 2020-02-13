@@ -3,7 +3,7 @@ Maximum number of words for this document: 2500
 
 
 ## Introduction									
-Author(s): `name of the team member(s) responsible for this section`
+Author(s): name
 
 Write a short description of your version of the system you are going to design and implement in this course. 
 Clearly specify which are the key aspects of your system, such as:
