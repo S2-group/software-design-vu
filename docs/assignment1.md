@@ -19,7 +19,7 @@ Don’t forget to use links to external URLs (e.g., the direct link to the Fanta
 Maximum number of words for this section: 1000
 
 ## Features
-Author(s): `name of the team member(s) responsible for this section`
+Author(s):  Elizabeth Mieczkowski, Ben Novotny, Sarah Pazik, Sam Rowekamp, Gemma Standley
 
 <When defining both functional features and quality requirements, remember that you will need to come back to them in Assignments 2 and 3 and explicitly state how specific parts of models/implementation satisfy them.>
 
@@ -35,7 +35,7 @@ As a preamble to the table, you can discuss the main line of reasoning you appli
 | F4  | ... | ... |
 
 ### Quality requirements
-Author(s): `name of the team member(s) responsible for this section`
+Author(s):  Elizabeth Mieczkowski, Ben Novotny, Sarah Pazik, Sam Rowekamp, Gemma Standley
 
 As a preamble to the table, you can discuss the main line of reasoning you followed for coming up with the quality requirements listed below.
 
@@ -51,7 +51,7 @@ Each quality requirement must be tagged with the corresponding quality attribute
 Maximum number of words for this section: 1000
 
 ### Java libraries
-Author(s): `name of the team member(s) responsible for this section`
+Author(s):  Elizabeth Mieczkowski, Ben Novotny, Sarah Pazik, Sam Rowekamp, Gemma Standley
 
 | Name (with link) | Description  |
 |---|---|
