@@ -50,7 +50,7 @@ As a preamble to the table, you can discuss the main line of reasoning you appli
 | F4  | ... | ... |
 
 ### Quality requirements
-Author(s): Koen vand den Burg
+Author(s): Claudia Grigoras
 
 As a preamble to the table, you can discuss the main line of reasoning you followed for coming up with the quality requirements listed below.
 
