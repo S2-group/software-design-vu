@@ -3,7 +3,7 @@ Maximum number of words for this document: 2500
 
 
 ## Introduction									
-Author(s): name
+Author(s): Elizabeth Mieczkowski, Ben Novotny, Sarah Pazik, Sam Rowekamp, Gemma Standley
 
 Write a short description of your version of the system you are going to design and implement in this course. 
 Clearly specify which are the key aspects of your system, such as:
