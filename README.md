@@ -47,3 +47,103 @@ How to build a Jar file with Intellij:
 You can find your jar file in /out/artifacts/filename.jar.
 
 If you are still having troubles, check out [this link](https://www.jetbrains.com/help/idea/packaging-a-module-into-a-jar-file.html).
+
+
+## **How to add libraries to your project**
+
+There are two categories of libraries. Those available on Maven and those not. Below you will find steps for each.
+
+#### Libraries from Maven
+
+All major Java libraries (and possibly most of the ones you will be using) are on Maven. A Maven library will have something similar to
+the following on its website/github:
+
+```xml
+<dependency>
+  <groupId> ... </groupId>
+  <artifactId> ... </artifactId>
+  <version> ... </version>
+</dependency>
+```
+
+To install such a library you simply need to insert an entry 
+
+```groovy
+implementation group : '...' , name : '...' , version : '...'
+```
+
+under `dependencies` in [build.gradle](build.gradle)
+
+##### Example
+
+As an example we will use Google's [Guava](https://github.com/google/guava). 
+
+From Guava's website we get:
+
+```xml
+<dependency>
+  <groupId>com.google.guava</groupId>
+  <artifactId>guava</artifactId>
+  <version>28.2-jre</version>
+</dependency>
+```
+
+We then update Gradle dependencies as follows:
+
+```groovy
+dependencies {
+    implementation group: 'com.google.guava', name: 'guava', version: '28.2-jre'
+    ...
+}
+```
+
+*Note*: Many libraries will provide the above Gradle line on their website, so you can just copy it.
+
+#### Local JARs
+
+Lesser known libraries may not be available on Maven. Or you may want to build the library on your machine.
+In such cases you have to add a Gradle dependency to a a local jar. Perform the following steps:
+
+- Create a `libs` directory in the root of your project. This directory will include all the non-Maven library JARs
+  i.e Your project structure should look something like this:
+  ```
+  software-design-vu/
+  ├─ libs/
+  │  ├─ A.jar
+  │  ├─ B.jar
+  │  └─ ...
+  ├─ ...
+  └─ ...
+  ```
+- Update `repositories` part of your [build.gradle](build.gradle) file to:
+  ```groovy
+  repositories {
+    mavenCentral()
+    flatDir {
+      dirs 'libs'
+    }
+  }
+  ```
+- For each jar `<libname>.jar` under `libs/` add a line `implementation name : '<libname>'` inside the `dependencies` block of your [build.gradle](build.gradle) file.
+
+#### Updating the Project
+
+After you save (`CTRL-s`) the updated [build.gradle](build.gradle), Intellij with pop up a small window on the bottom right corner:
+
+![gradle-update-popup](https://i.gyazo.com/a977980c32f6e0051a02c66942f9ac51.png)
+
+Select *Import Changes*. If you select *Enable Auto-Import*, next time you update [build.gradle](build.gradle) changes will be automatically imported.
+
+If you don't see a popup appearing, you can go to the top right corner and click on the "Gradle" button:
+
+![gradle-button](https://i.gyazo.com/1a36cf9fbfdd9d38a2bb030c9ab18602.png)
+
+Then, on the window that appears select *Reimport All Gradle Projects*. i.e the first (leftmost) option in that list:
+
+![gradle-button-next](https://i.gyazo.com/2e9147e9b4c97a2e200229da9f8cc782.png)
+
+After updating the project, Intellij automatically adds the new libraries to the `classpath`. This means that all symbols can be
+resolved and the editor should provide appropriate code completion. 
+
+If it any case the editor is complaining, you can put your mouse in the error and there will be be an option "Add library X to the classpath". 
+Selecting that should solve the issue.
