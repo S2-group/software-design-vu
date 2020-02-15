@@ -145,5 +145,5 @@ Then, on the window that appears select *Reimport All Gradle Projects*. i.e the 
 After updating the project, Intellij automatically adds the new libraries to the `classpath`. This means that all symbols can be
 resolved and the editor should provide appropriate code completion. 
 
-If it any case the editor is complaining, you can put your mouse in the error and there will be be an option "Add library X to the classpath". 
+If in any case the editor is complaining, you can put your mouse in the error and there will be be an option "Add library X to the classpath". 
 Selecting that should solve the issue.
