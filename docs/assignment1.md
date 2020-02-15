@@ -9,11 +9,11 @@
 ## Introduction									
 Author(s): `Dimtiar Georgiev, Klimis Tsakiridis, Iva Dimitrova, Stoyan Tsinov`
 
-####Project track
+###Project track
 As a team, we decided to go with the CodeSnippetsManager track. Our code snippet organizer will be called Coniunx (meaning friend/mate in Latin). Coniunx will be the right hand of every developer. 
-####The main type of users
+###The main type of users
 The software will be intended to help every developer/person who uses the same code/text repeatedly. The basic idea is to have a centralized space where you can keep code, phrases, sentences, et cetera accessible within a single click, in order to be reused. Many tools provide features such as notes, but if you are a developer there are limited solutions to support a syntax highlight. 
-####How will the system work?
+###How will the system work?
 After starting our system the user will end up in the Dashboard (instead of menu) screen where he will be able to navigate through the system. Several options will be provided on this screen (screens):
 1. Go to settings
 2. Go to Snippets
@@ -21,11 +21,11 @@ After starting our system the user will end up in the Dashboard (instead of menu
 4. Recently added
 
 Every screen will provide the user with different options.
-#####1. Settings Screen
+###1. Settings Screen
 Will provide the user with options to change the system color and/or default programing language. Once the settings are changed the data will be parsed and sent to a JSON file which will notify the system that the settings are changed and will update the current settings accordingly. 
 
 The user will be provided the option to categorize the snippets. He/she can provide the categories in a text area separated by comma. This implementation gives the user the opportunity to categorize its snippets. Our idea is that upon creation we would like to enable the user to better organize his snippets. Therefore being able to create categories seemed like a helpful feature. Some examples could be categories such as functions, math formulas, and small projects.
-#####2. Snippets screen
+###2. Snippets screen
 The main view of this screen will be the list with all snippets on the left side of the screen and the overview of the snippets on the right. In the overview, the user will see his/her snippets grouped by the different programming languages used to create them. Every item in the list will have option buttons for editing, deleting and copying the snippet content.
 
 Once a snippet from the left is selected an edit window will appear instead of the overview window. This will allow the user to edit the desired snippet. When the user “Saves” the changes the change will be updated in the JSON file containing all of the snippets.	
@@ -33,13 +33,13 @@ Once a snippet from the left is selected an edit window will appear instead of t
 A dedicated “Add button” will be located on the screen all of the time. When the user is adding a snipped, he/she can select from multiple programming languages or leave it as plain text as well as setting the category. If a programming language is selected the text aria will automatically highlight any syntax that is relevant to this programing language. Any snippet can be added to a group for easy access.
 
 For every snippet, a dedicated “Copy” button will be present. This button will help the user copy the content of the snippet without him/her having to do it manually. Moreover, a “Delete” button will remove the snipped from the list. Last but not least “Edit” button will be there so the user can access the edit window faster. If the user really needs the whole snipped he/she can download it on their device. The download will have the same file extension as the standard file extension of the language selected. Eg: if you have snipped named “hello_world” with selected Java language when downloading the file a suggested name will be hello_world.java.
-#####3. Create new snippet screen
+###3. Create new snippet screen
 Once this option is chosen the user will be prompted with the option to add a new snipped to the system as mentioned in point 2. The user can set the category that will distinct the snippet from the others or simply add it to a list with other snippets sharing the same characteristics.
-#####4. Recently added
+###4. Recently added
 This part of the Dashboard will display a list of the items that were added most recently to the list (regarding the group or language of the item). This option will be provided as we assume it will be a lot easier to access the lastly added snippet since in the “Snippet screen” the user will see the snippets ordered by name, not date. There will be the option for filtering the items but it will cost extra clicks to the user in order to see the most recently added items.
 
 
-####How will the data be handled?
+###How will the data be handled?
 When the user opens the application the snippets.json and settings.json files will be parsed. Once the data is parsed it will be available to the user to add/edit/delete from it. In particular case as the settings, the user will be provided with a settings screen where he can change the settings variable. At the moment the user saves the data the variables will be updated in the settings.json file. Almost the same flow goes for the snippets. When the user loads the system, the snippets will be read from the snippets.json file and will be loaded in a list. From now on all of the snippet manipulations such as adding, removing, editing will take place locally in this list. When the user closes the application the JSON parser will parse this list and replace the data in the snippets.json file. Doing so the system has to parse the snippet.json only once. This will make the system faster instead of parsing and editing data every time a snippet is requested.
 
 
