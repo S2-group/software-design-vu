@@ -66,11 +66,15 @@ Maximum number of words for this section: 1000
 ### Java libraries
 Author(s): Wilkin van Roosmalen
 
+The following table contains a list of Java libraries that will be used for this project.
+
 | Name (with link) | Description  |
 |---|---|
 | [TextIO](https://text-io.beryx.org/releases/latest/) | Text-IO is a Java library that is used in making console applications that read interactive input from the user. It by default uses text terminals that are backed by Java's default java.io.Console library. This is perfect for this project as  we are required to use the terminal as the game screen, but using this library we can make the terminal more interactive than the default console. |
-| ... | ... |
-| ... | ... |
+| [Gson](https://github.com/google/gson) | Gson is a Java serialization and deserialization library maintained by Google. It is used to convert Java objects to JSON files and back on the go.  In this project we can use this library to read configuration files hold attributes of game objects. We can also save game states and player information if we decide to add this feature. |
+| [Apache Commons RNG](https://commons.apache.org/proper/commons-rng/) | Apache Commons RNG provides different implementation of pseud-random number generation algorithms and utility methods related to RNG. This library will prove useful when implementing features that depend on randomness, such as the combat system. |
+| [KryoNet](https://github.com/EsotericSoftware/kryonet) | Apache Commons RNG provides different implementation of pseud-random number generation algorithms and utility methods related to RNG. This library will prove useful when implementing features that depend on randomness, such as the combat system. |
+| [Tinylog](https://tinylog.org/v2/) | Tinylog is a lightweight, configurable, logging framework. It is easy to use as it provides a static logger that can be utilized in a lot of situations. When working on a project it is always useful to log what exactly is happening. Because we use the command line interface `System.out` is not a great option. With Tinylog we can easily change where logs are send and/or saved. |
 
 Maximum number of words for this section: 500
-Word Count: 66
+Word Count: 286
