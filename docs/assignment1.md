@@ -54,10 +54,15 @@ As a preamble to the table, you can discuss the main line of reasoning you follo
 
 | ID  | Short name  | Quality attribute | Description  |
 |---|---|---|---|
-| QR1  | ... | ... | ... |
-| QR2  | ... | ... | ... |
-| QR3  | ... | ... | ... |
-| QR4  | ... | ... | ... |
+| QR1  | Commands sanity checks | Reliability | When the player issues a command, the syntax of the command shall always get validated against the format specified in F3 |
+| QR2  | Adaptable system | Maintainability & Responsiveness | The video game shall be easily adaptable to new stories and worlds. The system should not be dependent to one story only (when changing the story or the world, only variables and actions should change) |
+| QR3  | Loading game state | Responsiveness | Once the player types in a command, loading the game state shall be executed in less than 5 seconds regardless of the computer capabilities |
+| QR4  | Accessing the commands | Usability & Availability | The players shall at any point within the game be able to access the available commands at that particular level in game (through the command specified at F3 – help) |
+| QR5  | Secured connections | Security | When playing in a multiplayer mode, the system should provide a safe network connection to both user  |
+| QR6  | Real-time commands multiplayer mode | Responsiveness & Reliability | The system shall have a maximum latency of 2 seconds for providing commands and loading game state between 2 players in multiplayer mode |
+| QR7  | Un-biased game | Reliability & Responsiveness | The system shall ensure that the statistics provided at F6 are correct and un-biased and that the combat mentioned at F7 is unbiased and always gives a 50/50 chance roll. |
+| QR8  | Reliable data  | Reliability & usability | The system shall provide correct inventory responses and storing (F7) and correct timing within the game (F8) |
+
 
 Each quality requirement must be tagged with the corresponding quality attribute (see corresponding slides of the first lecture for knowing them).
 
