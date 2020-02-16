@@ -36,8 +36,6 @@ Word Count: 552
 ## Features
 Author(s): Koen van den Burg
 
-<When defining both functional features and quality requirements, remember that you will need to come back to them in Assignments 2 and 3 and explicitly state how specific parts of models/implementation satisfy them.>
-
 ### Functional features
 
 As a preamble to the table, you can discuss the main line of reasoning you applied for defining the functional features provided in the table.
