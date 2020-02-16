@@ -1,67 +1,54 @@
 # Assignment 1
-Maximum number of words for this document: 2500
-
-
 ## Introduction									
-Author(s): `name of the team member(s) responsible for this section`
 
-Write a short description of your version of the system you are going to design and implement in this course. 
-Clearly specify which are the key aspects of your system, such as:
-- customizations/extensions w.r.t. the project track, 
-- main type of user(s)
-- overall idea about how it works
-- ...
+Authors: Serghei Mihailov, Bjorn Keyser, Yael Goede, Milos Delgorge
 
-Be creative here!
+The name of the project is Snippo. The system we will be implementing will be an implementation based on the code snippets manager. The goal of the code snippets manager is to create a system to manage snippets of source code. The system will simplify the managing of snippets by providing formats and functionalities that will let the user search, edit, and create source code snippets. The system will be able to adapt to new languages introduced by the user, hereby increasing the potential user group to all programming language users. The snippets manager will be hosted locally on the machine. The user will be able to interact with the manager through the shell. Here the user can use a crud api to manage the available snippets. The system will also provide a search command that will make retrieving snippets easier. The search command will use other features, for example contents, tags and metadata to optimise the search speed. 
 
-Don’t forget to use links to external URLs (e.g., the direct link to the Fantasy soccer league you are getting inspiration from, the link to the original video game you are getting inspiration from, etc.), if applicable. 
+Existing snippet manager applications for inspiration:
+1. Gisto: https://www.gistoapp.com/features
+2. Github Gists: https://developer.github.com/v3/gists/.
 
-Maximum number of words for this section: 1000
+## Features:
 
-## Features
-Author(s): `name of the team member(s) responsible for this section`
+Author(s):Serghei Mihailov, Bjorn Keyser, Yael Goede, Milos Delgorge
 
-<When defining both functional features and quality requirements, remember that you will need to come back to them in Assignments 2 and 3 and explicitly state how specific parts of models/implementation satisfy them.>
+| **ID** | **Short name** | **Description** |
+| --- | --- | --- |
+| F1 | API to Create/Read/Update/Delete snippets | Users should be able to easily access edit, create and delete snippets |
+| F2 | Snippet editor | A basic Vim-like cli editor with visual/insert/replace modes |
+| F3 | Tags | Users can add tags to snippets by which will make finding snippets easier |
+| F4 | Choose language | The user can choose any supported programming language to make their snippet |
+| F5 | Search/Filter | Users can search for their snippets by content, tags, description, title, language. Like snippo -s &quot;language:ja va tags:tag1,tag2 searchterm&quot; |
+| F6 | Configurable syntax highlighting | highlighting of syntax that is configurable via a file that maps words to colors |
+| F7 | Readme/help for the tool | Explaining the basic commands and how to use the tool |
+| F8 | Shortcuts and shell parameters | In the style of: snippo -f &quot;assignment1&quot; returns files that contain &quot;assignment1&quot;; snippo -c &quot;new&quot; creates a snippet &quot;new&quot; |
+| F9 (optional) | Authentication | Basic user account management system |
+| F10 | Snippet metadata | (creation/modification date, etc) think of windows file data. |
+| F11 (optional) | Import/Export snippets | Import/Export via a json file |
+| F12 (optional) | Integrated with Github Gist API | [https://developer.github.com/v3/gists/](https://developer.github.com/v3/gists/) |
+| F13 | Basic interactive UI in shell | On launch the program will display available commands (e.g. edit, create, delete) and execute the chosen ones until closed  |
 
-### Functional features
+## Quality Requirements:
 
-As a preamble to the table, you can discuss the main line of reasoning you applied for defining the functional features provided in the table.
+Author(s): Serghei Mihailov, Bjorn Keyser, Yael Goede, Milos Delgorge
 
-| ID  | Short name  | Description  |
-|---|---|---|
-| F1  | CRUD | Create, read, update and delete snippets  |
-| F2  | Tags | Code snippets can be tagged via freely-defined labels called tags  |
-| F3  | Search |  By title, content |
-| F4  | Filter |  By tag, language, date and contents of [title, content] |
-| F5  | Code highlighting  | Language-specific word coloring |
-| F6  | Historical metadata  | Created, modified, accessed... |
-| F7  | Modification history | Version control (git-like) |
-| F8  | Integrate with Github Gist API | the user can fetch and save code snippets directly as GitHub gists |
-| F9  |...|...|
+| **ID** | **Short name** | **Quality attribute** | **Description** |
+| --- | --- | --- | --- |
+| QR1 | Configurable language highlighting | Extensibility | It should be easy for the user to add a new code language. |
+| QR2 | Fast search | Responsiveness | Fast search, scalable with the number and size of snippets |
+| QR3 | Intuitive UI | Usability | A new user should be able to create/read/edit snippets within 5 minutes of using the tool |
+| QR4 | Persistent snippet storage | Reliability | Snippets remain reliably stored in memory until deleted inside the manager or manually deleted from the filesystem |
+| QR5 | Storing unsaved work | Reliability, Usability | In the case of unexpected shutdown of the process, unsaved work should be stored |
 
-### Quality requirements
-Author(s): `name of the team member(s) responsible for this section`
+## Java libraries:
 
-As a preamble to the table, you can discuss the main line of reasoning you followed for coming up with the quality requirements listed below.
+Authors: Serghei Mihailov, Bjorn Keyser, Yael Goede, Milos Delgorge
 
-| ID  | Short name  | Quality attribute | Description  |
-|---|---|---|---|
-| QR1  | Commands sanity checks | Reliability  | When the player issues a command, the syntax of the command shall always get validated against the format specified in F2 |
-| QR2  | Extensible world | Maintainability  | The video game shall be easilty extendable in terms of levels, worlds, interaction points  |
-| QR3  | Instantaneous results | Responsiveness  | Once the scores of all soccer players are provided by the user, the results of the virtual matches shall be available within 1 second |
-| QR4  | ... | ... | ... |
-
-Each quality requirement must be tagged with the corresponding quality attribute (see corresponding slides of the first lecture for knowing them).
-
-Maximum number of words for this section: 1000
-
-### Java libraries
-Author(s): `name of the team member(s) responsible for this section`
-
-| Name (with link) | Description  |
-|---|---|
-| [JFoenix](http://www.jfoenix.com/)  | Used for styling the user interface of the system. We chose it among others because ... | 
-| [fastjson](https://github.com/alibaba/fastjson) | We will use it for reading and writing JSON configuration files containing the description of the levels of the videogame. We chose it because it is easy to configure and use from Java code and preliminary experiments makes us confident about its correct functioning... |
-| ...  | ... |
-
-Maximum number of words for this section: 500
+| Name | Description |
+| --- | --- |
+| [Picocli](https://picocli.info/quick-guide.html#_what_is_picocli) | Picocli is a Java library and mini-framework for creating command line applications with almost no code. |
+| [Gists](https://developer.github.com/v3/gists/) | This api will be used as a bonus. Implementing the snippets manager with the gists api. |
+| [java.net.HttpUrlConnection](http://download.oracle.com/javase/7/docs/api/java/net/HttpURLConnection.html) | For http requests. |
+| [fastjson](https://github.com/alibaba/fastjson) | For managing json files |
+| [Time4J](http://www.time4j.net/) | Managing datetime |
