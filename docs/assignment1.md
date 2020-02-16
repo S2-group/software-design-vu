@@ -26,7 +26,7 @@ include anything incredibly explicit and violent like the *Fallout* game series,
 
 This gameplay will be achieved by creating models of the two important factors of the game: the scenes in which the character is in at a given moment,
 and the characters that the player encounters in the scenes. Each of the scenes will be based on the same template, but with different objects, characters
-and places to explore. Since we are working with object-oriented programming, a separate Scenes class will be created, with a different scene being created
+and places to explore. Since we are working with object-oriented programming, a separate Scenes model will be created, with a different scene being created
 at points in the game with specific parameters, with some possibly randomized. Each scene will have different options but falling under one of the three
 umbrellas of movement, exploration or interaction. The interaction can be with characters, objects. Interactions can also be of different types, like picking
 up an object or walking in a certain direction. These interactions help the player to reach the goal or to fail and lose the game.
