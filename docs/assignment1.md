@@ -15,19 +15,17 @@ Author(s):Serghei Mihailov, Bjorn Keyser, Yael Goede, Milos Delgorge
 
 | **ID** | **Short name** | **Description** |
 | --- | --- | --- |
-| F1 | API to Create/Read/Update/Delete snippets | Users should be able to easily access edit, create and delete snippets |
-| F2 | Snippet editor | A basic Vim-like cli editor with visual/insert/replace modes |
-| F3 | Tags | Users can add tags to snippets by which will make finding snippets easier |
-| F4 | Choose language | The user can choose any supported programming language to make their snippet |
-| F5 | Search/Filter | Users can search for their snippets by content, tags, description, title, language. Like snippo -s &quot;language:ja va tags:tag1,tag2 searchterm&quot; |
-| F6 | Configurable syntax highlighting | highlighting of syntax that is configurable via a file that maps words to colors |
-| F7 | Readme/help for the tool | Explaining the basic commands and how to use the tool |
-| F8 | Shortcuts and shell parameters | In the style of: snippo -f &quot;assignment1&quot; returns files that contain &quot;assignment1&quot;; snippo -c &quot;new&quot; creates a snippet &quot;new&quot; |
-| F9 (optional) | Authentication | Basic user account management system |
-| F10 | Snippet metadata | (creation/modification date, etc) think of windows file data. |
-| F11 (optional) | Import/Export snippets | Import/Export via a json file |
-| F12 (optional) | Integrated with Github Gist API | [https://developer.github.com/v3/gists/](https://developer.github.com/v3/gists/) |
-| F13 | Basic interactive UI in shell | On launch the program will display available commands (e.g. edit, create, delete) and execute the chosen ones until closed  |
+| F1 | API to Create/Read/Update/Delete snippets | Users should be able to easily access edit, create and delete snippets by calling the tool from the CLI using arguments. |
+| F2 | Snippet editor | Users should be able to edit and save snippets via a basic Vim-like CLI editor with visual/insert/replace modes. |
+| F3 | Tags | Users should be able to add tags to snippets by which will make finding snippets easier. This should include language and whether the snippet is "starred". |
+| F5 | Search/Filter | Users can search for their snippets by content, tags, description, title, language. Like snippo -s "language:java tags:tag1,tag2 searchterm". |
+| F6 | Configurable syntax highlighting | Users should have their code for a specific language with highlighting of syntax that is configurable via a file (that they create or that has been provided) that maps keywords to colors. |
+| F7 | Readme/help for the tool | Users should be able to view a manual explaining the basic commands and how to use the tool. |
+| F8 (optional) | Authentication | Users should be able to create and use accounts where their personal protected snippets are stored. |
+| F9 | Snippet metadata | Users should be able to view snippet metadata such as creation and last modification date, count of times edited or opened. |
+| F10 (optional) | Import/Export snippets | Users should be able to import and export via a json file to reuse on a different machine using Snippo. |
+| F11 (optional) | Integrated with Github Gist API | Users should be able to use Snippo in conjunction with Github Gists: [https://developer.github.com/v3/gists/](https://developer.github.com/v3/gists/) |
+| F12 | Basic interactive UI in shell | On launch the program should display available commands (e.g. edit, create, delete) and execute the chosen ones until closed.  |
 
 ## Quality Requirements:
 
