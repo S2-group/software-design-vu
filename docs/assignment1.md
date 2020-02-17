@@ -13,7 +13,9 @@ To interact with the VUORK world, the user will use text commands in the CLI to 
 
 With the game briefly explained, we must now consider how to develop this idea in a way that is easily extendable, maintainable and comprehensible. By using the Object-Oriented programming paradigm, we aim to create a system that is easily modifiable, expandable and intuitive for programmers to understand. To help achieve this goal, we will be making use of UML diagrams. 
 
-   				   Figure 1: A use case diagram of VUORK![img](https://lh3.googleusercontent.com/ePg0EoRTAvMiKXEP_VNm-gGz7HN0pBql_kOfZ-RUjralgX5VEYfBDSGg7DdKa8HeYwpv4C79SSpxdnjOcfLk6GLn7E-IDENFk6257sC3hyDslfFupreykPBXSfHrvP1NY3T5XnxJ)
+   				   Figure 1: A use case diagram of VUORK
+
+![Use case diagram of VUORK] (https://lh3.googleusercontent.com/ePg0EoRTAvMiKXEP_VNm-gGz7HN0pBql_kOfZ-RUjralgX5VEYfBDSGg7DdKa8HeYwpv4C79SSpxdnjOcfLk6GLn7E-IDENFk6257sC3hyDslfFupreykPBXSfHrvP1NY3T5XnxJ)
 
 The remainder of this paper will cover detailed features and quality requirements to help us structure this project (This should be self explanatory). 
 
