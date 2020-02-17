@@ -1,7 +1,7 @@
 # Assignment 1
 Maximum number of words for this document: 2500
 
-Word Count: 1553
+Word Count: 1548
 
 ## Introduction
 Author(s): Sofia Konovalova & Bogdan-Petre Cercel
@@ -136,7 +136,7 @@ Author(s): Claudia Grigoras
 | QR7  | Un-biased game | Reliability & Responsiveness | The system shall ensure that the statistics provided at F6 are correct and un-biased and that the combat mentioned at F7 is unbiased and always gives a 50/50 chance roll. |
 | QR8  | Reliable data  | Reliability & usability | The system shall provide correct inventory responses and storing (F7) and correct timing within the game (F8) |
 
-Word Count: 715
+Word Count: 710
 
 ### Java libraries
 Author(s): Wilkin van Roosmalen
