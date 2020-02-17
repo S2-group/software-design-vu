@@ -1,7 +1,7 @@
 # Assignment 1
 Maximum number of words for this document: 2500
 
-Word Count: 618
+Word Count: 1478
 
 ## Introduction
 Author(s): Sofia Konovalova & Bogdan-Petre Cercel
@@ -37,8 +37,6 @@ Word Count: 552
 Author(s): Koen van den Burg
 
 ### Functional features
-
-As a preamble to the table, you can discuss the main line of reasoning you applied for defining the functional features provided in the table.
 
 <table>
 <tr>
@@ -125,8 +123,6 @@ Weapons are not stackable, while currency and other items are.</td>
 ### Quality requirements
 Author(s): Claudia Grigoras
 
-As a preamble to the table, you can discuss the main line of reasoning you followed for coming up with the quality requirements listed below.
-
 | ID  | Short name  | Quality attribute | Description  |
 |---|---|---|---|
 | QR1  | Commands sanity checks | Reliability | When the player issues a command, the syntax of the command shall always get validated against the format specified in F3 |
@@ -138,10 +134,7 @@ As a preamble to the table, you can discuss the main line of reasoning you follo
 | QR7  | Un-biased game | Reliability & Responsiveness | The system shall ensure that the statistics provided at F6 are correct and un-biased and that the combat mentioned at F7 is unbiased and always gives a 50/50 chance roll. |
 | QR8  | Reliable data  | Reliability & usability | The system shall provide correct inventory responses and storing (F7) and correct timing within the game (F8) |
 
-
-Each quality requirement must be tagged with the corresponding quality attribute (see corresponding slides of the first lecture for knowing them).
-
-Maximum number of words for this section: 1000
+Word Count: 640
 
 ### Java libraries
 Author(s): Wilkin van Roosmalen
@@ -156,5 +149,4 @@ The following table contains a list of Java libraries that will be used for this
 | [KryoNet](https://github.com/EsotericSoftware/kryonet) | KryoNet provides a simple API for communicating between clients. Using a its own serialization library (Kryo), it sends objects through the TCP and/or UDP protocol(s). If we get to implementing multiplayer features KryoNet will simplify networking immensely. |
 | [Tinylog](https://tinylog.org/v2/) | Tinylog is a lightweight, configurable, logging framework. It is easy to use as it provides a static logger that can be utilized in a lot of situations. When working on a project it is always useful to log what exactly is happening. Because we use the command line interface `System.out` is not a great option. With Tinylog we can easily change where logs are send and/or saved. |
 
-Maximum number of words for this section: 500
 Word Count: 286
