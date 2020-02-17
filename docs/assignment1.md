@@ -49,9 +49,79 @@ As a preamble to the table, you can discuss the main line of reasoning you appli
 <tr>
 <td>F1</td>
 <td>Commands</td>
-<td>Game will have a text-based option system</td>
+<td>Game will have a <b>text-based option system</b>, where the player can type different commands in a command prompt which will result in different
+actions(F3).</td>
+</tr>
+<tr>
+<td>F2</td>
+<td>Interface</td>
+<td>The game will be played inside a command prompt. Everything is text. <i>Desired: </i>Some scenarios will have ASCII art.</td>
+</tr>
+<tr>
+<td>F3</td>
+<td>Actions</td>
+<td>Typing different commands will result in different actions in the game world, examples of such are:
+<ul>
+<li>Movement</li>
+<li>Attacking</li>
+<li>Conversation</li>
+<li>Interacting with items (doors, keys, picking up items)</li>
+<li>Dying (restarts the game)</li>
+<li>Healing</li>
+<li>Examining items and surrounding</li>
+<li>Sleeping</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>F4</td>
+<td>Items</td>
+<td>There will be a multitude of different items which can be added to the inventory of the player (F8):
+<ul>
+<li>Weapons</li>
+<li>Keys</li>
+<li>Healing items</li>
+<li>Ammunition</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>F5</td>
+<td>Characters</td>
+<td>The game will have characters, each with different statistics(F6) defining what they are (enemies, friendlies, etc).</td>
+</tr>
+<tr>
+<td>F6</td>
+<td>Statistics</td>
+<td>The game will have <b>statistics</b> for the player and other characters in the game. Statistics will be:
+<ul>
+<li>Health Points</li>
+<li>Debuffs (hangover, wounds, bleeding)</li>
+<li>Aggressiveness</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>F7</td>
+<td>Combat</td>
+<td>The game will have a very simple <b>combat system.</b> If the player is able to attack a target, depending on the aggressiveness of the target, it can
+attack the player back. If the attack hits there is 50/50 chance of damage. <i>Desired: </i>The combat system shall have a modifier mechanic on which the chance
+of hitting or damage depends on. "Stronger" enemies have higher modifiers thus will give more damage to the player. </td>
+</tr>
+<tr>
+<td>F8</td>
+<td>Inventory</td>
+<td>The game will have a simple <b>inventory system</b> using slots for weapons, currency and other items. Simple means there is no weight and volume system.
+Weapons are not stackable, while currency and other items are.</td>
+</tr>
+<tr>
+<td>F9</td>
+<td>Time Mechanic</td>
+<td>The game will have a <b>time system</b> for story-telling purposes. Time will be implemented with a turn-based system, for example: every <i>x</i> turns
+<i>y</i> amount of time passes. Some actions will pass time immediately, such as sleeping.</td>
 </tr>
 </table>
+
 ### Quality requirements
 Author(s): Claudia Grigoras
 
