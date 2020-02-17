@@ -40,31 +40,18 @@ Author(s): Koen van den Burg
 
 As a preamble to the table, you can discuss the main line of reasoning you applied for defining the functional features provided in the table.
 
-| ID  | Short name  | Description  |
-|---|---|---|
-| F1  | Commands | Game wiill have a text-based **option system**, the player can type different commands in a command prompt which will result in **different actions**(F3). |
-| F2  | Interface | The game will be played inside the default console of the device. Everything is in text. Desired: ASCII art in some situations. |
-| F3  | Actions | Typing different commands will result in different actions in the game world. The actions are: <ul>
-  <li>Movement</li>
-  <li>Attacking</li>
-  <li>Conversation with other characters</li>
-  <li>Opening doors/using car keys</li>
-  <li>Dying (restarts the game)</li>
-  <li>Healing</li>
-  <li>Picking up items</li>
-  <li>Examining an item/room/scenario</li>
-  <li>Sleeping</li> </ul> |
-| F4  | Items | There will be a multitude of different items which can be added to the inventory of the player, such as weapons, keys and ammunition. |
-| F5 | Characters | The game will have characters, each with different **statistics** (F6) defining what they are (enemies, friendlies, etc.) |
-| F6 | Statistics | The game will have statistics for the player and other characters in the game. Statistics can be:<ul>
-  <li>health points</li>
-  <li>debuffs (hangover, wounds, bleeding) </li>
-  <li>aggressiveness (for enemies) </li>
-  <li>health points</li></ul> |
-| F7 | Combat | The game will have a very simple **combat system**. If the player is able to attack a target, depending on the aggressiveness of that target, it can attack the character back. If the attack hits depends on a 50/50 chance. *Desired*: The combat system shall have a modifier mechanic where the chance to hit and damage depend on. "Stronger" enemies have high modifiers, thus will do more damage. |
-| F8 | Inventory | The game will have a simple **inventory system** using slots, for a weapon, currency, etc. Simple means no weight system, no volume system. There is a weapon slot, which is not stackable. Ammunition, currency and other items are stackable. |
-| F9 | Time Mechanic | The game will have a **time system** for story-telling purposes. Time will be implemented with a turn-based system, for examples, for every *x* amount of turns *y* amount of time passes, with some actions passing time immediately, such as sleeping. |
-
+<table>
+<tr>
+<th>ID</th>
+<th>Short Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>F1</td>
+<td>Commands</td>
+<td>Game will have a text-based option system</td>
+</tr>
+</table>
 ### Quality requirements
 Author(s): Claudia Grigoras
 
