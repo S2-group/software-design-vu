@@ -27,8 +27,8 @@ You’ll come to a page that says “Compare changes”.
 
 3. Choose branches.
 To create a pull request, you want to set the base and compare branches to the following:  
-base: `master` 
-compare: the branch where you are currently working (e.g., `Assignment1`)  
+- base: `master` 
+- compare: the branch where you are currently working (e.g., `Assignment1`)  
 
 4. Once you have selected your branches, GitHub will ask you to write a title and a comment for the Pull Request. The title of the Pull Request should follow the following pattern: `<Team name>-Assignment<Number of assignment>`. You will see a list of commits that have been made by you. If you have followed the steps correctly, GitHub will show a summary of your Pull Request.
 
