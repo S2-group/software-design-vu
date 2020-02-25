@@ -1,6 +1,6 @@
 # Assignment 2
 
-Maximum number of words for this document: 9000
+Maximum number of words for this document: 12000
 
 **IMPORTANT**: In this assignment you will model the whole system. Within each of your models, you will have a *prescriptive intent* when representing the elements related to the feature you are implementing in this assignment, whereas the rest of the elements are used with a *descriptive intent*. In all your diagrams it is strongly suggested to used different colors for the prescriptive and descriptive parts of your models (this helps you in better reasoning on the level of detail needed in each part of the models and the instructors in knowing how to assess your models).   
 
@@ -34,7 +34,7 @@ In this document you have to adhere to the following formatting conventions:
 - the name of each **class** is in bold
 - the *attributes*, *operations*, *associations*, and *objects* are in italic.
 
-Maximum number of words for this section: 2500
+Maximum number of words for this section: 3000
 
 ## Object diagrams								
 Author(s): `name of the team member(s) responsible for this section`
@@ -46,7 +46,7 @@ This chapter is composed of a UML object diagram of your system, together with a
   
 `Textual description`
 
-Maximum number of words for this section: 500
+Maximum number of words for this section: 1000
 
 ## State machine diagrams									
 Author(s): `name of the team member(s) responsible for this section`
@@ -60,7 +60,7 @@ For each state machine you have to provide:
 
 The goal of your state machine diagrams is both descriptive and prescriptive, so put the needed level of detail here, finding the right trade-off between understandability of the models and their precision.
 
-Maximum number of words for this section: 2500
+Maximum number of words for this section: 3000
 
 ## Sequence diagrams									
 Author(s): `name of the team member(s) responsible for this section`
@@ -74,7 +74,7 @@ For each sequence diagram you have to provide:
 
 The goal of your sequence diagrams is both descriptive and prescriptive, so put the needed level of detail here, finding the right trade-off between understandability of the models and their precision.
 
-Maximum number of words for this section: 2500
+Maximum number of words for this section: 3000
 
 ## Implementation									
 Author(s): `name of the team member(s) responsible for this section`
@@ -88,7 +88,7 @@ In this chapter you will describe the following aspects of your project:
 
 IMPORTANT: remember that your implementation must be consistent with your UML models. Also, your implementation must run without the need from any other external software or tool. Failing to meet this requirement means 0 points for the implementation part of your project.
 
-Maximum number of words for this section: 1000
+Maximum number of words for this section: 2000
 
 ## References
 
