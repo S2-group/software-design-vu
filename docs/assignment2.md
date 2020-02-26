@@ -10,13 +10,14 @@ Maximum number of words for this document: 9000
 
 | ID  | Short name  | Description  |
 |---|---|---|
-| F1  | Tags | Code snippets can be tagged via freely-defined labels called tags  |
+| F1  | Command | Player can control the main character using command line commands with the following syntax: ‘[command] [item]’. The commands we will implement are: move, open, break, inspect, help   |
+| F2| Movements | Player can move through the environment using command: ‘move to [location]’ | 
 
 ### Used modeling tool
-Add here the name of the modeling tool you are using for your project.
+Draw.io
 
 ## Class diagram									
-Author(s): `name of the team member(s) responsible for this section`
+Author(s): Sarah
 
 This chapter contains the specification of the UML class diagram of your system, together with a textual description of all its elements.
 
@@ -37,7 +38,7 @@ In this document you have to adhere to the following formatting conventions:
 Maximum number of words for this section: 2500
 
 ## Object diagrams								
-Author(s): `name of the team member(s) responsible for this section`
+Author(s):  Sam
 
 This chapter contains the description of a "snapshot" of the status of your system during its execution. 
 This chapter is composed of a UML object diagram of your system, together with a textual description of its key elements.
@@ -49,7 +50,7 @@ This chapter is composed of a UML object diagram of your system, together with a
 Maximum number of words for this section: 500
 
 ## State machine diagrams									
-Author(s): `name of the team member(s) responsible for this section`
+Author(s): Beth, Gemma
 
 This chapter contains the specification of at least 2 UML state machines of your system, together with a textual description of all their elements. Also, remember that classes the describe only data structures (e.g., Coordinate, Position) do not need to have an associated state machine since they can be seen as simple "data containers" without behaviour (they have only stateless objects).
 
@@ -63,7 +64,7 @@ The goal of your state machine diagrams is both descriptive and prescriptive, so
 Maximum number of words for this section: 2500
 
 ## Sequence diagrams									
-Author(s): `name of the team member(s) responsible for this section`
+Author(s): Ben
 
 This chapter contains the specification of at least 2 UML sequence diagrams of your system, together with a textual description of all its elements. Here you have to focus on specific situations you want to describe. For example, you can describe the interaction of player when performing a key part of the videogame, during a typical execution scenario, in a special case that may happen (e.g., an error situation), when finalizing a fantasy soccer game, etc.
 
