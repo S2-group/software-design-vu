@@ -9,11 +9,8 @@ public class Player {
         this.currentLocation = currentLocation;
     }
 
-    public ArrayList<Object> getObjects() {
-        return objects;
-    }
+    public ArrayList<Object> getObjects() { return objects; }
 
-    public String getCurrentLocation() {
-        return currentLocation;
-    }
+    public String getCurrentLocation() { return currentLocation; }
+
 }
