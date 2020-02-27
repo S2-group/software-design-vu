@@ -1,0 +1,58 @@
+{
+  "start room": "Central Station",
+  "end room" : "Schiphol Airport",
+  "rooms" : [
+    {
+      "name" : "Central Station",
+      "items" : [
+        {
+          "name" : "ovChipkaart",
+          "location" : "Central Station",
+          "usage" : "The ovChipkaart is used to get in and out of the metro"
+
+        }
+      ],
+      "connectsTo" : "Station Zuid",
+      "script" : "Welcome to Central Station..."
+    },
+    {
+      "name" : "Station Zuid",
+      "items" : [
+        {
+          "name" : "raincoat",
+          "location" : "Station Zuid",
+          "usage" : "The raincoat shields you from the rain"
+        }
+      ],
+      "connectsTo" : ["Zuidplein", "Central Station"],
+      "script" : "Welcome to Station Zuid..."
+    },
+    {
+      "name" : "Zuidplein",
+      "items" : [
+        {
+          "name" : "money",
+          "location" : "Zuidplein",
+          "usage" : "Money can be loaded onto the ovChipkaart"
+        }
+
+      ],
+      "connectsTo" : ["Station Zuid", "Schiphol Airport"],
+      "script" : "Welcome to Schiphol Aiport"
+    },
+    {
+      "name" : "Schiphol Airport",
+      "items" : [
+        {
+          "name" : "boarding pass",
+          "location" : "Schiphol Airport",
+          "usage" : "The boarding pass can be used to board a plane departing Amsterdam"
+
+        }
+      ],
+      "connectsTo" : "Zuidplein",
+      "script" : "Welcome to Schiphol Airport..."
+    }
+
+  ]
+}
