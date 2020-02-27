@@ -3,7 +3,7 @@ import java.util.*;
 public class Player {
     private String name;
     private ArrayList<Object> inventory;
-    private static Room currentRoom;
+    private Room currentRoom;
 
     public Player(String name, ArrayList<Object> inventory, Room currentRoom) {
         this.name = name;
@@ -13,6 +13,8 @@ public class Player {
 
     public ArrayList<Object> getObjects() { return inventory; }
 
-    public static Room getCurrentRoom() { return currentRoom; }
+    public Room getCurrentRoom() { return currentRoom; }
+
+    public void setCurrentRoom(Room room) { this.currentRoom = room; }
 
 }
