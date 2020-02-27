@@ -23,6 +23,12 @@ This chapter contains the specification of the UML class diagram of your system,
 
 `Figure representing the UML class diagram`
 
+The Player class represents the user, i.e. the person moving through the game. Their name is a string object that contains whatever name the user chooses. Their inventory is a list of Item objects, containing any objects that were picked up but not yet put down. This way, we keep a list of all items the player can use at a given time. The currentLocation is a Room object that indicates which room the player is in at a given time. The player class is associated with the Room class because it needs to be able to access the player's current location. It is also associated with the Objective class because the Player needs to know what their time limit is for the game. It is also associated with the Item class, because it needs to keep track of the player's inventory. The association with the Action class is because a Player needs to be able to perform actions in order to change their location or inventory. 
+
+The Objective class represents the goal of the current game, and will hold information about whether or not the player has completed/won the game. The goal field contains the time in which the user needs to finish the game in order to win. The result field represents whether or not a player has won, either true or false. The winStatement is a String that is presented to the player when they win. The loseStatement is a String that is presented to the player when they lose. The win method returns true or false based on whether the user has finished the game in the allotted time frame. The Objective class is associated with the Setting class because each setting will have a different goal. It is also associated with the TimeLimit class because the user wins or loses based on the time limit given for the game. 
+
+The Action class
+
 For each class (and data type) in the class diagram you have to provide a paragraph providing the following information:
 - Brief description about what it represents
 - Brief description of the meaning of each attribute
