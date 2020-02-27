@@ -33,13 +33,13 @@ The Item class represents the items in the game that can be used by the player. 
 
 The Obstacle class represents any obstacles in a room, such as something blocking a door. The itemNeeded field contains what item the user needs to use in order to overcome the obstacle. The open field contains whether or not the player has overcome the obstacle. The Obstacle class, like the Item class, is associated with the Room class because each Room can have unlimited obstacles, and it needs to keep an inventory of those.
 
-The CommandParser class
+The CommandParser class exists to recognize valid commands from the user and catch any invalid ones. The command field is just a list of strings that contains the command names. The parse method is what does all of the work; it goes through the commands and performs them if they are valid or throws an error if they are not. 
 
-The Setting class
+The Setting class represents the place the user is in, and contains all of the locations a player can go. The rooms field is a list of Room objects that holds every room that exists in the current game. The Setting class is associated with the Room class, because each setting can have unlimited rooms, and a room cannot exist without a setting. 
 
-The Room class
+The Room class represents an individual room within the setting of the game. The name field is a string stating the name of the room. The items list holds each Item object that is in the given room. The same holds for the obstacles list, except it contains Obstacle objects. ConnectsTo is a list of rooms to which you can get to from the current room. The script is the string that the user will read when they enter the given room.  
 
-The TimeLimit class
+The TimeLimit class represents the time a user has left in the game. It will keep track of the player's time since starting the game, and assist the Objective class in assessing whether the player has won the game. The time field contains the current time, and the maxTime contains the maximum time the player has to complete the game. 
 
 The Main class
 
