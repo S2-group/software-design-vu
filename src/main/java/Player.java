@@ -1,16 +1,18 @@
 import java.util.*;
 
 public class Player {
+    public String name;
     private ArrayList<Object> inventory;
-    private String currentLocation;
+    private Room currentRoom;
 
-    public Player(ArrayList<Object> inventory, String currentLocation) {
+    public Player(String name, ArrayList<Object> inventory, Room currentRoom) {
+        this.name = name;
         this.inventory = inventory;
-        this.currentLocation = currentLocation;
+        this.currentRoom = currentRoom;
     }
 
     public ArrayList<Object> getObjects() { return inventory; }
 
-    public String getCurrentLocation() { return currentLocation; }
+    public Room getCurrentRoom() { return currentRoom; }
 
 }

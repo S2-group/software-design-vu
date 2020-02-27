@@ -14,10 +14,15 @@ public class CommandParser {
     private Action parse(String[] command) {
 
         Action result;
+        String keyword = command[0];
 
-        if (command[0].equals("move")) {
-          return new Action(); //TODO: make this a Move action
+        switch (keyword) {
+            case "move":
+                //FIXME: get the room and insert into the constructor below
+                return new Action("move", null, null);
+            default:
+                System.out.println("The command name is invalid. Please ask for help.");
+                return new Action ("error", null, null);
         }
-        else { return new Action(); } //TODO: make this a BadCommand action to print error to player
     }
 }
