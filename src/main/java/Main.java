@@ -20,8 +20,10 @@ public class Main {
         try {
             String input = in.readLine();
             File jsonFile = new File(input);
-            if (jsonFile.exists()){
-//                    do stuff here
+            int dotIndex = input.indexOf(".");
+            String fileType = input.substring(dotIndex+1);
+            if (jsonFile.exists() && fileType.equals("json")){
+                
             }
             System.out.println("ok");
         } catch(Exception e) {
