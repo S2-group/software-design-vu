@@ -1,9 +1,9 @@
 import java.util.*;
 
 public class Player {
-    public String name;
+    private String name;
     private ArrayList<Object> inventory;
-    private Room currentRoom;
+    private static Room currentRoom;
 
     public Player(String name, ArrayList<Object> inventory, Room currentRoom) {
         this.name = name;
@@ -13,6 +13,6 @@ public class Player {
 
     public ArrayList<Object> getObjects() { return inventory; }
 
-    public Room getCurrentRoom() { return currentRoom; }
+    public static Room getCurrentRoom() { return currentRoom; }
 
 }

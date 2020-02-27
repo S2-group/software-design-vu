@@ -18,7 +18,8 @@ public class CommandParser {
 
         switch (keyword) {
             case "move":
-                //FIXME: get the room and insert into the constructor below
+                Room currentRoom = Player.getCurrentRoom();
+                String moveToRoom = command[1];
                 return new Action("move", null, null);
             default:
                 System.out.println("The command name is invalid. Please ask for help.");
