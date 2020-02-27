@@ -9,13 +9,11 @@ public class Action {
         this.room = room;
     }
 
-    public boolean doAction(String commandName) {
+    public void doAction(String commandName) {
         switch (commandName) {
             case "move":
-                return true;
             default:
                 System.out.println("The command name is invalid. Please ask for help.");
-                return true;
         }
     }
 
