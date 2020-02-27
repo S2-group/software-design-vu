@@ -10,10 +10,10 @@ public class Match {
         this.team2 = team2;
     }
 
-    public String getMatchWinner(){
+    public Team getMatchWinner(){
         if( team1.getTeamScore() == team2.getTeamScore() )
-            return new Random().nextBoolean() ? team1.getTeamName() : team2.getTeamName();
-        return (team1.getTeamScore() > team2.getTeamScore() ? team1.getTeamName() : team2.getTeamName());
+            return new Random().nextBoolean() ? team1 : team2;
+        return (team1.getTeamScore() > team2.getTeamScore() ? team1 : team2);
     }
 
 
