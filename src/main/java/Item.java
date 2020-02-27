@@ -5,9 +5,12 @@ public class Item {
     private boolean held;
     private boolean used;
 
-    public Item(String name, String location, String usage, boolean held, boolean used) {
-        held = false;
-        used = false;
+    public Item(String name, String location, String usage) {
+        this.name = name;
+        this.location = location;
+        this.usage = usage;
+        this.held = false;
+        this.used = false;
 
     }
 }
