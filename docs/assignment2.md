@@ -23,6 +23,8 @@ This chapter contains the specification of the UML class diagram of your system,
 
 `Figure representing the UML class diagram`
 
+The Player class represents the user, i.e. the person moving through the game. 
+
 For each class (and data type) in the class diagram you have to provide a paragraph providing the following information:
 - Brief description about what it represents
 - Brief description of the meaning of each attribute
