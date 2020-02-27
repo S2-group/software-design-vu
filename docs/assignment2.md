@@ -23,7 +23,7 @@ This chapter contains the specification of the UML class diagram of your system,
 
 `Figure representing the UML class diagram`
 
-The Player class represents the user, i.e. the person moving through the game. 
+The Player class represents the user, i.e. the person moving through the game. Their name is a string object that contains whatever name the user chooses. Their inventory is a list of Item objects, containing any objects that were picked up but not yet put down. This way, we keep a list of all items the player can use at a given time. The currentLocation is a Room object that indicates which room the player is in at a given time. The player class is associated with the Room class because it needs to be able to access the player's current location. It is also associated with the Objective class because the Player needs to know what their time limit is for the game. It is also associated with the Item class, because it needs to keep track of the player's inventory. The association with the Action class is because a Player needs to be able to perform actions in order to change their location or inventory. 
 
 For each class (and data type) in the class diagram you have to provide a paragraph providing the following information:
 - Brief description about what it represents
