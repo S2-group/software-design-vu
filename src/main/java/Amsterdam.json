@@ -7,7 +7,6 @@
       "items" : [
         {
           "name" : "ovChipkaart",
-          "location" : "Central Station",
           "usage" : "The ovChipkaart is used to get in and out of the metro"
 
         }
@@ -20,7 +19,6 @@
       "items" : [
         {
           "name" : "raincoat",
-          "location" : "Station Zuid",
           "usage" : "The raincoat shields you from the rain"
         }
       ],
@@ -32,7 +30,6 @@
       "items" : [
         {
           "name" : "money",
-          "location" : "Zuidplein",
           "usage" : "Money can be loaded onto the ovChipkaart"
         }
 
@@ -45,7 +42,6 @@
       "items" : [
         {
           "name" : "boarding pass",
-          "location" : "Schiphol Airport",
           "usage" : "The boarding pass can be used to board a plane departing Amsterdam"
 
         }
