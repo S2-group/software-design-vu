@@ -9,28 +9,23 @@ public class Action {
         this.room = room;
     }
 
-    public void doAction(String commandName) {
-        switch (commandName) {
+    public void doAction(String[] command, Player player) {
+        Action result;
+        String keyword = command[0];
+
+        switch (keyword) {
             case "move":
+                Room currentRoom = player.getCurrentRoom();
+                Room nextRoom = currentRoom.getNextRoomFromName(command[1]);
+
+                if (nextRoom == null) {
+                    System.out.println("The room name is invalid. Please ask for help.");
+                } else {
+                    player.setCurrentRoom(nextRoom);
+                }
+
             default:
                 System.out.println("The command name is invalid. Please ask for help.");
         }
     }
-
-    private boolean pickUp() {
-        return true;
-    }
-
-    private boolean putDown() {
-        return true;
-    }
-
-    private boolean use() {
-        return true;
-    }
-
-    private boolean move(Room location) {
-        return true;
-    }
-
 }
