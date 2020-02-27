@@ -27,7 +27,21 @@ The Player class represents the user, i.e. the person moving through the game. T
 
 The Objective class represents the goal of the current game, and will hold information about whether or not the player has completed/won the game. The goal field contains the time in which the user needs to finish the game in order to win. The result field represents whether or not a player has won, either true or false. The winStatement is a String that is presented to the player when they win. The loseStatement is a String that is presented to the player when they lose. The win method returns true or false based on whether the user has finished the game in the allotted time frame. The Objective class is associated with the Setting class because each setting will have a different goal. It is also associated with the TimeLimit class because the user wins or loses based on the time limit given for the game. 
 
-The Action class
+The Action class represents all of the actions and movements a user can perform in the game. The commandName field is a string that the user inputs in order to perform an action. The item is the Item object that the action is being used on. The pickUp method takes an item and puts it into the player's inventory. The putDown method takes the item out of their inventory. The use method makes the player use the specified item. The move method takes in a Room and moves the player to the specified room. The doAction method performs the action specified by CommandName. The Action class is connected to the Item class because each action needs to be performed on a specific item. The same holds for the Obstacle class; each obstacle will have actions that can be used on them. It is also connected to the CommandParser class because the CommandParser will determine whether a command is valid or not.  
+
+The Item class represents the items in the game that can be used by the player. The held field represents whether or not the item is currently in the user's inventory. The used field represents whether or not the user has already used the item. It is connected to the Room class because each room can have an unlimited number of items, and the Room class needs to access that information.
+
+The Obstacle class represents any obstacles in a room, such as something blocking a door. The itemNeeded field contains what item the user needs to use in order to overcome the obstacle. The open field contains whether or not the player has overcome the obstacle. The Obstacle class, like the Item class, is associated with the Room class because each Room can have unlimited obstacles, and it needs to keep an inventory of those.
+
+The CommandParser class
+
+The Setting class
+
+The Room class
+
+The TimeLimit class
+
+The Main class
 
 For each class (and data type) in the class diagram you have to provide a paragraph providing the following information:
 - Brief description about what it represents
