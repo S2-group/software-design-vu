@@ -37,7 +37,7 @@ The **CommandParser** class exists to recognize valid commands from the user and
 
 The **Setting** class represents the place the user is in, and contains all of the locations a player can go. The rooms field is a list of Room objects that holds every room that exists in the current game. The Setting class is composed with the Room class, because each setting can have unlimited rooms, and a room cannot exist without a setting. 
 
-The **Room** class represents an individual room within the setting of the game. The name field is a string stating the name of the room. The items list holds each Item object that is in the given room. The same holds for the obstacles list, except it contains Obstacle objects. ConnectsTo is a list of rooms to which you can get to from the current room. The script is the string that the user will read when they enter the given room.  
+The **Room** class represents an individual room within the setting of the game. The name field is a string stating the name of the room. The items hashmap holds each Item object that is in the given room. The same holds for obstacles, except it contains Obstacle objects. NextRooms is a list of rooms to which you can get to from the current room. The script is the string that the user will read when they enter the given room.  
 
 The **TimeLimit** class represents the time a user has left in the game. It will keep track of the player's time since starting the game, and assist the Objective class in assessing whether the player has won the game. The time field contains the current time, and the maxTime contains the maximum time the player has to complete the game. 
 
