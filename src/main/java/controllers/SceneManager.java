@@ -19,7 +19,12 @@ public class SceneManager {
 
     private final Scene mainMenuScene = new Scene(new MainMenuPane(), 800 / 2.0, 600);
 
-    private Map<Class<? extends GamePane>, Scene> scenes = new HashMap<Class<? extends GamePane>, Scene>(){{ put(MainMenuPane.class, mainMenuScene);}};
+    private final Scene leagueSimulatorScene = new Scene(new LeagueSimulatorPane(), 800, 600);
+
+    private Map<Class<? extends GamePane>, Scene> scenes = new HashMap<Class<? extends GamePane>, Scene>(){{
+        put(MainMenuPane.class, mainMenuScene);
+        put(LeagueSimulatorPane.class, leagueSimulatorScene);
+    }};
 
     /**
      * Primary stage.
