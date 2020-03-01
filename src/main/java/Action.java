@@ -16,14 +16,14 @@ public class Action {
         switch (keyword) {
             case "move":
                 Room currentRoom = player.getCurrentRoom();
-//                TODO: fix
-//                Room nextRoom = currentRoom.getNextRoomFromName(command[1]);
 
-//                if (nextRoom == null) {
-//                    System.out.println("The room name is invalid. Please ask for help.");
-//                } else {
-//                    player.setCurrentRoom(nextRoom);
-//                }
+                Room nextRoom = currentRoom.getNextRoomFromName(command[1]);
+
+                if (nextRoom == null) {
+                    System.out.println("The room name is invalid. Please ask for help.");
+                } else {
+                    player.setCurrentRoom(nextRoom);
+                }
 
             default:
                 System.out.println("The command name is invalid. Please ask for help.");
