@@ -9,24 +9,43 @@ public class Action {
         this.room = room;
     }
 
-    public void doAction(String[] command, Player player) {
+    public static void doAction(String[] command, Player player) {
         Action result;
         String keyword = command[0];
 
         switch (keyword) {
             case "move":
-                Room currentRoom = player.getCurrentRoom();
+                if (command[1].equals("to")) {
+                    Room currentRoom = player.getCurrentRoom();
+                    String wholeName;
+                    if (command.length > 3) {
+                        String firstWord = command[2];
+                        String secondWord = command[3];
+                        wholeName = firstWord + " " + secondWord;
+                    } else {
+                        wholeName = command[2];
+                    }
+                    Room nextRoom = currentRoom.getNextRoomFromName(wholeName);
 
-                Room nextRoom = currentRoom.getNextRoomFromName(command[1]);
-
-                if (nextRoom == null) {
-                    System.out.println("The room name is invalid. Please ask for help.");
-                } else {
-                    player.setCurrentRoom(nextRoom);
+                    if (nextRoom == null) {
+                        System.out.println(Main.ANSI_BLUE + "\nThe room name is invalid. Please ask for help.\n" + Main.ANSI_RESET);
+                        break;
+                    } else {
+                        player.setCurrentRoom(nextRoom);
+                        System.out.println(Main.ANSI_BLUE + "\nYou have moved to " + nextRoom.getRoomName() + ".\n" + player.getCurrentRoom().getScript() + "\n" + Main.ANSI_RESET);
+                        break;
+                    }
                 }
-
+            case "help":
+                String[] roomOptions = player.getCurrentRoom().getNextRooms();
+                String roomOptionsString = roomOptions[0];
+                for (int i = 1; i < roomOptions.length; i++){
+                    roomOptionsString = roomOptions[i] + ", " + roomOptionsString;
+                }
+                System.out.println(Main.ANSI_BLUE + "\nYou can move to " + roomOptionsString + ". To move, type 'move to <location>.'\n");
+                break;
             default:
-                System.out.println("The command name is invalid. Please ask for help.");
+                System.out.println(Main.ANSI_BLUE + "\nThe command name is invalid. Please ask for help.\n" + Main.ANSI_RESET);
         }
     }
 }

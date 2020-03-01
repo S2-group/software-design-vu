@@ -2,16 +2,16 @@ import java.util.*;
 
 public class Player {
     private String name;
-    private ArrayList<Object> inventory;
+    private ArrayList<Item> inventory;
     private Room currentRoom;
 
-    public Player(String name, ArrayList<Object> inventory, Room currentRoom) {
+    public Player(String name, ArrayList<Item> inventory, Room currentRoom) {
         this.name = name;
         this.inventory = inventory;
         this.currentRoom = currentRoom;
     }
 
-    public ArrayList<Object> getObjects() { return inventory; }
+    public ArrayList<Item> getItems() { return inventory; }
 
     public Room getCurrentRoom() { return currentRoom; }
 

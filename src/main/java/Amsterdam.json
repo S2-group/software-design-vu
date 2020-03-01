@@ -35,7 +35,7 @@
 
       ],
       "connects to" : ["Station Zuid", "Schiphol Airport"],
-      "script" : "Welcome to Schiphol Aiport"
+      "script" : "Welcome to Zuidplein..."
     },
     {
       "name" : "Schiphol Airport",

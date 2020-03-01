@@ -13,13 +13,27 @@ public class Room {
         this.script = script;
     }
 
+    public String getRoomName(){
+        return name;
+    }
+
+    public String getScript(){
+        return script;
+    }
+
     public Item getItemFromName(String itemName) {
 
         return items.get(itemName);
     }
 
     public Room getNextRoomFromName(String roomName) {
-        return  Main.roomMap.get(roomName);
+        List<String> nextList = Arrays.asList(nextRooms);
+        if (nextList.contains(roomName)){
+            return  Main.roomMap.get(roomName);
+        } else{
+            return null;
+        }
+
     }
 
     public String[] getNextRooms() {
