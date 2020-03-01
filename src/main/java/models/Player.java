@@ -1,6 +1,7 @@
+package models;
+
 public class Player {
 
-    private int id;
     private String name;
     private int score;
 
@@ -13,7 +14,5 @@ public class Player {
         return score;
     }
 
-    public void setScore(int newScore) {
-        this.score = newScore;
-    }
+    public String getName() { return name; }
 }

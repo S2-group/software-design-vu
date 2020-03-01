@@ -22,13 +22,16 @@ The functional requirements below represent our understanding of the technical p
 | ID  | Short name  | Description  |
 |---|---|---|
 | F1  | User-provided data | Allow the user to manually provide player data via the user interface in CSV format. Each row should only contain two values, i.e. name and score, e.g. `Ben Foster,51`. The file shouldn’t have a header row. |
-| F2  | Erroneous data  | In the event user input cannot be processed, present an error detailing the issue to the user.|
+| F2  | Error Reporting  | In the event user input cannot be processed, present an error detailing the issue to the user.|
 | F3  | Team formation  | Allow the user to form a team of 11 players from the players provided, with no duplicates.|
 | F4  | Multiple teams | System will support the creation of multiple teams. In the case the user only creates one team, random teams are created by the system to reach the minimal number of teams in a league.|
-| F5  | League formation | Allow the user to set up a league with its own schedule. The first round can have at most 16 matches. Matches will be played according to this schedule and the system will output the winner of each individual game. |
-| F6 | Team score | The final score of a team is computed by summing the points scored by each of the players according to the user provided data. |
-| F7 | Soccer match | A soccer match can be simulated between two teams. The winner is chosen based on each team’s final score as described in F5 - the highest scoring team wins. |
-| F8 | Equal scores | In the event two teams have equal scores, the winner is chosen at random. |
+| F5 | Deletion | System will support the deletion of an existing player or team. |
+| F6  | League formation | Allow the user to set up a league with its own schedule. The first round can have at most 16 matches. Matches will be played according to this schedule and the system will output the winner of each individual game. |
+| F7 | Team score | The final score of a team is computed by summing the points scored by each of the players according to the user provided data. |
+| F8 | Soccer match | A soccer match within a league can be simulated between two teams. The winner is chosen based on each team’s final score as described in F5 - the highest scoring team wins. |
+| F9 | Equal scores | In the event two teams have equal scores, the winner is chosen at random. |
+| F10 | Leaderboard | System will show a leaderboard of the top-performing teams based on the number of wins.|
+| F11 | GUI | System will have a GUI comprising of a main menu, a league simulator (where the user creates and plays a league), a team editor (for team creation and deletion), a player editor(for adding player data as per F1) and a leaderboard (as per F10)|
 
 ### Quality requirements
 Author(s): `Patricia Santana Vasquez`
