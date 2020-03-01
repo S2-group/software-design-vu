@@ -3,10 +3,10 @@ import java.util.*;
 public class Room {
     private String name;
     private HashMap<String, Item> items;
-    private HashMap<String, Room> nextRooms;
+    private String[] nextRooms;
     private String script;
 
-    public Room(String name, HashMap<String, Item> items, HashMap<String, Room> nextRooms, String script) {
+    public Room(String name, HashMap<String, Item> items, String[] nextRooms, String script) {
         this.name = name;
         this.items = items;
         this.nextRooms = nextRooms;
@@ -17,11 +17,12 @@ public class Room {
         return items.get(itemName);
     }
 
-    public Room getNextRoomFromName(String roomName) {
-        return nextRooms.get(roomName);
-    }
+//    TODO: fix since now nextRooms is String[] and not a hashmap
+//    public Room getNextRoomFromName(String roomName) {
+//        return nextRooms.get(roomName);
+//    }
 
-    public HashMap<String, Room> getNextRooms() {
+    public String[] getNextRooms() {
         return nextRooms;
     }
 

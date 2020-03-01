@@ -11,7 +11,7 @@
 
         }
       ],
-      "connectsTo" : "Station Zuid",
+      "connects to" : ["Station Zuid"],
       "script" : "Welcome to Central Station..."
     },
     {
@@ -22,7 +22,7 @@
           "usage" : "The raincoat shields you from the rain"
         }
       ],
-      "connectsTo" : ["Zuidplein", "Central Station"],
+      "connects to" : ["Zuidplein", "Central Station"],
       "script" : "Welcome to Station Zuid..."
     },
     {
@@ -34,7 +34,7 @@
         }
 
       ],
-      "connectsTo" : ["Station Zuid", "Schiphol Airport"],
+      "connects to" : ["Station Zuid", "Schiphol Airport"],
       "script" : "Welcome to Schiphol Aiport"
     },
     {
@@ -46,7 +46,7 @@
 
         }
       ],
-      "connectsTo" : "Zuidplein",
+      "connects to" : ["Zuidplein"],
       "script" : "Welcome to Schiphol Airport..."
     }
 
