@@ -1,12 +1,12 @@
 import java.io.*;
+import java.util.List;
+
 import org.apache.commons.io.FileUtils;
+import org.json.JSONArray;
 import org.json.JSONObject;
-//import org.json.*;
-//import org.apache.commons.io.FileUtils;
-//import org.json.simple.JSONObject;
-//import org.json.simple.parser.JSONParser;
 
 
+// to run: hit green arrow, then type src/main/java/Amsterdam.json when prompted
 
 public class Main {
 
@@ -36,6 +36,14 @@ public class Main {
                 System.out.println(startRoom);
                 String endRoom = tomJsonObject.getString("end room");
                 System.out.println(endRoom);
+
+                JSONArray rooms = tomJsonObject.getJSONArray("rooms");
+                for (int i = 0; i < rooms.length(); i++){
+                    JSONObject room = rooms.getJSONObject(i);
+                    String name = room.getString("name");
+                    System.out.println("name: " + name);
+                    System.out.println(room);
+                }
 
                 System.out.println("ok");
             }
