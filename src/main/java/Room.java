@@ -14,13 +14,13 @@ public class Room {
     }
 
     public Item getItemFromName(String itemName) {
+
         return items.get(itemName);
     }
 
-//    TODO: fix since now nextRooms is String[] and not a hashmap
-//    public Room getNextRoomFromName(String roomName) {
-//        return nextRooms.get(roomName);
-//    }
+    public Room getNextRoomFromName(String roomName) {
+        return  Main.roomMap.get(roomName);
+    }
 
     public String[] getNextRooms() {
         return nextRooms;
