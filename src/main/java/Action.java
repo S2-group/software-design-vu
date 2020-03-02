@@ -70,7 +70,8 @@ public class Action {
                 }
             case "help":
                 System.out.println(Main.ANSI_BLUE + "\nTo move, type 'move to <location>'.\nTo see where to move to next" +
-                        "and what items are in this location, type 'look around'.\n");
+                        "and what items are in this location, type 'look around'.\nTo add an item to your inventory, type 'pick up <item>'.\n"
+                        + Main.ANSI_RESET);
 
                 break;
             case "look":
