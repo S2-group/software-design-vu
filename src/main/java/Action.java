@@ -62,6 +62,7 @@ public class Action {
                         break;
                     } else {
                         player.addToInventory(item);
+                        System.out.println(Main.ANSI_BLUE + "\nYou have picked up " + itemName + ".\n" + Main.ANSI_RESET);
                     }
 
                 } else {
