@@ -73,8 +73,14 @@ public class Action {
                     String itemName = command[1];
 
                     Item item = Main.itemMap.get(itemName);
-                    System.out.println(Main.ANSI_BLUE + "\n" + item.getUsage() + "\n" + Main.ANSI_RESET);
-                    break;
+
+                    if (item == null) {
+                        System.out.println(Main.ANSI_BLUE + "\nThat item does not exist.\n" + Main.ANSI_RESET);
+                        break;
+                    } else {
+                        System.out.println(Main.ANSI_BLUE + "\n" + item.getUsage() + "\n" + Main.ANSI_RESET);
+                        break;
+                    }
 
                 } else {
                     System.out.println(Main.ANSI_BLUE + "\nDid you mean 'inspect item'?\n" + Main.ANSI_RESET);
