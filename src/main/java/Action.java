@@ -54,7 +54,7 @@ public class Action {
                     }
 
                     String itemName = command[2];
-                    
+
                 } else {
                     System.out.println(Main.ANSI_BLUE + "\nDid you mean 'pick up'?\n" + Main.ANSI_RESET);
                     break;
