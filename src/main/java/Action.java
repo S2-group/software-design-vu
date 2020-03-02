@@ -12,6 +12,19 @@ public class Action {
         this.room = room;
     }
 
+    public static String printInventory(ArrayList<Item> playerItems) {
+        String playerInventory = "";
+        String playerInventoryFinal;
+
+        for (Item item : playerItems){
+            playerInventory = item.getNameFromItem() + ", " + playerInventory;
+        }
+        int unnecessaryComma = playerInventory.lastIndexOf(",");
+        playerInventoryFinal = "Your current inventory: " + playerInventory.substring(0, unnecessaryComma);
+
+        return playerInventoryFinal;
+    }
+
     public static void doAction(String[] command, Player player) {
         Action result;
         String keyword = command[0];
@@ -60,7 +73,10 @@ public class Action {
                         break;
                     } else {
                         player.addToInventory(item);
+                        currentRoom.removeItemFromRoom(itemName);
                         System.out.println(Main.ANSI_BLUE + "\nYou have picked up " + itemName + ".\n" + Main.ANSI_RESET);
+                        System.out.println(Main.ANSI_BLUE + printInventory(player.getInventory())
+                                + ".\n" + Main.ANSI_RESET);
                         break;
                     }
 

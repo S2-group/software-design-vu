@@ -21,9 +21,9 @@ public class Room {
         return script;
     }
 
-    public Item getItemFromName(String itemName) {
-        return items.get(itemName);
-    }
+    public Item getItemFromName(String itemName) { return items.get(itemName); }
+
+    public void removeItemFromRoom(String itemName) { items.remove(itemName); }
 
     public Room getNextRoomFromName(String roomName) {
         List<String> nextList = Arrays.asList(nextRooms);
@@ -34,9 +34,7 @@ public class Room {
         }
     }
 
-    public String[] getNextRooms() {
-        return nextRooms;
-    }
+    public String[] getNextRooms() { return nextRooms; }
 
     public HashMap<String, Item> getItems() { return items; }
 
