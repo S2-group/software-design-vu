@@ -13,6 +13,8 @@ public class Player {
 
     public ArrayList<Item> getInventory() { return inventory; }
 
+    public void addToInventory(Item item) { this.inventory.add(item); }
+
     public Room getCurrentRoom() { return currentRoom; }
 
     public void setCurrentRoom(Room room) { this.currentRoom = room; }

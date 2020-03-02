@@ -45,7 +45,8 @@ public class Action {
                 }
             case "pick":
                 if (command[1].equals("up")) {
-                    HashMap<String, Item> currentItemsInRoom = player.getCurrentRoom().getItems();
+                    Room currentRoom = player.getCurrentRoom();
+                    HashMap<String, Item> currentItemsInRoom = currentRoom.getItems();
                     ArrayList<Item> currentInventory = player.getInventory();
 
                     if (command.length < 3) {
@@ -54,6 +55,14 @@ public class Action {
                     }
 
                     String itemName = command[2];
+                    Item item = currentRoom.getItemFromName(itemName);
+
+                    if (item == null) {
+                        System.out.println(Main.ANSI_BLUE + "\nThe item name is invalid. Please ask for help.\n" + Main.ANSI_RESET);
+                        break;
+                    } else {
+                        player.addToInventory(item);
+                    }
 
                 } else {
                     System.out.println(Main.ANSI_BLUE + "\nDid you mean 'pick up'?\n" + Main.ANSI_RESET);
