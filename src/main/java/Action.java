@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.*;
 
 public class Action {
@@ -40,11 +41,23 @@ public class Action {
                 }
                 else {
                     System.out.println(Main.ANSI_BLUE + "\nDid you mean 'move to'?\n" + Main.ANSI_RESET);
+                    break;
                 }
             case "pick":
                 if (command[1].equals("up")) {
-                    HashMap<String, Item> currentItems = player.getCurrentRoom().getItems();
+                    HashMap<String, Item> currentItemsInRoom = player.getCurrentRoom().getItems();
+                    ArrayList<Item> currentInventory = player.getInventory();
 
+                    if (command.length < 3) {
+                        System.out.println(Main.ANSI_BLUE + "\nYou cannot pick up nothing.\n" + Main.ANSI_RESET);
+                        break;
+                    }
+
+                    String itemName = command[2];
+
+                } else {
+                    System.out.println(Main.ANSI_BLUE + "\nDid you mean 'pick up'?\n" + Main.ANSI_RESET);
+                    break;
                 }
             case "help":
                 System.out.println(Main.ANSI_BLUE + "\nTo move, type 'move to <location>'.\nTo see where to move to next" +

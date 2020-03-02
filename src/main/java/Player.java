@@ -11,7 +11,7 @@ public class Player {
         this.currentRoom = currentRoom;
     }
 
-    public ArrayList<Item> getItems() { return inventory; }
+    public ArrayList<Item> getInventory() { return inventory; }
 
     public Room getCurrentRoom() { return currentRoom; }
 
