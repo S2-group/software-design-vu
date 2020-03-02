@@ -116,9 +116,8 @@ public class Action {
                     playerInventoryFinal = "Your current inventory is empty";
                 }
                 System.out.println(Main.ANSI_BLUE + "\nYou are currently located in " + player.getCurrentRoom().getRoomName() +
-                        ".\n" + playerInventoryFinal + ". \nTo move, type 'move to <location>'.\nTo see where to move to next" +
-                        "and what items are in this location, type 'look around'.\nTo add an item to your inventory, type 'pick up <item>'.\n"
-                        + Main.ANSI_RESET);
+                        ".\n" + playerInventoryFinal + ". \n\nTo move, type " + Main.ANSI_MAGENTA +  "'move to <location>'" + Main.ANSI_BLUE +  ".\nTo see where to move to next and what items are in this location, type " + Main.ANSI_MAGENTA + "'look around'"  +
+                        Main.ANSI_BLUE +  ".\nTo add an item to your inventory, type " + Main.ANSI_MAGENTA +  "'pick up <item>'" + Main.ANSI_BLUE + ".\n" + Main.ANSI_RESET);
 
                 break;
             case "look":

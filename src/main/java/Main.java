@@ -15,6 +15,7 @@ public class Main {
 
     public static final String ANSI_RESET = "\u001B[0m";
     public static final String ANSI_BLUE = "\u001B[34m";
+    public static final String ANSI_MAGENTA = "\u001b[35m";
 
     public static JSONObject startRoom;
     public static JSONObject endRoom;
