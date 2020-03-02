@@ -60,7 +60,9 @@ public class Action {
                         break;
                     } else {
                         player.addToInventory(item);
+                        currentRoom.removeItemFromRoom(itemName);
                         System.out.println(Main.ANSI_BLUE + "\nYou have picked up " + itemName + ".\n" + Main.ANSI_RESET);
+                        System.out.println(Main.ANSI_BLUE + "\nYou are now holding  " + itemName + ".\n" + Main.ANSI_RESET);
                         break;
                     }
 
