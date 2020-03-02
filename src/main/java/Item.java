@@ -12,6 +12,10 @@ public class Item {
         this.held = false;
         this.used = false;
     }
+
+    public String getNameFromItem(){
+        return this.name;
+    }
     public void holdItem(boolean hold) {
         this.held = hold;
     }

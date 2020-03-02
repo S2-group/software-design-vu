@@ -70,7 +70,20 @@ public class Action {
                     break;
                 }
             case "help":
-                System.out.println(Main.ANSI_BLUE + "\nTo move, type 'move to <location>'.\nTo see where to move to next" +
+                ArrayList<Item> playerItems = player.getInventory();
+                String playerInventory = "";
+                String playerInventoryFinal;
+                if (playerItems.size() != 0){
+                    for (Item item : playerItems){
+                        playerInventory = item.getNameFromItem() + ", " + playerInventory;
+                    }
+                    int unnecessaryComma = playerInventory.lastIndexOf(",");
+                    playerInventoryFinal = "Your current inventory: " + playerInventory.substring(0, unnecessaryComma);
+                } else {
+                    playerInventoryFinal = "Your current inventory is empty";
+                }
+                System.out.println(Main.ANSI_BLUE + "\nYou are currently located in " + player.getCurrentRoom().getRoomName() +
+                        ".\n" + playerInventoryFinal + ". \nTo move, type 'move to <location>'.\nTo see where to move to next" +
                         "and what items are in this location, type 'look around'.\nTo add an item to your inventory, type 'pick up <item>'.\n"
                         + Main.ANSI_RESET);
 
@@ -87,8 +100,8 @@ public class Action {
                     for (String itemName : roomItems.keySet()){
                         itemOptionsString = itemName + ", " + itemOptionsString;
                     }
-                    int unnecessaryComma = itemOptionsString.lastIndexOf(",");
-                    String itemOptionsFinalString = itemOptionsString.substring(0, unnecessaryComma);
+                    int unnecessaryComma1 = itemOptionsString.lastIndexOf(",");
+                    String itemOptionsFinalString = itemOptionsString.substring(0, unnecessaryComma1);
                     System.out.println(Main.ANSI_BLUE + "\nYou can move to " + roomOptionsString + ".\nItem(s) located" +
                             "in this room: " + itemOptionsFinalString);
                     break;
