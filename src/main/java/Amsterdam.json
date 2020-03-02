@@ -1,6 +1,6 @@
 {
   "start room": "Central Station",
-  "end room" : "Schiphol Airport",
+  "end room" : "The Airplane",
   "rooms" : [
     {
       "name" : "Central Station",
@@ -50,8 +50,14 @@
 
         }
       ],
-      "connects to" : ["Zuidplein"],
+      "connects to" : ["Zuidplein", "The Airplane"],
       "script" : "Welcome to Schiphol Airport..."
+    },
+    {
+      "name" : "The Airplane",
+      "items" : [],
+      "connects to" : ["Schiphol Airport"],
+      "script" : "You have boarded the airplane."
     }
 
   ]
