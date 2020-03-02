@@ -11,6 +11,12 @@ public class Item {
         this.usage = usage;
         this.held = false;
         this.used = false;
+    }
+    public void holdItem(boolean hold) {
+        this.held = hold;
+    }
 
+    public void useItem(boolean use) {
+        this.used = use;
     }
 }
