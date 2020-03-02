@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class Action {
     private String commandName;
     private Item item;
@@ -35,6 +37,14 @@ public class Action {
                         System.out.println(Main.ANSI_BLUE + "\nYou have moved to " + nextRoom.getRoomName() + ".\n" + player.getCurrentRoom().getScript() + "\n" + Main.ANSI_RESET);
                         break;
                     }
+                }
+                else {
+                    System.out.println(Main.ANSI_BLUE + "\nDid you mean 'move to'?\n" + Main.ANSI_RESET);
+                }
+            case "pick":
+                if (command[1].equals("up")) {
+                    HashMap<String, Item> currentItems = player.getCurrentRoom().getItems();
+
                 }
             case "help":
                 String[] roomOptions = player.getCurrentRoom().getNextRooms();

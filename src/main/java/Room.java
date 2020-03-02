@@ -40,5 +40,7 @@ public class Room {
         return nextRooms;
     }
 
+    public HashMap<String, Item> getItems() { return items; }
+
 
 }
