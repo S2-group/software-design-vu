@@ -9,6 +9,10 @@
           "name" : "ovChipkaart",
           "usage" : "The ovChipkaart is used to get in and out of the metro"
 
+        },
+        {
+          "name" : "example",
+          "usage" : "doesn't matter"
         }
       ],
       "connects to" : ["Station Zuid"],

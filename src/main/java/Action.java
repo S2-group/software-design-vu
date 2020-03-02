@@ -93,7 +93,15 @@ public class Action {
                     for (int i = 1; i < roomOptions.length; i++){
                         roomOptionsString = roomOptions[i] + ", " + roomOptionsString;
                     }
-                    System.out.println(Main.ANSI_BLUE + "\nYou can move to " + roomOptionsString + ".\n");
+                    HashMap<String, Item> roomItems = player.getCurrentRoom().getItems();
+                    String itemOptionsString = "";
+                    for (String itemName : roomItems.keySet()){
+                        itemOptionsString = itemName + ", " + itemOptionsString;
+                    }
+                    int unnecessaryComma = itemOptionsString.lastIndexOf(",");
+                    String itemOptionsFinalString = itemOptionsString.substring(0, unnecessaryComma);
+                    System.out.println(Main.ANSI_BLUE + "\nYou can move to " + roomOptionsString + ".\nItem(s) located" +
+                            "in this room: " + itemOptionsFinalString);
                     break;
                 }
 
