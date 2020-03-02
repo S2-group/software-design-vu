@@ -9,14 +9,11 @@
           "name" : "ovChipkaart",
           "usage" : "The ovChipkaart is used to get in and out of the metro"
 
-        },
-        {
-          "name" : "example",
-          "usage" : "doesn't matter"
         }
       ],
       "connects to" : ["Station Zuid"],
-      "script" : "Welcome to Central Station..."
+      "script" : "Welcome to Central Station, the heart of Amsterdam. You are near the entrance to the Metro, but cannot get through the gates. \nIf only you had a way to get on the Metro...",
+
     },
     {
       "name" : "Station Zuid",
@@ -27,7 +24,7 @@
         }
       ],
       "connects to" : ["Zuidplein", "Central Station"],
-      "script" : "Welcome to Station Zuid..."
+      "script" : "Welcome to Station Zuid. It is easy to get from here to Schiphol Airport, but you do not have enough money left on your \novChipkaart to take a train to the airport. Maybe if you walk around outside to find money, but it's pouring rain...\nIf only you had something to shield you from the rain..."
     },
     {
       "name" : "Zuidplein",
@@ -39,7 +36,7 @@
 
       ],
       "connects to" : ["Station Zuid", "Schiphol Airport"],
-      "script" : "Welcome to Zuidplein..."
+      "script" : "Welcome to Zuidplein, located outside of Station Zuid. If you have enough money on you ovChipkaart, you can get from here to \nSchiphol Airport."
     },
     {
       "name" : "Schiphol Airport",
@@ -51,7 +48,7 @@
         }
       ],
       "connects to" : ["Zuidplein", "The Airplane"],
-      "script" : "Welcome to Schiphol Airport..."
+      "script" : "Welcome to Schiphol Airport. You need to make it to your airplane before it departs. \nThere's something you'll need first, though..."
     },
     {
       "name" : "The Airplane",
