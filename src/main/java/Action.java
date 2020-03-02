@@ -60,13 +60,21 @@ public class Action {
                     break;
                 }
             case "help":
-                String[] roomOptions = player.getCurrentRoom().getNextRooms();
-                String roomOptionsString = roomOptions[0];
-                for (int i = 1; i < roomOptions.length; i++){
-                    roomOptionsString = roomOptions[i] + ", " + roomOptionsString;
-                }
-                System.out.println(Main.ANSI_BLUE + "\nYou can move to " + roomOptionsString + ". To move, type 'move to <location>.'\n");
+                System.out.println(Main.ANSI_BLUE + "\nTo move, type 'move to <location>'.\nTo see where to move to next" +
+                        "and what items are in this location, type 'look around'.\n");
+
                 break;
+            case "look":
+                if (command[1].equals("around") && command.length == 2){
+                    String[] roomOptions = player.getCurrentRoom().getNextRooms();
+                    String roomOptionsString = roomOptions[0];
+                    for (int i = 1; i < roomOptions.length; i++){
+                        roomOptionsString = roomOptions[i] + ", " + roomOptionsString;
+                    }
+                    System.out.println(Main.ANSI_BLUE + "\nYou can move to " + roomOptionsString + ".\n");
+                    break;
+                }
+
             default:
                 System.out.println(Main.ANSI_BLUE + "\nThe command name is invalid. Please ask for help.\n" + Main.ANSI_RESET);
         }
