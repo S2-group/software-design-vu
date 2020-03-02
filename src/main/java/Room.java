@@ -22,7 +22,6 @@ public class Room {
     }
 
     public Item getItemFromName(String itemName) {
-
         return items.get(itemName);
     }
 
@@ -33,12 +32,12 @@ public class Room {
         } else{
             return null;
         }
-
     }
 
     public String[] getNextRooms() {
         return nextRooms;
     }
 
+    public HashMap<String, Item> getItems() { return items; }
 
 }
