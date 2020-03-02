@@ -43,7 +43,9 @@ The following quality requirements were chosen in order to improve ease of use f
 | QR1  | Intuitive UI | Usability  | UI should be simple, intuitive to use and consistent throughout the system. Interface elements should be minimal and allow only the necessary operations the user requires. |
 | QR2  | Instantaneous results| Responsiveness  | Once a league starts, the results of the virtual matches shall be available within 1 second. |
 | QR3  | Documentation | Maintainability  | The code is readable and follows a logical structure. |
-| QR4 | Reliable Output  | Correctness | Scores computed by the system are accurate and precise. |
+| QR4  | Efficiency | Resource Utilization | Java libraries are used effectively in order to improve the performance of the system. |
+| QR5 | Reliable Output  | Correctness | Scores computed by the system are accurate and precise. |
+
 
 ### Java libraries
 Author(s): `Torstein Thomassen`
