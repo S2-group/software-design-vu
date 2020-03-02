@@ -19,4 +19,6 @@ public class Item {
     public void useItem(boolean use) {
         this.used = use;
     }
+
+    public String getUsage() { return usage; }
 }

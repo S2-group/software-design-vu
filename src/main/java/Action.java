@@ -46,8 +46,6 @@ public class Action {
             case "pick":
                 if (command[1].equals("up")) {
                     Room currentRoom = player.getCurrentRoom();
-                    HashMap<String, Item> currentItemsInRoom = currentRoom.getItems();
-                    ArrayList<Item> currentInventory = player.getInventory();
 
                     if (command.length < 3) {
                         System.out.println(Main.ANSI_BLUE + "\nYou cannot pick up nothing.\n" + Main.ANSI_RESET);
@@ -63,10 +61,23 @@ public class Action {
                     } else {
                         player.addToInventory(item);
                         System.out.println(Main.ANSI_BLUE + "\nYou have picked up " + itemName + ".\n" + Main.ANSI_RESET);
+                        break;
                     }
 
                 } else {
                     System.out.println(Main.ANSI_BLUE + "\nDid you mean 'pick up'?\n" + Main.ANSI_RESET);
+                    break;
+                }
+            case "inspect":
+                if (command.length == 2) {
+                    String itemName = command[1];
+
+                    Item item = Main.itemMap.get(itemName);
+                    System.out.println(Main.ANSI_BLUE + "\n" + item.getUsage() + "\n" + Main.ANSI_RESET);
+                    break;
+
+                } else {
+                    System.out.println(Main.ANSI_BLUE + "\nDid you mean 'inspect item'?\n" + Main.ANSI_RESET);
                     break;
                 }
             case "help":
