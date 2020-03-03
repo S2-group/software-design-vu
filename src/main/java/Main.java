@@ -89,10 +89,16 @@ public class Main {
                 Player player1 = new Player(playerName,  new ArrayList<Item>(),roomMap.get(startRoom.getString("name")));
                 System.out.println(ANSI_BLUE + "\n" + startRoom.getString("script")  + "\n" + ANSI_RESET);
 
-                while(!player1.getCurrentRoom().getRoomName().equals(endRoom.getString("name"))){
+                mainWhile: while(!player1.getCurrentRoom().getRoomName().equals(endRoom.getString("name"))){
                     try {
                         String[] input2 = in.readLine().split("\\s+");
-                        Action.doAction(input2, player1);
+                        if(input2[0].equals("quit") && input2.length == 1) {
+                            System.out.println(ANSI_BLUE + "\nYou lose!\n" + ANSI_RESET);
+                            break mainWhile;
+                        }
+                        else {
+                            Action.doAction(input2, player1);
+                        }
                     } catch(Exception e){
                         e.printStackTrace();
                     }

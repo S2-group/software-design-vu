@@ -1,0 +1,66 @@
+{
+  "start room": "Hilltop",
+  "end room" : "Imperial Palace in Vizima",
+  "rooms" : [
+    {
+      "name" : "Hilltop",
+      "items" : [
+        {
+          "name" : "letter",
+          "usage" : "The letter is from your long-lost love, Yennefer of Vengerberg, imploring you to meet her in Willoughby, a town near White Orchard that has since been burned to the ground."
+        },
+        {
+          "name" : "steelSword",
+          "usage" : "The witcher's steel sword is used to fight humans or other non-magical enemies."
+        },
+        {
+          "name" : "silverSword",
+          "usage" : "The witcher's silver sword is used to fight monsters."
+        }
+      ],
+      "connects to" : ["Village Outskirts", "Abandoned Village", "Castle Ruins"],
+      "script" : "You stand on a hilltop, from which you can see the nearby town of White Orchard, the ruins of an ancient castle, and a small group of houses that have been destroyed by some passing army."
+    },
+
+    {
+      "name" : "Village Outskirts",
+      "items" : [],
+      "connects to" : ["Hilltop", "Castle Ruins"],
+      "script" : "You are on a stretch of road heading in the direction of White Orchard. Just in front of you, there seems to be some sort of commotion..."
+    },
+
+    {
+      "name" : "Village of White Orchard",
+      "items" : [],
+      "connects to" : ["Village Outskirts", "Tavern"],
+      "script" : "You stand in the small, medieval village of White Orchard. You can see a tavern which seems well-frequented by the villagers."
+    },
+
+    {
+      "name" : "Tavern",
+      "items" : [],
+      "connects to" : ["Village of White Orchard"],
+      "script" : "The tavern is dark and smells of smoke and spilled ale. A bartender behind the counter polishes a mug, while a group of peasants eye you suspiciously. This might be a good place to ask if Yennefer has passed through White Orchard."
+    },
+
+    {
+      "name" : "Abandoned Village",
+      "items" : [
+        {
+          "name" : "crowns",
+          "usage" : "Apparently missed by the marauding army, this small sum could be used to buy food or drink."
+        }
+      ],
+      "connects to" : ["Hilltop"],
+      "script" : "You stand in the still-smoldering remains of a small settlement that was clearly \"visited\" by a passing army, likely the Nilfgaardian invaders."
+    },
+
+    {
+      "name" : "Imperial Palace in Vizima",
+      "items" : [],
+      "connects to" : ["Village of White Orchard"],
+      "script" : "You have reunited with Yennefer and fled from the Wild Hunt to the seat of the Nilfgaardian invasion in the captured city of Vizima. Emperor Emyhr var Emreis, the White Flame Dancing on the Graves of His Foes, demands your presence for an audience."
+    }
+
+  ]
+}
