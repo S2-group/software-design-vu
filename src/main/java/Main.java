@@ -9,7 +9,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 
-// to run: hit green arrow, then type src/main/java/Amsterdam.json when prompted
+// to run: hit green arrow, then type a file name, for example, src/main/java/Amsterdam.json, when prompted
 
 public class Main {
 
@@ -25,14 +25,12 @@ public class Main {
 
     public static String playerName;
 
-
-
     public static void main (String[] args){
 
         System.out.println(ANSI_BLUE + "\n Welcome to the Text Adventure Game. \n Please enter the name of the json file you want to load. \n"
         + ANSI_RESET);
-
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
         try {
             String input = in.readLine();
             File jsonFile = new File(input);
@@ -44,8 +42,8 @@ public class Main {
 
                 String start = tomJsonObject.getString("start room");
                 String end = tomJsonObject.getString("end room");
-
                 JSONArray rooms = tomJsonObject.getJSONArray("rooms");
+
                 for (int i = 0; i < rooms.length(); i++){
                     JSONObject room = rooms.getJSONObject(i);
                     String name = room.getString("name");
@@ -56,11 +54,9 @@ public class Main {
                     }
 
                     String script = room.getString("script");
-
                     JSONArray items = room.getJSONArray("items");
                     HashMap<String, Item> thisItemMap = new HashMap<>();
 
-//                    initialize items (poor time complexity)
                     for (int j = 0; j < items.length(); j++){
                         JSONObject item = items.getJSONObject(j);
                         String itemName = item.getString("name");
@@ -68,19 +64,19 @@ public class Main {
                         thisItemMap.put(itemName, new Item(itemName, name, usage));
                         itemMap.put(itemName, new Item(itemName, name, usage));
                     }
+
                     JSONArray nextRoomsJson = room.getJSONArray("connects to");
                     String[] nextRooms = new String[nextRoomsJson.length()];
+
                     for (int k = 0; k < nextRoomsJson.length(); k++){
                         String nextName = nextRoomsJson.getString(k);
                         nextRooms[k] = nextName;
                     }
                     roomMap.put(name, new Room(name, thisItemMap, nextRooms, script));
-
                 }
-//                roomMap.forEach((key, value) -> System.out.println(key + ":" + Arrays.toString(value.getNextRooms())));
-//                itemMap.forEach((key, value) -> System.out.println(key + ":" + value));
 
                 System.out.println(ANSI_BLUE + "\nWhat is your name?\n" + ANSI_RESET);
+
                 try {
                     playerName = in.readLine();
                     System.out.println(ANSI_BLUE + "\n Welcome, " + playerName +". \n Let's begin. Your goal is to get to "
@@ -97,7 +93,6 @@ public class Main {
                     try {
                         String[] input2 = in.readLine().split("\\s+");
                         Action.doAction(input2, player1);
-
                     } catch(Exception e){
                         e.printStackTrace();
                     }
@@ -105,16 +100,11 @@ public class Main {
                         System.out.println(ANSI_BLUE + "\nCONGRATULATIONS, " + playerName +  "! You made it to " + endRoom.getString("name") + "\n" + ANSI_RESET);
                     }
                 }
-
             }else{
                 System.out.println(ANSI_BLUE + "\nNot a valid json file.\n" + ANSI_RESET);
             }
-
         } catch(Exception e) {
-
             e.printStackTrace();
         }
-
-
     }
 }
