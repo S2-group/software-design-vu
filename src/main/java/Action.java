@@ -74,7 +74,7 @@ public class Action {
                     } else {
                         player.addToInventory(item);
                         currentRoom.removeItemFromRoom(itemName);
-                        System.out.println(Main.ANSI_BLUE + "\nYou have picked up " + itemName + ".\n" + Main.ANSI_RESET);
+                        System.out.println(Main.ANSI_BLUE + "\nYou have picked up " + itemName + "." + Main.ANSI_RESET);
                         System.out.println(Main.ANSI_BLUE + printInventory(player.getInventory())
                                 + ".\n" + Main.ANSI_RESET);
                         break;
@@ -107,11 +107,7 @@ public class Action {
                 String playerInventory = "";
                 String playerInventoryFinal;
                 if (playerItems.size() != 0){
-                    for (Item item : playerItems){
-                        playerInventory = item.getNameFromItem() + ", " + playerInventory;
-                    }
-                    int unnecessaryComma = playerInventory.lastIndexOf(",");
-                    playerInventoryFinal = "Your current inventory: " + playerInventory.substring(0, unnecessaryComma);
+                    playerInventoryFinal = printInventory(player.getInventory());
                 } else {
                     playerInventoryFinal = "Your current inventory is empty";
                 }
