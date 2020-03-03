@@ -26,7 +26,7 @@ In order to make the game as generic as possible, we want to include Functional 
 
 | ID  | Short name  | Description  |
 |---|---|---|
-| F1  | Command | Player can control the main character using command line commands with the following syntax: ‘[command] [item]’. The commands we will implement are: move, open, break, inspect, help   |
+| F1  | Command | Player can control the main character using the command line commands move to, pick up, look around, inspect, help, and have the following syntax: ‘[pick up] [item]’, '[move to] [location]', '[look around]', '[help]', '[inspect][item]'.   |
 | F2  | Movements  | Player can move through the environment using command: ‘move to [location]’  |
 | F3  | Help Messages  | After a certain amount of time, user will be given hints of what actions to perform or movements to make  |
 | F4  | Items | User can use commands on items (e.g. bikes or metro in Amsterdam, coffee, doors) in order to progress. Some items will be used to perform actions and some will be used as an energy booster to get through the game.  |

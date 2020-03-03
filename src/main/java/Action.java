@@ -67,7 +67,6 @@ public class Action {
 
                     String itemName = command[2];
                     Item item = currentRoom.getItemFromName(itemName);
-
                     if (item == null) {
                         System.out.println(Main.ANSI_BLUE + "\nThe item name is invalid. Please ask for help.\n" + Main.ANSI_RESET);
                         break;
@@ -113,7 +112,7 @@ public class Action {
                 }
                 System.out.println(Main.ANSI_BLUE + "\nYou are currently located in " + player.getCurrentRoom().getRoomName() +
                         ".\n" + playerInventoryFinal + ". \n\nTo move, type " + Main.ANSI_MAGENTA +  "'move to <location>'" + Main.ANSI_BLUE +  ".\nTo see where to move to next and what items are in this location, type " + Main.ANSI_MAGENTA + "'look around'"  +
-                        Main.ANSI_BLUE +  ".\nTo add an item to your inventory, type " + Main.ANSI_MAGENTA +  "'pick up <item>'" + Main.ANSI_BLUE + ".\n" + Main.ANSI_RESET);
+                        Main.ANSI_BLUE +  ".\nTo add an item to your inventory, type " + Main.ANSI_MAGENTA +  "'pick up <item>'" + Main.ANSI_BLUE + ".\nTo learn more about an item, type " + Main.ANSI_MAGENTA + "'inspect <item>'" + Main.ANSI_BLUE +  ".\n" + Main.ANSI_RESET);
 
                 break;
             case "look":
@@ -125,13 +124,18 @@ public class Action {
                     }
                     HashMap<String, Item> roomItems = player.getCurrentRoom().getItems();
                     String itemOptionsString = "";
-                    for (String itemName : roomItems.keySet()){
-                        itemOptionsString = itemName + ", " + itemOptionsString;
+                    String itemOptionsFinalString;
+                    if (roomItems.isEmpty()){
+                        itemOptionsFinalString = "none";
+                    } else {
+                        for (String itemName : roomItems.keySet()){
+                            itemOptionsString = itemName + ", " + itemOptionsString;
+                        }
+                        int unnecessaryComma1 = itemOptionsString.lastIndexOf(",");
+                        itemOptionsFinalString = itemOptionsString.substring(0, unnecessaryComma1);
                     }
-                    int unnecessaryComma1 = itemOptionsString.lastIndexOf(",");
-                    String itemOptionsFinalString = itemOptionsString.substring(0, unnecessaryComma1);
                     System.out.println(Main.ANSI_BLUE + "\nYou can move to " + roomOptionsString + ".\nItem(s) located" +
-                            "in this room: " + itemOptionsFinalString);
+                            "in this room: " + itemOptionsFinalString + ".\n");
                     break;
                 }
 
