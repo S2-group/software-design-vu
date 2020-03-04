@@ -10,6 +10,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
 
 import java.util.*;
 
@@ -196,6 +197,12 @@ public class LeagueSimulatorPane extends GamePane {
 
     }
 
+    void showError( String text ){
+        Text errorText = new Text(text);
+        errorText.setFill(Color.RED);
+        centerContainer.getChildren().add(errorText);
+    }
+
     @Override
     void setCallbacks() {
          playButton.setOnMouseClicked(event -> {
@@ -204,7 +211,7 @@ public class LeagueSimulatorPane extends GamePane {
                  this.createLeagueSchedule();
                  this.displayWinners();
              } catch (Exception e) {
-                 System.out.println("Show error TODO");
+                 this.showError("Please select teams for all matches.");
              }
          });
 
