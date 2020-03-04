@@ -40,12 +40,12 @@ The following quality requirements were chosen in order to improve ease of use f
 
 | ID  | Short name  | Quality attribute | Description  |
 |---|---|---|---|
-| QR1  | Intuitive UI | Usability  | UI should be simple, intuitive to use and consistent throughout the system. Interface elements should be minimal and allow only the necessary operations the user requires. |
-| QR2  | Instantaneous results| Responsiveness  | Once a league starts, the results of the virtual matches shall be available within 1 second. |
-| QR3  | Documentation | Maintainability  | The code is readable and follows a logical structure. |
-| QR4  | Efficiency | Resource Utilization | Java libraries are used effectively in order to improve the performance of the system. |
-| QR5 | Reliable Output  | Correctness | Scores computed by the system are accurate and precise. |
-
+| QR1  | Intuitive UI | Usability  | The options to launch the league simulator, edit your team, and edit your players shall be available to the user within 1 second of running the program. All feature should be accessible in less than 4 clicks. |
+| QR2  | Prompt results| Responsiveness  | Once a league starts, the results of the virtual matches shall be available within 1 second. |
+| QR3  | Extensible Scale | Maintainability  | The fantasy soccer game shall be easily expandable in terms of scale in future iterations e.g. adding new player data multiple times |
+| QR4  | System Service | Availability | When users enter the player data, the service of starting a match shall be available within 1 second. |
+| QR5 | Reliable Output  | Reliability | Scores computed by the system are accurate and precise. |
+| QR6 | Error messaging | Security | Verbose backend errors are not reported back to the user, only simple messages on how to fix an issue, e.g. "Not all teams of the league are selected".
 
 ### Java libraries
 Author(s): `Torstein Thomassen`

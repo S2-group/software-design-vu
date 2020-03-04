@@ -23,7 +23,7 @@ In this document you have to adhere to the following formatting conventions:
 ## Class diagram									
 Author(s): `Teona Moga`
 
-The system we designed for the Fantasy Soccer project consists of 3 packages: *models*, *views* and *controllers* and one Main class. Packages views and controllers deal with the GUI part of the project and are implemented using the javafx library, such that they will be described more briefly than models, which is where the entire back-end logic lies.   
+The system we designed for the Fantasy Soccer project consists of 3 packages: *models*, *views* and *controllers* and one Main class. Packages *views* and *controllers* deal with the GUI part of the project and are implemented using the javafx library, such that they will be described more briefly than *models*, which is where the entire back-end logic lies.   
   
 *Models* package  
   
@@ -112,7 +112,7 @@ Attributes
 
 Operations
 
-- *void playRound(Queue<Team&gt; teamsToPlay, int round)*: recursive method that generates *winners*. First call is *playRound(initialTeams, 1). The method calls itself for following rounds until one team remains (the league winner) 
+- *void playRound(Queue<Team&gt; teamsToPlay, int round)*: recursive method that generates *winners*. First call is *playRound(initialTeams, 1)*. The method calls itself for following rounds until one team remains (the league winner) 
 - HashMap<Integer, ArrayList<Team>> getWinners(): calls *playRound* method and returns *winners*
 
 Associations
