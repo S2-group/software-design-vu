@@ -31,11 +31,6 @@ public class SceneManager {
      */
     private Stage stage;
 
-    /**
-     * Sets the primary stage.
-     *
-     * @param stage Primary stage.
-     */
     public void setStage(final Stage stage) {
         if (this.stage != null) {
             throw new IllegalStateException("Primary stage is already initialized!");
@@ -44,11 +39,7 @@ public class SceneManager {
         this.stage = stage;
     }
 
-    /**
-     * Replaces the currently active {@link Scene} with another one.
-     *
-     * @param scene New scene to display.
-     */
+
     private void showScene(final Scene scene) {
         if (stage == null) {
             return;

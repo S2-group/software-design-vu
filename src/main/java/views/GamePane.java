@@ -2,13 +2,11 @@ package views;
 
 import javafx.scene.layout.BorderPane;
 
-/**
- * Abstraction for a {@link BorderPane} which can act as the root of a {@link javafx.scene.Scene}.
- */
+
 public abstract class GamePane extends BorderPane {
 
     /**
-     * Connects all components into the {@link BorderPane}.
+     * Connects all components into the root of a javafx.scene.Scene.
      */
     abstract void connectComponents();
 
@@ -18,7 +16,7 @@ public abstract class GamePane extends BorderPane {
     abstract void styleComponents();
 
     /**
-     * Set callbacks for all interactive components.
+     * Sets callbacks for all interactive components.
      */
     abstract void setCallbacks();
 }

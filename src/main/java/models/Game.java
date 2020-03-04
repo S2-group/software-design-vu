@@ -10,11 +10,9 @@ public class Game {
 
     private ArrayList<Player> allPlayers;
     private ArrayList<Team> allTeams;
-    private ArrayList<Team> leaderboard;
     private League league;
 
     public Game(){
-        leaderboard = new ArrayList<>();
         allPlayers = new ArrayList<>();
         allTeams = new ArrayList<>();
     }
@@ -40,8 +38,9 @@ public class Game {
         return league.getWinners();
     }
 
-    public void generateLeaderboard(){
+    public ArrayList<Team>  generateLeaderboard(){
         //TODO
+        return allTeams;
     }
 
     public ArrayList<String> getAllTeamNames(){
@@ -56,6 +55,14 @@ public class Game {
         }
         return null;
 
+    }
+
+    public void removeTeam(String teamName){
+        //TODO
+    }
+
+    public void removePlayer(String playerName){
+        //TODO
     }
 
     public static Game getInstance() {
