@@ -42,7 +42,7 @@ Our class diagram started out with an Objective class as well, but as we started
 ## Object diagrams								
 Author(s):  Sam
 
-`Figure representing the UML class diagram`
+![Object Diagram](https://github.com/sarahpazik/software-design-vu/blob/Assignment2/object%20diagram%20(1).png)
   
 Each of the objects represented in the object diagram match their descriptions as given in the explanation of the class diagram. Notably, any object indicated by a box in blue represents an object that has yet to be fully implemented (as it is not a part of Assignment 2), but that is planned for the completion of Assignment 3.
 
