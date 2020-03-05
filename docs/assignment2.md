@@ -59,7 +59,7 @@ Author(s): Elizabeth, Gemma
 
  The player state machine represents the Player class, and how the Player class interacts with the Action class to complete the prompts from the command line. The diagram, entitled “Player State Machine”, describes the possible actions that a player can execute in order to change their state. For the scope of this assignment, this includes interacting with items and locations. 
  
- ![Player State Machine](https://github.com/sarahpazik/software-design-vu/blob/Assignment2/docs/Player%20State%20Machine.png)
+ ![Player State Machine](https://github.com/sarahpazik/software-design-vu/blob/Assignment2/Player%20State%20Machine.png)
  
 	It is important to note that all of the features in blue on the state machine diagram are currently prescriptive and not yet implemented. 
 	
