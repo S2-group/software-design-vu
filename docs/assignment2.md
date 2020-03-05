@@ -19,13 +19,9 @@ Draw.io
 ## Class diagram									
 Author(s): Sarah
 
-This chapter contains the specification of the UML class diagram of your system, together with a textual description of all its elements.
-
 `Figure representing the UML class diagram`
 
 The **Player** class represents the user, i.e. the person moving through the game. Their *name* is a string object that contains whatever name the user chooses. Their *inventory* is a list of Item objects, containing any objects that were picked up but not yet put down. This way, we keep a list of all items the player can use at a given time. The *currentLocation* is a Room object that indicates which room the player is in at a given time. The *getObjects* method returns a list of the player's current inventory, the *getCurrentRoom* method returns the player's current location, and the *setCurrentRoom* method changes the player's location to the given room. The *getInventory* method returns the player's current inventory, i.e. what items they are currently holding, while *addToInventory* adds an item to this list. The player class is associated with the Room class because it needs to be able to access the player's current location. It is also associated with the Item class, because it needs to keep track of the player's inventory. The association with the Action class is because a Player needs to be able to perform actions in order to change their location or inventory. 
-
-The **Objective** class represents the goal of the current game, and will hold information about whether or not the player has completed/won the game. The *goal* field contains the time in which the user needs to finish the game in order to win. The *result* field represents whether or not a player has won, either true or false. The *winStatement* is a String that is presented to the player when they win. The *loseStatement* is a String that is presented to the player when they lose. The *win* method returns true or false based on whether the user has finished the game in the allotted time frame. *GetWinStatement* and *getLoseStatement* just return their respective string variables we've already mentioned. The Objective class is associated with the Setting class because each setting will have a different goal. It is also associated with the TimeLimit class because the user wins or loses based on the time limit given for the game. 
 
 The **Action** class represents all of the actions and movements a user can perform in the game. The *commandName* field is a string that the user inputs in order to perform an action. The *item* is the Item object that the action is being used on. The *room* is the Room object that the item is located in. The *doAction* method performs the action specified by CommandName, such as picking up, putting down, moving, and using an item. The *printInventory* method simply prints the player's current inventory, to see what items they can perform actions on. The Action class is connected to the Item class because each action needs to be performed on a specific item. The same holds for the Obstacle class; each obstacle will have actions that can be used on them. 
 
@@ -37,27 +33,24 @@ The **Setting** class represents the place the user is in, and contains all of t
 
 The **Room** class represents an individual room within the setting of the game. The *name* field is a string stating the name of the room. The *items* hashmap holds each Item object that is in the given room. The same holds for *obstacles*, except it contains Obstacle objects. *NextRooms* is a hashmap of rooms to which you can get to from the current room. The *script* is the string that the user will read when they enter the given room. The *getItemFromName* method returns the item object based on the name, and the *getNextRoomFromName* does the same, just for room objects. The *getNextRooms* method returns a hashmap containing all of the possible rooms you can get to from the current room. The *getRoomName* method returns the name of the room, and *getScript* returns the script. *RemoveItemsFromRoom* allows you to take an item out of a room based on the item name. *GetItems* returns a list of all of the items in the room. 
 
-The **TimeLimit** class represents the time a user has left in the game. It will keep track of the player's time since starting the game, and assist the Objective class in assessing whether the player has won the game. The *currentTime* field contains the user's current time since starting, and the *timeLimit* contains the maximum time the player has to complete the game. 
+The **TimeLimit** class represents the time a user has left in the game. It will keep track of the player's time since starting the game, and assist the Main class in assessing whether the player has won the game. The *currentTime* field contains the user's current time since starting, and the *timeLimit* contains the maximum time the player has to complete the game. 
 
-The **Main** class is where the execution of the game happens. It prompts the user to input a JSON file and then reads in the JSON file to execute the game from the file. The *startRoom* variable is a JSONObject indicating the room that the game starts in, and *endRoom* indicates the room that the game ends in. *RoomMap* and *itemMap* are hashmaps indicating which rooms contain which items, based on the information in the JSON file. *PlayerName* is simply a string containing the player's name, which comes from the user when the game prompts them to input their name. The Main class is able to access the Room class and the Objective class because the Main class needs to know where the player is and whether they have won yet or not. 
+The **Main** class is where the execution of the game happens. It prompts the user to input a JSON file and then reads in the JSON file to execute the game from the file. The *startRoom* variable is a JSONObject indicating the room that the game starts in, and *endRoom* indicates the room that the game ends in. *RoomMap* and *itemMap* are hashmaps indicating which rooms contain which items, based on the information in the JSON file. *PlayerName* is simply a string containing the player's name, which comes from the user when the game prompts them to input their name. The Main class is able to access the Room class and TimeLimit because the Main class needs to know where the player is and whether they have won yet or not. 
 
-In this document you have to adhere to the following formatting conventions:
-- the name of each **class** is in bold
-- the *attributes*, *operations*, *associations*, and *objects* are in italic.
-
-Maximum number of words for this section: 2500
+Our class diagram started out with an Objective class as well, but as we started implementing, we realized that all of the functions of the Objective class could be more easily executed in the Main class. Now, we've instead decided to just have the Main class connect to TimeLimit instead of having Objective in between. 
 
 ## Object diagrams								
 Author(s):  Sam
 
-This chapter contains the description of a "snapshot" of the status of your system during its execution. 
-This chapter is composed of a UML object diagram of your system, together with a textual description of its key elements.
-
 `Figure representing the UML class diagram`
   
-`Textual description`
+Each of the objects represented in the object diagram match their descriptions as given in the explanation of the class diagram. Notably, any object indicated by a box in blue represents an object that has yet to be fully implemented (as it is not a part of Assignment 2), but that is planned for the completion of Assignment 3.
 
-Maximum number of words for this section: 500
+At a given state in the game, there is always a Player object representing the current player of the game. It connects to an Item object, a Room object, an Action object, and a Setting object. The associated Item object - in this case, "coffee" - represents an item that is in the player's current inventory. The Action object indicates an action currently being taken by the player - in this case, "use coffee" - through a specific command that represents a snapshot of a moment in the game. Notably, this Action is also associated to the Item because it constitutes "using" the item. The Room object indicates the room the player is currently located in - in this case, Station Zuid. Finally, the Setting object - Amsterdam - is a collection and description of all of the rooms.
+
+In turn, the Room object connects to an Item object and an Obstacle object. The Item object, an ov-Chipkaart, is connected because it represents an item found in that particular room. The Obstacle object - in this case, a stop at the metro - will (once implemented) represent a barrier to continued movement by the player that can be removed by using the correct item.
+
+Finally, the Setting object - Amsterdam - connects to a TimeLimit object and back to the Room of StationZuid. The room is one of many in the setting, while the TimeLimit will indicate how much time is left for the player to reach the goal.
 
 ## State machine diagrams									
 Author(s): Beth, Gemma
