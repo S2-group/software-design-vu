@@ -19,8 +19,6 @@ Draw.io
 ## Class diagram									
 Author(s): Sarah
 
-This chapter contains the specification of the UML class diagram of your system, together with a textual description of all its elements.
-
 `Figure representing the UML class diagram`
 
 The **Player** class represents the user, i.e. the person moving through the game. Their *name* is a string object that contains whatever name the user chooses. Their *inventory* is a list of Item objects, containing any objects that were picked up but not yet put down. This way, we keep a list of all items the player can use at a given time. The *currentLocation* is a Room object that indicates which room the player is in at a given time. The *getObjects* method returns a list of the player's current inventory, the *getCurrentRoom* method returns the player's current location, and the *setCurrentRoom* method changes the player's location to the given room. The *getInventory* method returns the player's current inventory, i.e. what items they are currently holding, while *addToInventory* adds an item to this list. The player class is associated with the Room class because it needs to be able to access the player's current location. It is also associated with the Item class, because it needs to keep track of the player's inventory. The association with the Action class is because a Player needs to be able to perform actions in order to change their location or inventory. 
@@ -37,13 +35,9 @@ The **Room** class represents an individual room within the setting of the game.
 
 The **TimeLimit** class represents the time a user has left in the game. It will keep track of the player's time since starting the game, and assist the Main class in assessing whether the player has won the game. The *currentTime* field contains the user's current time since starting, and the *timeLimit* contains the maximum time the player has to complete the game. 
 
-The **Main** class is where the execution of the game happens. It prompts the user to input a JSON file and then reads in the JSON file to execute the game from the file. The *startRoom* variable is a JSONObject indicating the room that the game starts in, and *endRoom* indicates the room that the game ends in. *RoomMap* and *itemMap* are hashmaps indicating which rooms contain which items, based on the information in the JSON file. *PlayerName* is simply a string containing the player's name, which comes from the user when the game prompts them to input their name. The Main class is able to access the Room class because the Main class needs to know where the player is and whether they have won yet or not. 
+The **Main** class is where the execution of the game happens. It prompts the user to input a JSON file and then reads in the JSON file to execute the game from the file. The *startRoom* variable is a JSONObject indicating the room that the game starts in, and *endRoom* indicates the room that the game ends in. *RoomMap* and *itemMap* are hashmaps indicating which rooms contain which items, based on the information in the JSON file. *PlayerName* is simply a string containing the player's name, which comes from the user when the game prompts them to input their name. The Main class is able to access the Room class and TimeLimit because the Main class needs to know where the player is and whether they have won yet or not. 
 
-In this document you have to adhere to the following formatting conventions:
-- the name of each **class** is in bold
-- the *attributes*, *operations*, *associations*, and *objects* are in italic.
-
-Maximum number of words for this section: 2500
+Our class diagram started out with an Objective class as well, but as we started implementing, we realized that all of the functions of the Objective class could be more easily executed in the Main class. Now, we've instead decided to just have the Main class connect to TimeLimit instead of having Objective in between. 
 
 ## Object diagrams								
 Author(s):  Sam
