@@ -12,7 +12,6 @@ public class Main {
 
         // Bunch of things needed
         FileReader locationsReader = new FileReader("src/main/json-files/test-map.json");
-//        FileReader npcReader = new FileReader("src/main/json-files/npcs.json");
 
         JSONParser jsonParser = new JSONParser();
         LocationLoader locationLoader = new LocationLoader();
@@ -20,14 +19,11 @@ public class Main {
 
         // imports JSONArray of locations from json file
         JSONArray locationList = (JSONArray) jsonParser.parse(locationsReader);
-//        JSONArray npcList = (JSONArray) jsonParser.parse(npcReader);
 
-        // test location (starting point)
-//        Location startingLocation = locationLoader.parseJsonByName("Home", locationList);
         Location startingLocation = locationLoader.getHomeLocation(locationList);
 
         // start game
-        GameState gameState = new GameState("Daniel", startingLocation, null, locationList);
+        GameState gameState = new GameState("Daniel", startingLocation, locationList);
 
         while(!gameState.getIsFinished()) {  // just to stop the IDE from complaining
             System.out.println(

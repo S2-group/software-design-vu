@@ -5,21 +5,21 @@ public class Player {
     private String name;
     private List<String> inventory;
 
+    public boolean hasItem(String item) { return inventory.contains(item); }
+
     public Location move(String argument, GameState state) {
         String[] currNeighbours = state.getLocation().getNeighbours();
 
-        for (String currNeighbour : currNeighbours) {
+        for (String currNeighbour: currNeighbours) {
             if (currNeighbour.equals(argument)) {
                 LocationLoader locationLoader = new LocationLoader();
                 return locationLoader.parseJsonByName(argument, state.getLocationList());
             }
         }
 
-        System.out.println("Cant find that place");
+        System.out.println("Cannot find that place");
         return state.getLocation();
     }
-
-    public Boolean hasItem(String item) { return inventory.contains(item); }
 
     public void look(String argument, GameState state) {
         if(argument.equals(state.getLocation().getNpc())) {
@@ -29,7 +29,6 @@ public class Player {
         }
     }
 
-    // initialize npc and gets riddle
     public void talk(String argument, GameState state) {
         if(argument.equals(state.getLocation().getNpc())) {
 

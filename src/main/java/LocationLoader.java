@@ -8,7 +8,7 @@ public class LocationLoader {
 
         String name = (String) locationObject.get("name");
         String desc = (String) locationObject.get("description");
-//        String npc = (String) locationObject.get("npc");
+
         JSONObject npcObject = (JSONObject) locationObject.get("npc");
 
         String npc_name = (String) npcObject.get("name");
@@ -29,7 +29,6 @@ public class LocationLoader {
 
     public Location getHomeLocation(JSONArray locationList) {
         return LocationLoader.parseJsonObject((JSONObject) locationList.get(0));
-//        return null;
     }
 
     public Location parseJsonByName(String argument, JSONArray locationList) {
@@ -41,17 +40,6 @@ public class LocationLoader {
             }
         }
         return null;
-    }
-
-    public boolean stageExist(String argument, JSONArray locationList) {
-        for (Object obj : locationList) {
-            Location location = LocationLoader.parseJsonObject((JSONObject) obj);
-
-            if (location.getName().equals(argument)) {
-                return true;
-            }
-        }
-        return false;
     }
 
 }

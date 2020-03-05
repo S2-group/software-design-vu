@@ -15,7 +15,7 @@ public class Location {
     private String[] items;
     private String[] neighbours;
 
-    public class NPC {
+    private class NPC {
         private String name;
         private String about;
         private String item;
@@ -59,7 +59,7 @@ public class Location {
         this.description = desc;
         this.npc = new NPC(npc_name, npc_about, npc_item, npc_riddle, npc_answer, npc_returnDialog);
         this.items = items;
-        neighbours = neigh;
+        this.neighbours = neigh;
     }
 
 }

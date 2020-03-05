@@ -5,7 +5,6 @@ public class InputParser {
     public char getCommand() { return command; }
     public String getArgument() { return argument; }
 
-
     // TODO: lmao god forgive me, gotta rethink this one...
     private static char parseCommand(String userCommand) {
 
@@ -29,7 +28,6 @@ public class InputParser {
             default:
                 return 'x';
         }
-
     }
 
     private static String parseArgument(String userArgument) {

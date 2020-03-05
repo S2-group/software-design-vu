@@ -7,14 +7,12 @@ public class GameState {
     private JSONArray locationList;
     private boolean isFinished;
 
-    private Location[] locationsVisited;
-
     public GameState updateGameState(InputParser parsedInput) {
         GameState newGameState = this;
 
         switch (parsedInput.getCommand()) {
             case 'm':
-                newGameState.setLocation(player.move(parsedInput.getArgument(), this));
+                newGameState.setLocation(player.move(parsedInput.getArgument(), newGameState));
                 break;
 //            case 'g':
 //                newGameState.player.setInventory(player.get(parsedInput.getArgument(), this));
@@ -55,28 +53,21 @@ public class GameState {
     }
 
     // get, set methods
-    public Location getLocation() {
-            Location returnLoc = location;
-            return returnLoc;
-    }
+    public Location getLocation() { return location; }
     public String getNpc() { return location.getNpc(); }
     public JSONArray getLocationList() { return locationList; }
     public Player getPlayer() { return player; }
     public boolean getIsFinished() { return isFinished; }
 
     public void setLocation(Location location) { this.location = location; }
-//    public void setNpc(NPC npc) { this.npc = npc; }
     public void setPlayer(Player player) { this.player = player; }
     public void setFinished(boolean finished) { isFinished = finished; }
 
     // constructor
-    public GameState(String name, Location location, Location[] locationsVisited, JSONArray locationList) {
+    public GameState(String name, Location location, JSONArray locationList) {
         this.player = new Player(name);
         this.location = location;
-        this.locationsVisited = locationsVisited;
         this.locationList = locationList;
-//        this.npcList = npcList;
         this.isFinished = false;
     }
-
 }
