@@ -12,6 +12,8 @@ Maximum number of words for this document: 12000
 |---|---|---|
 | F6  | League Formation | Allow the user to set up a league with its own schedule. The first round can have at most 16 matches. Matches will be played according to this schedule and the system will output the winner of each individual game. |
 
+This is the only feature we implemented; a league has (for now) a fixed-size of 16 teams in the first round. Players and teams are hard-coded into the system.
+
 ### Used modeling tool
 Add here the name of the modeling tool you are using for your project.
 
