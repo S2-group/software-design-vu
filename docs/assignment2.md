@@ -211,7 +211,7 @@ Author(s): `Patricia Santana Vasquez`
 
 **Title: Team Creation**
 
-
+![](imgs/teamcreation.png)
 
 **Elements**
 
