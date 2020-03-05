@@ -223,6 +223,13 @@ Maximum number of words for this section: 3000
 ## Implementation									
 Author(s): `name of the team member(s) responsible for this section`
 
+`Press me, I'm a video`
+[![asciicast](imgs/screenshot.png)](http://dw.convertfiles.com/files/0996030001583406917/video.mp4)
+
+This video shows the execution of the program where we have implemented feature F6. The user can setup a league with different teams and it displays the winner of each game as an output.
+ 
+
+
 In this chapter you will describe the following aspects of your project:
 - the strategy that you followed when moving from the UML models to the implementation code;
 - the key solutions that you applied when implementing your system (for example, how you implemented the syntax highlighting feature of your code snippet manager, how you manage fantasy soccer matches, etc.);
