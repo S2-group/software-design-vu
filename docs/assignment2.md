@@ -35,7 +35,7 @@ This package implements 5 distinct classes: **Game**, **League**, **Team**, **Pl
   
 #### **Game**  
   
-This class is responsible with managing the data of the game and coordinating actions across the system. As can be observed from the diagram, it follows the singleton design pattern; this decision was made in the attempt to keep the data consistent and the instance of the class easily accessible, as it is regularly used by the GUI.  
+This class is responsible with managing the data of the game and coordinating actions across the system.
   
 Attributes 
   
@@ -154,7 +154,7 @@ Abstract methods
 
 ### *Controllers* package
 
-Only consists of a singleton class **SceneManager** used for managing the *javafx* Scenes.
+Only consists of class **SceneManager** used for managing the *javafx* Scenes.
 
 Operations
 
