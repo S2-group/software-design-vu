@@ -1,0 +1,172 @@
+[
+  {
+    "location": {
+      "name": "Home",
+      "description": "You are at home, playing a video game on your brand new console, when an intruder barges in through the roof. It's Stinky Monkey, the most cruel console thief in the Universe.",
+      "npc": {
+        "name": "Stinky Monkey",
+        "about": "He looks quite intimidating and stupid at the same time.",
+        "item": "",
+        "riddle": "Behold, it is a me, Stinky Monkey. I am here to take your precious console, and there is no way of stopping me unless you bring me a freshly made pizza.",
+        "answer": "",
+        "returnDialog": ""
+      },
+      "items": "",
+      "neighbours": "Restaurant, Albert Heijn, Market"
+    }
+  },
+
+  {
+    "location": {
+      "name": "Albert Heijn",
+      "description": "You enter the Albert Heijn. You start going through the aisles when you spot a baby in the trolley holding a can of premade dough.",
+      "npc": {
+        "name": "baby",
+        "about": "As you get closer you notice that the baby is wearing a tuxedo and in his tiny hand there is can of premade dough.",
+        "item": "",
+        "riddle": "Good afternoon, adventure seeker. My name is Nigel and I am a well respected illuminati member. ",
+        "answer": "",
+        "returnDialog": ""
+      },
+      "items": "dough",
+      "neighbours": "Home, Jumbo, Park"
+    }
+  },
+
+  {
+    "location": {
+      "name": "Jumbo",
+      "description": "You enter the Jumbo. But a Jumbo employee is blocking your way.",
+      "npc": {
+        "name": "employee",
+        "about": "The employee looks tired and irritated. As he is arranging the products on the shelf you can hear him mumbling some incoherent words.",
+        "item": "",
+        "riddle": "What do you want now? I don't have time for the meaningless smalltalk. ",
+        "answer": "",
+        "returnDialog": ""
+      },
+      "items": "mushrooms",
+      "neighbours": "Albert Heijn, Park"
+    }
+  },
+
+  {
+    "location": {
+      "name": "Dirk",
+      "description": "You enter the Dirk. There is a sneaky looking fox looking out of its hole.",
+      "npc": {
+        "name": "fox",
+        "about": "",
+        "item": "",
+        "riddle": "",
+        "answer": "",
+        "returnDialog": ""
+      },
+      "items": "tomato sauce",
+      "neighbours": "Jumbo, Spar"
+    }
+  },
+
+  {
+    "location": {
+      "name": "Spar",
+      "description": "You enter the Spar. There is a strange homeless man following you around.",
+      "npc": {
+        "name": "homeless man",
+        "about": "",
+        "item": "",
+        "riddle": "",
+        "answer": "",
+        "returnDialog": ""
+      },
+      "items": "pepperoni",
+      "neighbours": "Park, Palace"
+    }
+  },
+
+  {
+    "location": {
+      "name": "Lidl",
+      "description": "You enter the Lidl. A hungry student is frantically running through the store.",
+      "npc": {
+        "name": "hungry student",
+        "about": "",
+        "item": "",
+        "riddle": "",
+        "answer": "",
+        "returnDialog": ""
+      },
+      "items": "olives",
+      "neighbours": "Restaurant, Park, Palace"
+    }
+  },
+
+  {
+    "location": {
+      "name": "Park",
+      "description": "You arrive at the local park. In front of you there is a tree and on the tree branch you see a crow. When you look closer you realise it's holding a piece of cheese in its beak.",
+      "npc": {
+        "name": "crow",
+        "about": "",
+        "item": "",
+        "riddle": "",
+        "answer": "",
+        "returnDialog": ""
+      },
+      "items": "cheese",
+      "neighbours": "Albert Heijn, Spar, Palace, Lidl"
+    }
+  },
+
+  {
+    "location": {
+      "name": "Market",
+      "description": "You arrive at the Albert Cuyp market. There is only one stand that sells fresh artichokes, but the farmer selling it is not very friendly.",
+      "npc": {
+        "name": "farmer",
+        "about": "",
+        "item": "",
+        "riddle": "",
+        "answer": "",
+        "returnDialog": ""
+      },
+      "items": "artichokes",
+      "neighbours": "Jumbo, Home"
+    }
+  },
+
+  {
+    "location": {
+      "name": "Restaurant",
+      "description": "You enter the restaurant you work at. The talking oven is left unattended.",
+      "npc": {
+        "name": "oven",
+        "about": "i am a talking oven, i think",
+        "item": "pizza",
+        "riddle": "am i oven?",
+        "answer": "yes",
+        "returnDialog": "ooofff okay"
+      },
+      "items": "pizza",
+      "neighbours": "Home, Lidl"
+    }
+  },
+
+  {
+    "location": {
+      "name": "Palace",
+      "description": "You find yourself in Stinky Monkey's Palace. It's huge. And stinky. ",
+      "npc": {
+        "name": "Stinky Monkey",
+        "about": "",
+        "item": "",
+        "riddle": "",
+        "answer": "",
+        "returnDialog": ""
+      },
+      "items": "",
+      "neighbours": "Lidl, Park, Spar"
+    }
+  }
+]
+
