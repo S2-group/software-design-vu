@@ -58,14 +58,15 @@ Maximum number of words for this section: 2500
 ## Object diagrams								
 Author(s):  Sam
 
-This chapter contains the description of a "snapshot" of the status of your system during its execution. 
-This chapter is composed of a UML object diagram of your system, together with a textual description of its key elements.
-
 `Figure representing the UML class diagram`
   
-`Textual description`
+Each of the objects represented in the object diagram match their descriptions as given in the explanation of the class diagram. Notably, any object indicated by a box in blue represents an object that has yet to be fully implemented (as it is not a part of Assignment 2), but that is planned for the completion of Assignment 3.
 
-Maximum number of words for this section: 500
+At a given state in the game, there is always a Player object representing the current player of the game. It connects to an Item object, a Room object, an Action object, and a Setting object. The associated Item object - in this case, "coffee" - represents an item that is in the player's current inventory. The Action object indicates an action currently being taken by the player - in this case, "use coffee" - through a specific command that represents a snapshot of a moment in the game. Notably, this Action is also associated to the Item because it constitutes "using" the item. The Room object indicates the room the player is currently located in - in this case, Station Zuid. Finally, the Setting object - Amsterdam - is a collection and description of all of the rooms.
+
+In turn, the Room object connects to an Item object and an Obstacle object. The Item object, an ov-Chipkaart, is connected because it represents an item found in that particular room. The Obstacle object - in this case, a stop at the metro - will (once implemented) represent a barrier to continued movement by the player that can be removed by using the correct item.
+
+Finally, the Setting object - Amsterdam - connects to a TimeLimit object and back to the Room of StationZuid. The room is one of many in the setting, while the TimeLimit will indicate how much time is left for the player to reach the goal.
 
 ## State machine diagrams									
 Author(s): Beth, Gemma
