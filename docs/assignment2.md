@@ -223,8 +223,7 @@ Maximum number of words for this section: 3000
 ## Implementation									
 Author(s): `name of the team member(s) responsible for this section`
 
-`Press me, I'm a video`
-[![asciicast](imgs/screenshot.png)](http://dw.convertfiles.com/files/0996030001583406917/video.mp4)
+![](imgs/video.gif)
 
 This video shows the execution of the program where we have implemented feature F6. The user can setup a league with different teams and it displays the winner of each game as an output.
  
