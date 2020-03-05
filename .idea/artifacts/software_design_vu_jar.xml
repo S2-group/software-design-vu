@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="software-design-vu:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/software_design_vu_jar</output-path>
+    <root id="archive" name="software-design-vu.jar" />
+  </artifact>
+</component>

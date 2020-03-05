@@ -156,8 +156,6 @@ Operations
 ## Object diagrams								
 Author(s): `Torstein Thomassen`
 
-TODO
-
 This object diagram shows an example of objects with different states in our program.
 All the different attributes and variables has to be fulled in with example data.
 
@@ -165,7 +163,7 @@ In this example each team has only three players. This is only for demonstration
 
 This structure resembles very a tree structure with branches and leafs. The tree structure is commonly used in many software design. It's an efficient and good way to structure the relation between objects. 
 
-This creates a hieracy where a parent can only directly affect the children. E.g the *Match* can't affect the *Player* directly, only the *Team*s       
+This creates a hierarchy where a parent can only directly affect the children. E.g the **Match** can't affect the **Player** directly, only the **Team**s       
 
 `Object diagram over the Match Class`
 ![](imgs/ass2%20obj%20diagram.png)
@@ -173,7 +171,7 @@ This creates a hieracy where a parent can only directly affect the children. E.g
 The diagram above shows an example over the *Match* class. It has a relation with two *Team* object, and the *Team* object again has a relation with various *Player* object
 As you can see *Team 1* would win the match because they have a higher score.  
 
-Maximum number of words for this section: 1000
+
 
 ## State machine diagrams									
 Author(s): `Torstein Thomassen` & `Teona Moga`
@@ -189,7 +187,9 @@ The state diagram above represents the different states a league can be in. When
 
 `State diagram over Game Class`
 ![](imgs/ass2%20state%20Diagram.png)
-TODO // talk about this thing 
+
+Above is shown a state diagram for the **Game** class. You have different methods that effect the three main states the **Game** class consist of.
+From the initial state all lists are empty, and you have options to fill the lists with **Player**s or **Team**s. 
 
 
 
