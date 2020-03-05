@@ -186,6 +186,14 @@ The goal of your state machine diagrams is both descriptive and prescriptive, so
 
 Maximum number of words for this section: 3000
 
+--NEW
+
+In the way our system is designed, only the **Game** and **League** classes are not stateless. Their state diagrams are shown below.
+
+![](imgs/StatechartDiagram1.jpg)
+
+The state diagram above represents the different states a league can be in. When it is initialized, no rounds are played so the *winners* map is empty. **League** has one recursive method, called when the results of the created schedule, i.e. **initialTeams**, are requested. What breaks the recursion is having no more matches to play in a subsequent round, as there is only one team left (the winner of the league).
+
 ## Sequence diagrams									
 Author(s): `name of the team member(s) responsible for this section`
 
