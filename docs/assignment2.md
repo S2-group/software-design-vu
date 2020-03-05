@@ -207,18 +207,15 @@ TODO // talk about this thing
 
 
 ## Sequence diagrams									
-Author(s): `name of the team member(s) responsible for this section`
+Author(s): `Patricia Santana Vasquez`
 
-This chapter contains the specification of at least 2 UML sequence diagrams of your system, together with a textual description of all its elements. Here you have to focus on specific situations you want to describe. For example, you can describe the interaction of player when performing a key part of the videogame, during a typical execution scenario, in a special case that may happen (e.g., an error situation), when finalizing a fantasy soccer game, etc.
+**Title: Team Creation**
 
-For each sequence diagram you have to provide:
-- a title representing the specific situation you want to describe;
-- a figure representing the sequence diagram;
-- a textual description of all its elements in a narrative manner (you do not need to structure your description into tables in this case). We expect a detailed description of all the interaction partners, their exchanged messages, and the fragments of interaction where they are involved. For each sequence diagram we expect a description of about 300-500 words.
 
-The goal of your sequence diagrams is both descriptive and prescriptive, so put the needed level of detail here, finding the right trade-off between understandability of the models and their precision.
 
-Maximum number of words for this section: 3000
+**Elements**
+
+The main goal and focus of this sequence diagram was to show the interaction between the user and the interaction partners/ objects of :game and :team within our fantasy soccer single player game. The sequence diagram above shows how a user can input data to create a team in the game. This part of the system will be executed once the player data is within our game and provided by the user. The user is represented by a stick figure within the sequence diagram with the title “Actor”. The user provided data of players is sent to the interaction partner and object of :game. The :game object is represented as a head of a lifeline. From the game object, the send event of new CreateTeam() is executed and the object of a new team is created. Because this is an example of a creation of a new object within our software system, the Arrowhead is pointing to the head of the :team object and is dashed. This send event points to the interaction partner and object of :team which then executes Game.getInstance().addTeam() once that message is received. This a representation of a receive event within this sequence diagram.Once this receive event is executed, the software system we created will add a team to the game. In the end, this a simple part of the software system but a vital one to the creation of our fantasy soccer game. Without the creation of a team/teams with the use of player data provided by the user/Actor the basic functionality of the game would not be possible. This sequence diagram is representative of the way in which we have focused on implementing a simple and feasible fantasy soccer game.
 
 ## Implementation									
 Author(s): `name of the team member(s) responsible for this section`
