@@ -1,11 +1,5 @@
 # Assignment 2
 
-Maximum number of words for this document: 12000
-
-**IMPORTANT**: In this assignment you will model the whole system. Within each of your models, you will have a *prescriptive intent* when representing the elements related to the feature you are implementing in this assignment, whereas the rest of the elements are used with a *descriptive intent*. In all your diagrams it is strongly suggested to used different colors for the prescriptive and descriptive parts of your models (this helps you in better reasoning on the level of detail needed in each part of the models and the instructors in knowing how to assess your models).   
-
-**Format**: establish formatting conventions when describing your models in this document. For example, you style the name of each class in bold, whereas the attributes, operations, and associations as underlined text, objects are in italic, etc.
-
 ### Implemented feature
 
 | ID  | Short name  | Description  |
@@ -15,12 +9,7 @@ Maximum number of words for this document: 12000
 This is the only feature we implemented; a league has (for now) a fixed-size of 16 teams in the first round. Players and teams are hard-coded into the system.
 
 ### Used modeling tool
-Add here the name of the modeling tool you are using for your project.
-
-In this document you have to adhere to the following formatting conventions:
-- the name of each **class** is in bold
-- the *attributes*, *operations*, *associations*, and *objects* are in italic.
-
+[StarUML](http://staruml.io/) 
 
 ## Class diagram									
 Author(s): `Teona Moga`
@@ -189,18 +178,7 @@ Maximum number of words for this section: 1000
 ## State machine diagrams									
 Author(s): `Torstein Thomassen` & `Teona Moga`
 
-This chapter contains the specification of at least 2 UML state machines of your system, together with a textual description of all their elements. Also, remember that classes the describe only data structures (e.g., Coordinate, Position) do not need to have an associated state machine since they can be seen as simple "data containers" without behaviour (they have only stateless objects).
 
-For each state machine you have to provide:
-- the name of the class for which you are representing the internal behavior;
-- a figure representing the part of state machine;
-- a textual description of all its states, transitions, activities, etc. in a narrative manner (you do not need to structure your description into tables in this case). We expect 3-4 lines of text for describing trivial or very simple state machines (e.g., those with one to three states), whereas you will provide longer descriptions (e.g., ~500 words) when describing more complex state machines.
-
-The goal of your state machine diagrams is both descriptive and prescriptive, so put the needed level of detail here, finding the right trade-off between understandability of the models and their precision.
-
-Maximum number of words for this section: 3000
-
---NEW
 
 In the way our system is designed, only the **Game** and **League** classes are not stateless. Their state diagrams are shown below.
 
@@ -229,22 +207,16 @@ The main goal and focus of this sequence diagram was to show the interaction bet
 ## Implementation									
 Author(s): `name of the team member(s) responsible for this section`
 
+The first step in our implementation process was coming up with very basic UML diagrams that outlined the basic classes and functionality required by the system. We followed an Agile approach, where we would go back and forth between our code and the diagrams, until we achieved the desired functionality (the implementation of feature FR6). We also focused on implementing the GUI such that we would be able to integrate it with the back-end and have the league formation feature work not only at a code level but also at a user level. 
+
+Location of the main Java class required for executing the system is: `software-design-vu/src/main/java/Main.java`
+
+Running the main class should result in opening the application as shown below:
 ![](imgs/video.gif)
 
 This video shows the execution of the program where we have implemented feature F6. The user can setup a league with different teams and it displays the winner of each game as an output.
  
-
-
-In this chapter you will describe the following aspects of your project:
-- the strategy that you followed when moving from the UML models to the implementation code;
-- the key solutions that you applied when implementing your system (for example, how you implemented the syntax highlighting feature of your code snippet manager, how you manage fantasy soccer matches, etc.);
-- the location of the main Java class needed for executing your system in your source code;
-- the location of the Jar file for directly executing your system;
-- the 30-seconds video showing the execution of your system (you can embed the video directly in your md file on GitHub).
-
-IMPORTANT: remember that your implementation must be consistent with your UML models. Also, your implementation must run without the need from any other external software or tool. Failing to meet this requirement means 0 points for the implementation part of your project.
-
-Maximum number of words for this section: 2000
+We didn't manage to create a JAR although closely following the instructions in both git and the external website provided. 
 
 ## References
 
