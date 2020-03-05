@@ -53,18 +53,22 @@ In turn, the Room object connects to an Item object and an Obstacle object. The 
 Finally, the Setting object - Amsterdam - connects to a TimeLimit object and back to the Room of StationZuid. The room is one of many in the setting, while the TimeLimit will indicate how much time is left for the player to reach the goal.
 
 ## State machine diagrams									
-Author(s): Beth, Gemma
+Author(s): Elizabeth, Gemma
 
-This chapter contains the specification of at least 2 UML state machines of your system, together with a textual description of all their elements. Also, remember that classes the describe only data structures (e.g., Coordinate, Position) do not need to have an associated state machine since they can be seen as simple "data containers" without behaviour (they have only stateless objects).
+####Player State Machine
 
-For each state machine you have to provide:
-- the name of the class for which you are representing the internal behavior;
-- a figure representing the part of state machine;
-- a textual description of all its states, transitions, activities, etc. in a narrative manner (you do not need to structure your description into tables in this case). We expect 3-4 lines of text for describing trivial or very simple state machines (e.g., those with one to three states), whereas you will provide longer descriptions (e.g., ~500 words) when describing more complex state machines.
+ The player state machine represents the Player class, and how the Player class interacts with the Action class to complete the prompts from the command line. The diagram, entitled “Player State Machine”, describes the possible actions that a player can execute in order to change their state. For the scope of this assignment, this includes interacting with items and locations. 
+ 
+ ![Player State Machine](https://github.com/sarahpazik/software-design-vu/blob/Assignment2/docs/Player%20State%20Machine.png)
+ 
+	It is important to note that all of the features in blue on the state machine diagram are currently prescriptive and not yet implemented. 
+	
+The state machine in the diagram describes the possible states a player can adopt as they play the game. The game begins with no player. The user is prompted to provide the player with a name, and then this player is initialized using the corresponding name and JSON file. This is represented by the first arrow in the diagram, labeled with initPlayer(name), and then the following state. Upon entry into this state, the “Initial Player” begins in the “start room” specified in the JSON file, with no objects in their inventory. The player then has two options for the next commands they want to execute, i.e. the next states they can adopt: moving to a new location (“move”), or picking up an item (“pickUp”). 
 
-The goal of your state machine diagrams is both descriptive and prescriptive, so put the needed level of detail here, finding the right trade-off between understandability of the models and their precision.
+If the player chooses to enter a new location, they move to the “Player in New Location” state in the diagram. Their current location is changed to the new one, and then displayed while they are in that state. If they choose to pick up an item in whichever location they are currently located, they move to the “Player with Item” state. That item is added to the player’s inventory, and stored there while they are in this state. The player can then choose if they want to move rooms again, or put down the item. The player can only put down an item if they are holding it (a feature which is currently only prescriptive). If they choose to put down this item, they exit the state in which they have that item, moving back to a state in which they are located in their current location but without the item in their inventory.
 
-Maximum number of words for this section: 2500
+This continues in a cyclical way, with the player being able to move and pick up or put down items as they please. This cycle terminates when they enter the “end room” specified in the JSON file. Once they enter this room, their end time will be displayed (currently a prescriptive feature), as well as a win or lose message depending on whether or not they completed their objective within the bounds of the time limit. Entering the final state means that either the player has won or lost the game, which is why the diagram displays two alternate transitions following the end room, i.e. the two possible final states for the player. 
+
 
 ## Sequence diagrams									
 Author(s): Ben
