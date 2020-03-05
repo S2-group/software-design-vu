@@ -170,16 +170,15 @@ Author(s): `Torstein Thomassen`
 This chapter contains the description of a "snapshot" of the status of your system during its execution. 
 This chapter is composed of a UML object diagram of your system, together with a textual description of its key elements.
 
-`Figure representing the UML class diagram`
-  
-`Textual description`
+TODO
 
+`Object diagram over the Match Class`
 ![](imgs/ass2%20obj%20diagram.png)
 
 Maximum number of words for this section: 1000
 
 ## State machine diagrams									
-Author(s): `name of the team member(s) responsible for this section`
+Author(s): `Torstein Thomassen` & `Teona Moga`
 
 This chapter contains the specification of at least 2 UML state machines of your system, together with a textual description of all their elements. Also, remember that classes the describe only data structures (e.g., Coordinate, Position) do not need to have an associated state machine since they can be seen as simple "data containers" without behaviour (they have only stateless objects).
 
@@ -196,9 +195,16 @@ Maximum number of words for this section: 3000
 
 In the way our system is designed, only the **Game** and **League** classes are not stateless. Their state diagrams are shown below.
 
+`State diagram over League Class`
 ![](imgs/StatechartDiagram1.jpg)
 
 The state diagram above represents the different states a league can be in. When it is initialized, no rounds are played so the *winners* map is empty. **League** has one recursive method, called when the results of the created schedule, i.e. **initialTeams**, are requested. What breaks the recursion is having no more matches to play in a subsequent round, as there is only one team left (the winner of the league).
+
+`State diagram over Game Class`
+![](imgs/ass2%20state%20Diagram.png)
+TODO // talk about this thing 
+
+
 
 ## Sequence diagrams									
 Author(s): `name of the team member(s) responsible for this section`
