@@ -161,19 +161,28 @@ Operations
 - *void setStage(final Stage stage)*: Sets the primary stage
 - *void showScene(final Scene scene)*: Replaces the currently active Scene with another one
 - *void showPane(final Class<? extends GamePane> pane)*: Replaces the current  **GamePane** with another
-- *SceneManager getInstance()*: returns the instance of the calss
+- *SceneManager getInstance()*: returns the instance of the class
 
 
 ## Object diagrams								
 Author(s): `Torstein Thomassen`
 
-This chapter contains the description of a "snapshot" of the status of your system during its execution. 
-This chapter is composed of a UML object diagram of your system, together with a textual description of its key elements.
-
 TODO
+
+This object diagram shows an example of objects with different states in our program.
+All the different attributes and variables has to be fulled in with example data.
+
+In this example each team has only three players. This is only for demonstration and will be fixed for the final version.
+
+This structure resembles very a tree structure with branches and leafs. The tree structure is commonly used in many software design. It's an efficient and good way to structure the relation between objects. 
+
+This creates a hieracy where a parent can only directly affect the children. E.g the *Match* can't affect the *Player* directly, only the *Team*s       
 
 `Object diagram over the Match Class`
 ![](imgs/ass2%20obj%20diagram.png)
+
+The diagram above shows an example over the *Match* class. It has a relation with two *Team* object, and the *Team* object again has a relation with various *Player* object
+As you can see *Team 1* would win the match because they have a higher score.  
 
 Maximum number of words for this section: 1000
 
