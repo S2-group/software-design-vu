@@ -55,13 +55,13 @@ Finally, the Setting object - Amsterdam - connects to a TimeLimit object and bac
 ## State machine diagrams									
 Author(s): Elizabeth, Gemma
 
-####Player State Machine
+#### Player State Machine
 
  The player state machine represents the Player class, and how the Player class interacts with the Action class to complete the prompts from the command line. The diagram, entitled “Player State Machine”, describes the possible actions that a player can execute in order to change their state. For the scope of this assignment, this includes interacting with items and locations. 
  
  ![Player State Machine](https://github.com/sarahpazik/software-design-vu/blob/Assignment2/Player%20State%20Machine.png)
  
-	It is important to note that all of the features in blue on the state machine diagram are currently prescriptive and not yet implemented. 
+It is important to note that all of the features in blue on the state machine diagram are currently prescriptive and not yet implemented. 
 	
 The state machine in the diagram describes the possible states a player can adopt as they play the game. The game begins with no player. The user is prompted to provide the player with a name, and then this player is initialized using the corresponding name and JSON file. This is represented by the first arrow in the diagram, labeled with initPlayer(name), and then the following state. Upon entry into this state, the “Initial Player” begins in the “start room” specified in the JSON file, with no objects in their inventory. The player then has two options for the next commands they want to execute, i.e. the next states they can adopt: moving to a new location (“move”), or picking up an item (“pickUp”). 
 
