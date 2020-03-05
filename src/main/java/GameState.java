@@ -11,32 +11,58 @@ public class GameState {
         GameState newGameState = this;
 
         switch (parsedInput.getCommand()) {
-            case 'm':
+            case MOVE:
+            case GO:
                 newGameState.setLocation(player.move(parsedInput.getArgument(), newGameState));
                 break;
-//            case 'g':
-//                newGameState.player.setInventory(player.get(parsedInput.getArgument(), this));
-//                break;
-            case 'l':
-                player.look(parsedInput.getArgument(), newGameState);   // NB! this changes npc var which is not explicit from func. name
+            case LOOK:
+                player.look(parsedInput.getArgument(), newGameState);
                 break;
-            case 't':
-                player.talk(parsedInput.getArgument(), newGameState);   // NB! this changes npc var which is not explicit from func. name
+            case TALK:
+                player.talk(parsedInput.getArgument(), newGameState);
                 break;
-//            case 'g':
-            case 's':
+            case SAY:
+            case ANSWER:
                 player.say(parsedInput.getArgument(), newGameState);
                 break;
-            case 'q':
+            case QUIT:
                 this.isFinished = true;
                 break;
-            case 'h':
+            case HELP:
                 printHelpMessage();
                 break;
             default:
                 System.out.println("FUCK -- updateGameState");
                 System.exit(1);
+
         }
+//        switch (parsedInput.getCommand()) {
+//            case 'm':
+//                newGameState.setLocation(player.move(parsedInput.getArgument(), newGameState));
+//                break;
+////            case 'g':
+////                newGameState.player.setInventory(player.get(parsedInput.getArgument(), this));
+////                break;
+//            case 'l':
+//                player.look(parsedInput.getArgument(), newGameState);   // NB! this changes npc var which is not explicit from func. name
+//                break;
+//            case 't':
+//                player.talk(parsedInput.getArgument(), newGameState);   // NB! this changes npc var which is not explicit from func. name
+//                break;
+////            case 'g':
+//            case 's':
+//                player.say(parsedInput.getArgument(), newGameState);
+//                break;
+//            case 'q':
+//                this.isFinished = true;
+//                break;
+//            case 'h':
+//                printHelpMessage();
+//                break;
+//            default:
+//                System.out.println("FUCK -- updateGameState");
+//                System.exit(1);
+//        }
 
         return newGameState;
     }

@@ -1,33 +1,23 @@
 public class InputParser {
-    private char command;
+    private Command command;
     private String argument;
 
-    public char getCommand() { return command; }
+    public enum Command {
+        GO,
+        MOVE,
+        LOOK,
+        TALK,
+        SAY,
+        ANSWER,
+        HELP,
+        QUIT
+    }
+
+    public Command getCommand() { return command; }
     public String getArgument() { return argument; }
 
-    // TODO: lmao god forgive me, gotta rethink this one...
-    private static char parseCommand(String userCommand) {
-
-        char input = userCommand.charAt(0);
-
-        switch (input) {    // TODO: add more commands :(
-            case 'm':
-                return 'm';
-            case 'g':
-                return 'g';
-            case 'l':
-                return 'l';
-            case 't':
-                return 't';
-            case 'h':
-                return 'h';
-            case 's':
-                return 's';
-            case 'q':
-                return 'q';
-            default:
-                return 'x';
-        }
+    private static Command parseCommand(String userCommand) {
+        return Command.valueOf(userCommand.toUpperCase());
     }
 
     private static String parseArgument(String userArgument) {

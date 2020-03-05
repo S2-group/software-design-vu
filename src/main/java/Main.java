@@ -10,9 +10,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws IOException, ParseException {
 
-        // Bunch of things needed
         FileReader locationsReader = new FileReader("src/main/json-files/test-map.json");
-
         JSONParser jsonParser = new JSONParser();
         LocationLoader locationLoader = new LocationLoader();
         Scanner scanner = new Scanner(System.in);
@@ -22,7 +20,6 @@ public class Main {
 
         Location startingLocation = locationLoader.getHomeLocation(locationList);
 
-        // start game
         GameState gameState = new GameState("Daniel", startingLocation, locationList);
 
         while(!gameState.getIsFinished()) {  // just to stop the IDE from complaining
@@ -39,7 +36,6 @@ public class Main {
             gameState = gameState.updateGameState(new InputParser(input));
             System.out.println(); // newline
         }
-
     }
 }
 
