@@ -8,9 +8,6 @@ import org.apache.commons.io.FileUtils;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-
-// to run: hit green arrow, then type a file name, for example, src/main/java/Amsterdam.json, when prompted
-
 public class Main {
 
     public static final String ANSI_RESET = "\u001B[0m";
