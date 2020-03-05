@@ -165,7 +165,7 @@ Operations
 
 
 ## Object diagrams								
-Author(s): `name of the team member(s) responsible for this section`
+Author(s): `Torstein Thomassen`
 
 This chapter contains the description of a "snapshot" of the status of your system during its execution. 
 This chapter is composed of a UML object diagram of your system, together with a textual description of its key elements.
@@ -173,6 +173,8 @@ This chapter is composed of a UML object diagram of your system, together with a
 `Figure representing the UML class diagram`
   
 `Textual description`
+
+![](imgs/ass2%20obj%20diagram.png)
 
 Maximum number of words for this section: 1000
 
