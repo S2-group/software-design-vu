@@ -145,7 +145,7 @@
         "item": "pizza",
         "riddle": "am i oven?",
         "answer": "yes",
-        "returnDialog": "ooofff okay"
+        "returnDialog": "ooofff go away"
       },
       "items": "pizza",
       "neighbours": "Home, Lidl"

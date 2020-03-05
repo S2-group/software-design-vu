@@ -4,12 +4,9 @@ public class GameState {
 
     private Player player;
     private Location location;
-//    private NPC npc;
     private JSONArray locationList;
-//    private JSONArray npcList;
     private boolean isFinished;
 
-    private int numRedo;
     private Location[] locationsVisited;
 
     public GameState updateGameState(InputParser parsedInput) {
@@ -19,18 +16,18 @@ public class GameState {
             case 'm':
                 newGameState.setLocation(player.move(parsedInput.getArgument(), this));
                 break;
-            case 'g':
-                newGameState.player.setInventory(player.get(parsedInput.getArgument(), this));
-                break;
+//            case 'g':
+//                newGameState.player.setInventory(player.get(parsedInput.getArgument(), this));
+//                break;
             case 'l':
                 player.look(parsedInput.getArgument(), newGameState);   // NB! this changes npc var which is not explicit from func. name
                 break;
             case 't':
                 player.talk(parsedInput.getArgument(), newGameState);   // NB! this changes npc var which is not explicit from func. name
                 break;
+//            case 'g':
             case 's':
                 player.say(parsedInput.getArgument(), newGameState);
-                //newGameState.player.setInventory(player.say(parsedInput.getArgument(), this));
                 break;
             case 'q':
                 this.isFinished = true;
@@ -52,15 +49,18 @@ public class GameState {
                 "\n\tget [item] - Get item from current location" +
                 "\n\tlook [npc] - Look at npc at current location" +
                 "\n\ttalk [npc] - Talk to npc at location" +
+                "\n\tsay [answer] - Answer the riddle to get the item" +
                 "\n\thelp - Display help message" +
                 "\n\tquit - Quit game");
     }
 
     // get, set methods
-    public Location getLocation() { return location; }
+    public Location getLocation() {
+            Location returnLoc = location;
+            return returnLoc;
+    }
     public String getNpc() { return location.getNpc(); }
     public JSONArray getLocationList() { return locationList; }
-//    public JSONArray getNpcList() { return npcList; }
     public Player getPlayer() { return player; }
     public boolean getIsFinished() { return isFinished; }
 
@@ -70,10 +70,9 @@ public class GameState {
     public void setFinished(boolean finished) { isFinished = finished; }
 
     // constructor
-    public GameState(String name, Location location, int numRedo, Location[] locationsVisited, JSONArray locationList) {
+    public GameState(String name, Location location, Location[] locationsVisited, JSONArray locationList) {
         this.player = new Player(name);
         this.location = location;
-        this.numRedo = numRedo;
         this.locationsVisited = locationsVisited;
         this.locationList = locationList;
 //        this.npcList = npcList;

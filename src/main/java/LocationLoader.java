@@ -43,7 +43,6 @@ public class LocationLoader {
         return null;
     }
 
-
     public boolean stageExist(String argument, JSONArray locationList) {
         for (Object obj : locationList) {
             Location location = LocationLoader.parseJsonObject((JSONObject) obj);

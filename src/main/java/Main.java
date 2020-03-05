@@ -27,7 +27,7 @@ public class Main {
         Location startingLocation = locationLoader.getHomeLocation(locationList);
 
         // start game
-        GameState gameState = new GameState("Daniel", startingLocation, 0, null, locationList);
+        GameState gameState = new GameState("Daniel", startingLocation, null, locationList);
 
         while(!gameState.getIsFinished()) {  // just to stop the IDE from complaining
             System.out.println(
