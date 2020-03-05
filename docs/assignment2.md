@@ -29,11 +29,11 @@ Author(s): `Teona Moga`
 
 The system we designed for the Fantasy Soccer project consists of 3 packages: *models*, *views* and *controllers* and one Main class. Packages *views* and *controllers* deal with the GUI part of the project and are implemented using the javafx library, such that they will be described more briefly than *models*, which is where the entire back-end logic lies.   
   
-*Models* package  
+### *Models* package  
   
 This package implements 5 distinct classes: **Game**, **League**, **Team**, **Player** and **Match**, described below.  
   
-**Game**  
+#### **Game**  
   
 This class is responsible with managing the data of the game and coordinating actions across the system. As can be observed from the diagram, it follows the singleton design pattern; this decision was made in the attempt to keep the data consistent and the instance of the class easily accessible, as it is regularly used by the GUI.  
   
@@ -61,7 +61,7 @@ Associations
 
 As can be observered from the class diagram, the **Game** class has composition relations with **Team**, **Player** and **League**, as it is resposible with creating and storing these other objects. While it can store an indefinite number of teams and players, a game can only have one league, as a user can not play multiple leagues at one time.  It also has associations with the GUI classes, which intercat with **Game** to either follow up on user actions, e.g. forming a new team, or get the data to be displayed to the user, e.g. the leaderboard.
 
-**Player**
+#### **Player**
 
 Class representing a single player. Only exists within a **Game** and is created from user input.
 
@@ -81,7 +81,7 @@ All **Player** objects are contained within **Game**. A team is an aggregation o
 
 
 
-**Team**
+#### **Team**
 
 Class representing a single soccer team. Only exists within a **Game** and is created through the GUI by the user through the selection of 8 **Player** objects.
 
@@ -105,7 +105,7 @@ Associations
 The composition relation between **Team** and **Game** suggests the fact that all **Team** objects ever created are part of the **Game**.allTeams. 
 Each team is an aggregation of exactly 8 **Player** objects.  
 
-**League** 
+#### **League** 
 
 A league simulates multiple rounds of matches between user-selected teams and determines the winners.
 
@@ -123,7 +123,7 @@ Associations
 
 A single **League** object can exist at one time within a **Game**. A league can start with at most 16 teams as per requirement **FR6**. Within the *playRound* method, **Match** objects are created from the playing teams to generate a winner.
 
-**Match**
+#### **Match**
 
 A match simulates a single soccer game between two teams.
 
@@ -140,11 +140,11 @@ Assiciations
 
 A match is formed of exactly 2 **Team** objects.
 
-*Views* package
+### *Views* package
 
 Each class in this package is an extention of the **GamePane** abstract class, described below. Each uses the *javafx* library and represents a different window in the GUI. All interactions with the *models* package are made via the **Game** class methods.
 
-**GamePane**
+#### **GamePane**
 
 Abstract methods
 
@@ -152,7 +152,7 @@ Abstract methods
 - *void styleComponents()*: Styles all components as required
 - *void setCallbacks()*: Sets callbacks for all interactive components
 
-*Controllers* package
+### *Controllers* package
 
 Only consists of a singleton class **SceneManager** used for managing the *javafx* Scenes.
 
