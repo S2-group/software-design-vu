@@ -25,6 +25,8 @@ In this document you have to adhere to the following formatting conventions:
 ## Class diagram									
 Author(s): `Teona Moga`
 
+![](imgs/classdi.jpg)
+
 The system we designed for the Fantasy Soccer project consists of 3 packages: *models*, *views* and *controllers* and one Main class. Packages *views* and *controllers* deal with the GUI part of the project and are implemented using the javafx library, such that they will be described more briefly than *models*, which is where the entire back-end logic lies.   
   
 *Models* package  
