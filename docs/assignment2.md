@@ -158,17 +158,17 @@ Author(s): `Torstein Thomassen`
 This object diagram shows an example of objects with different states in our program.
 All the different attributes and variables has to be fulled in with example data.
 
-In this example each team has only three players. This is only for demonstration and will be fixed for the final version.
+In this example each team has only three players. This is only for demonstration and will be changed for the final version.
 
-This structure resembles very a tree structure with branches and leafs. The tree structure is commonly used in many software design. It's an efficient and good way to structure the relation between objects. 
+This structure resembles a tree structure with branches and leafs. The tree structure is commonly used in many software design. It's an efficient and a good way to structure the relation between objects. 
 
-This creates a hierarchy where a parent can only directly affect the children. E.g the **Match** can't affect the **Player** directly, only the **Team**s       
+This creates a hierarchy where a parent can only directly affect the children. E.g the **Match** can't affect the **Player** 'directly', only the **Team** objects.       
 
 `Object diagram over the Match Class`
 ![](imgs/ass2%20obj%20diagram.png)
 
 The diagram above shows an example over the *Match* class. It has a relation with two *Team* object, and the *Team* object again has a relation with various *Player* object
-As you can see *Team 1* would win the match because they have a higher score.  
+As you can see *Team 1* would win the match because they have a higher score. You can also see it's the second round, because both teams have already one win.  
 
 
 
@@ -188,7 +188,8 @@ The state diagram above represents the different states a league can be in. When
 ![](imgs/ass2%20state%20Diagram.png)
 
 Above is shown a state diagram for the **Game** class. You have different methods that effect the three main states the **Game** class consist of.
-From the initial state all lists are empty, and you have options to fill the lists with **Player**s or **Team**s. 
+From the initial state all lists are empty, and you have options to fill the lists with **Player**s or **Team**s.
+ 
 
 
 
@@ -204,7 +205,7 @@ Author(s): `Patricia Santana Vasquez`
 The main goal and focus of this sequence diagram was to show the interaction between the user and the interaction partners/ objects of :game and :team within our fantasy soccer single player game. The sequence diagram above shows how a user can input data to create a team in the game. This part of the system will be executed once the player data is within our game and provided by the user. The user is represented by a stick figure within the sequence diagram with the title “Actor”. The user provided data of players is sent to the interaction partner and object of :game. The :game object is represented as a head of a lifeline. From the game object, the send event of new CreateTeam() is executed and the object of a new team is created. Because this is an example of a creation of a new object within our software system, the Arrowhead is pointing to the head of the :team object and is dashed. This send event points to the interaction partner and object of :team which then executes Game.getInstance().addTeam() once that message is received. This a representation of a receive event within this sequence diagram.Once this receive event is executed, the software system we created will add a team to the game. In the end, this a simple part of the software system but a vital one to the creation of our fantasy soccer game. Without the creation of a team/teams with the use of player data provided by the user/Actor the basic functionality of the game would not be possible. This sequence diagram is representative of the way in which we have focused on implementing a simple and feasible fantasy soccer game.
 
 ## Implementation									
-Author(s): `name of the team member(s) responsible for this section`
+Author(s): `Teona Moga`
 
 The first step in our implementation process was coming up with very basic UML diagrams that outlined the basic classes and functionality required by the system. We followed an Agile approach, where we would go back and forth between our code and the diagrams, until we achieved the desired functionality (the implementation of feature FR6). We also focused on implementing the GUI such that we would be able to integrate it with the back-end and have the league formation feature work not only at a code level but also at a user level. 
 
@@ -216,7 +217,3 @@ Running the main class should result in opening the application as shown below:
 This video shows the execution of the program where we have implemented feature F6. The user can setup a league with different teams and it displays the winner of each game as an output.
  
 We didn't manage to create a JAR although closely following the instructions in both git and the external website provided. 
-
-## References
-
-References, if needed.
