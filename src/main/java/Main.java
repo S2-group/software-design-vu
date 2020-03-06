@@ -78,7 +78,7 @@ public class Main {
                     playerName = in.readLine();
                     System.out.println(ANSI_BLUE + "\n Welcome, " + playerName +". \n Let's begin. Your goal is to get to "
                             + endRoom.getString("name") + ".\n You are currently located at " + startRoom.getString("name")
-                            + " and your inventory is currently empty.\n Type 'help' if you ever need help.\n" + ANSI_RESET);
+                            + " and your inventory is currently empty.\n Type " + ANSI_MAGENTA + "'help'" +ANSI_BLUE + " if you ever need help.\n" + ANSI_RESET);
                 }catch(Exception e){
                     e.printStackTrace();
                 }
