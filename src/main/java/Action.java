@@ -139,7 +139,7 @@ public class Action {
                         itemOptionsFinalString = itemOptionsString.substring(0, unnecessaryComma1);
                     }
                     System.out.println(Main.ANSI_BLUE + "\nYou can move to " + roomOptionsString + ".\nItem(s) located" +
-                            "in this room: " + itemOptionsFinalString + ".\n");
+                            "in this room: " + itemOptionsFinalString + ".\n" + Main.ANSI_RESET);
                     break;
                 }
 
