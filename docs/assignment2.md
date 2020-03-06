@@ -145,8 +145,8 @@ software-design-vu/src/main/java/Main.java
 The Jar file can be found at the directory location:
 software-design-vu/out/artifacts/software_design_vu_2020_jar/software-design-vu-2020-jar.jar
 
-- the 30-seconds video showing the execution of your system (you can embed the video directly in your md file on 
-GitHub).
+![30-Second Demo](https://github.com/sarahpazik/software-design-vu/blob/Assignment2/softwareDemo.mov)
+This demo show loading a JSON file and using the implemented commands of *help*, *look around*, *move to*, *inspect*, *pick up*, and *quit*.
 
 ## References
 
