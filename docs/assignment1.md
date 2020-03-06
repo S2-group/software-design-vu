@@ -51,5 +51,5 @@ Author(s): Beth, Sarah, Ben, Sam, Gemma
 | Name (with link) | Description  |
 |---|---|
 | [Hibernate](https://hibernate.org/)  | Java framework to store persistent data |
-| [fastjson](https://github.com/alibaba/fastjson) | Used for reading and writing JSON configuration files that will have descriptions of each location of the game |
+| [org.json](https://stleary.github.io/JSON-java/index.html) | Used for reading and writing JSON configuration files that will have descriptions of each location of the game |
 | [Java.net.Socket](https://docs.oracle.com/javase/7/docs/api/java/net/Socket.html), [Java.net.ServerSocket](https://docs.oracle.com/javase/8/docs/api/java/net/ServerSocket.html)  | Packages to facilitate websocket network communication between computers |
