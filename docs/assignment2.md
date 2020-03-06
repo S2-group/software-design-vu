@@ -104,11 +104,11 @@ minimally-implemented class for each of the classes that we planned to include t
 this involved adding our constructors, fields, and simple methods - mainly accessors and mutators - to each class as an
 easy first step. Then we began more in-depth work on some of the more central classes, particularly those that are
 relevant to our first two features as planned in Assignment 1. For us, this meant our Main class, Room, Item, Setting,
-Action, and Player. This notably left out TimeLimit and Objective as classes that we plan on implementing as
+Action, and Player. This notably left out TimeLimit and Obstacle as classes that we plan on implementing as
 part of Assignment 3. In addition, we began work on the first iterations of JSON files used for the implementation of
 many different types of games. As we continued developing our Main class and the JSON files it would interact with, we
 realized we had modeled more complexity than necessary to describe (and later implement) our planned features. In line
-with this realization, we chose to eliminate the Obstacle class (thus now notably absent from all of our diagrams) as it
+with this realization, we chose to eliminate the Objective class (thus now notably absent from all of our diagrams) as it
 was entirely redundant and unnecessary. In general, we continued with this strategy of following our diagrammed plan and
 eliminating redundancies or unnecessary complexity until we had implemented all of our features planned for Assignment 2
 . Furthermore, after getting as far as having a working game, we tested the implementation of each significant new piece
