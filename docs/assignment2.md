@@ -19,7 +19,7 @@ Draw.io
 ## Class diagram									
 Author(s): Sarah
 
-![Class Diagram](https://github.com/sarahpazik/software-design-vu/blob/Assignment2/class%20diagram%20(1).png)
+![Class Diagram](https://github.com/sarahpazik/software-design-vu/blob/Assignment2/classdiagram.png)
 
 The **Player** class represents the user, i.e. the person moving through the game. Their *name* is a string object that contains whatever name the user chooses. Their *inventory* is a list of Item objects, containing any objects that were picked up but not yet put down. This way, we keep a list of all items the player can use at a given time. The *currentLocation* is a Room object that indicates which room the player is in at a given time. The *getObjects* method returns a list of the player's current inventory, the *getCurrentRoom* method returns the player's current location, and the *setCurrentRoom* method changes the player's location to the given room. The *getInventory* method returns the player's current inventory, i.e. what items they are currently holding, while *addToInventory* adds an item to this list. The player class is associated with the Room class because it needs to be able to access the player's current location. It is also associated with the Item class, because it needs to keep track of the player's inventory. The association with the Action class is because a Player needs to be able to perform actions in order to change their location or inventory. 
 
