@@ -114,7 +114,6 @@ public class Action {
                         ".\n" + playerInventoryFinal + ".\n\nTo move, type " + Main.ANSI_MAGENTA +  "'move to <location>'" +
                         Main.ANSI_BLUE +  ".\nTo see where to move to next and what items are in this location, type " +
                         Main.ANSI_MAGENTA + "'look around'" + Main.ANSI_BLUE + ".\nTo add an item to your inventory, type " +
-                        Main.ANSI_MAGENTA +  "'pick up <item>'" + Main.ANSI_BLUE + ".\nTo add an item to your inventory, type " +
                         Main.ANSI_MAGENTA +  "'pick up <item>'" + Main.ANSI_BLUE + ".\nTo learn more about an item, type " +
                         Main.ANSI_MAGENTA + "'inspect <item>'" + Main.ANSI_BLUE + ".\nTo quit the game, type " +
                         Main.ANSI_MAGENTA + "'quit'" + Main.ANSI_BLUE + ".\n" + Main.ANSI_RESET);
