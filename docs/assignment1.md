@@ -4,12 +4,10 @@
 Author(s): Beth, Sarah, Ben, Sam, Gemma
 
 Our team will be designing and implementing a generic text adventure game which will be customized to create specific instances by modifying locations, items, objectives, actions, and more. We will use this abstract game to create Amsterdam, a navigation game in which players have to find coffee for energy boosters, use bikes or the metro to get around, move through locations like Albert Heijn and Rembrandtplein, and more to reach a secret final location and win the game.
-The overall goal will be for the player to reach a specific location within the game within a certain time limit, thus accomplishing his objective and winning the game. To reach this final location, the player will need to move through obstacles using commands, as well as interact with items. In order to accomplish this, our generic game will have basic classes for Player, Action, Objective, Setting with subclasses for Locations, CommandParser, Item, TimeLimit, and Obstacle.
+The overall goal will be for the player to reach a specific location within the game within a certain time limit, thus accomplishing his objective and winning the game. To reach this final location, the player will need to move through obstacles using commands, as well as interact with items. In order to accomplish this, our generic game will have basic classes for Player, Action, Setting with subclasses for Locations, Item, TimeLimit, and Obstacle.
 For the Player class, we want to include generic information such as the user’s name, as well as functionality which creates a user and specifies actions and commands the user can utilize.
-The Action class will allow the player to interact with the CommandParser class so that when the user inputs a valid command, they can see the consequences in the terminal. An example of this would be entering a new room (the action) using the keyword “enter”, and then seeing their new location and what items are now available to them.
-The Objective class will contain information about the end goal of the game, i.e. where the user wants to end up and in what amount of time.
+The Action class will allow the player to input valid commands, and then can see the consequences in the terminal. An example of this would be entering a new room (the action) using the keyword “enter”, and then seeing their new location and what items are now available to them.
 The Setting class will include generic information about what items, obstacles, etc. are in the game, as well as locations and directions from place to place. The location subclasses will hold the information for each specific room or location.
-The CommandParser class will handle the user’s commands, and determine whether an input is valid or not, given the item they are trying to use a command on. It will deal with any error handling that may be necessary.
 The Item class will contain all of the relevant information for different items throughout the game, such as bikes, coffee, doors, etc. Each item will have a set of commands (from the Action class) that the user will be allowed to use on it.
 The TimeLimit class will keep track of how much time a user has left in the game, since the goal of our game will be to reach a certain location in a given period of time.
 The Obstacle class will contain information about certain obstacles the user will have to overcome to progress, and what actions they can use to get past it.
@@ -31,8 +29,7 @@ In order to make the game as generic as possible, we want to include Functional 
 | F3  | Help Messages  | After a certain amount of time, user will be given hints of what actions to perform or movements to make  |
 | F4  | Items | User can use commands on items (e.g. bikes or metro in Amsterdam, coffee, doors) in order to progress. Some items will be used to perform actions and some will be used as an energy booster to get through the game.  |
 | F5  | Chat Room  | Game will be two player by using websocket network communication between computers. Users can chat with each other in order to help each other and ask questions to reach the goal.   |
-| F6  | Saving State  | User will be able to save their current state (location, item
-s, energy, etc) in order to continue playing at any time.   |
+| F6  | Saving State  | User will be able to save their current state (location, items, energy, etc) in order to continue playing at any time.   |
 
 ### Quality requirements
 Author(s): Beth, Sarah, Ben, Sam, Gemma
