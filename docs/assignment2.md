@@ -48,21 +48,22 @@ Each of the objects represented in the object diagram match their descriptions a
 diagram. Notably, any object indicated by a box in blue represents an object that has yet to be fully implemented (as it
  is not a part of Assignment 2), but that is planned for the completion of Assignment 3.
 
-At a given state in the game, there is always a Player object representing the current player of the game. It connects 
-to an Item object, a Room object, an Action object, and a Setting object. The associated Item object - in this case, 
-"coffee" - represents an item that is in the player's current inventory. The Action object indicates an action currently
-being taken by the player - in this case, "use coffee" - through a specific command that represents a snapshot of a
-moment in the game. Notably, this Action is also associated to the Item because it constitutes "using" the item. The
-Room object indicates the room the player is currently located in - in this case, Station Zuid. Finally, the Setting
-object - Amsterdam - is a collection and description of all of the rooms.
+At a given state in the game, there is always a **Player** object representing the current player of the game. It
+connects to an **Item** object, a **Room** object, an **Action** object, and a **Setting** object. The associated
+**Item** object - in this case, "coffee" - represents an item that is in the player's current inventory. The **Action**
+object indicates an action currently being taken by the player - in this case, "use coffee" - through a specific command
+that represents a snapshot of a moment in the game. Notably, this **Action** is also associated to the **Item** because
+it constitutes "using" the item. The **Room** object indicates the room the player is currently located in - in this
+case, Station Zuid. Finally, the **Setting** object - Amsterdam - is a collection and description of all of the rooms.
 
-In turn, the Room object connects to an Item object and an Obstacle object. The Item object, an ov-Chipkaart, is
-connected because it represents an item found in that particular room. The Obstacle object - in this case, a stop at the
-metro - will (once implemented) represent a barrier to continued movement by the player that can be removed by using the
-correct item.
+In turn, the **Room** object connects to an **Item** object and an **Obstacle** object. The Item object, an
+ov-Chipkaart, is connected because it represents an item found in that particular room. The **Obstacle** object - in
+this case, a stop at the metro - will (once implemented) represent a barrier to continued movement by the player that
+can be removed by using the correct item.
 
-Finally, the Setting object - Amsterdam - connects to a TimeLimit object and back to the Room of StationZuid. The room 
-is one of many in the setting, while the TimeLimit will indicate how much time is left for the player to reach the goal.
+Finally, the **Setting** object - Amsterdam - connects to a **TimeLimit** object and back to the **Room** of
+StationZuid. The room is one of many in the setting, while the **TimeLimit** will indicate how much time is left for the
+player to reach the goal.
 
 ## State machine diagrams									
 Author(s): Elizabeth, Gemma
@@ -101,14 +102,21 @@ If the item is used from the "item in player inventory" state, the attribute *us
 ## Sequence diagrams									
 Author(s): Ben
 
-This chapter contains the specification of at least 2 UML sequence diagrams of your system, together with a textual description of all its elements. Here you have to focus on specific situations you want to describe. For example, you can describe the interaction of player when performing a key part of the videogame, during a typical execution scenario, in a special case that may happen (e.g., an error situation), when finalizing a fantasy soccer game, etc.
+This chapter contains the specification of at least 2 UML sequence diagrams of your system, together with a textual
+description of all its elements. Here you have to focus on specific situations you want to describe. For example, you
+can describe the interaction of player when performing a key part of the videogame, during a typical execution scenario,
+in a special case that may happen (e.g., an error situation), when finalizing a fantasy soccer game, etc.
 
 For each sequence diagram you have to provide:
 - a title representing the specific situation you want to describe;
 - a figure representing the sequence diagram;
-- a textual description of all its elements in a narrative manner (you do not need to structure your description into tables in this case). We expect a detailed description of all the interaction partners, their exchanged messages, and the fragments of interaction where they are involved. For each sequence diagram we expect a description of about 300-500 words.
+- a textual description of all its elements in a narrative manner (you do not need to structure your description into
+tables in this case). We expect a detailed description of all the interaction partners, their exchanged messages, and
+the fragments of interaction where they are involved. For each sequence diagram we expect a description of about 300-500
+words.
 
-The goal of your sequence diagrams is both descriptive and prescriptive, so put the needed level of detail here, finding the right trade-off between understandability of the models and their precision.
+The goal of your sequence diagrams is both descriptive and prescriptive, so put the needed level of detail here, finding
+the right trade-off between understandability of the models and their precision.
 
 Maximum number of words for this section: 2500
 
@@ -119,25 +127,26 @@ Our strategy for moving from our UML models to the implementation code was fairl
 minimally-implemented class for each of the classes that we planned to include through our diagrams. To be specific,
 this involved adding our constructors, fields, and simple methods - mainly accessors and mutators - to each class as an
 easy first step. Then we began more in-depth work on some of the more central classes, particularly those that are
-relevant to our first two features as planned in Assignment 1. For us, this meant our Main class, Room, Item, Setting,
-Action, and Player. This notably left out TimeLimit and Obstacle as classes that we plan on implementing as
-part of Assignment 3. In addition, we began work on the first iterations of JSON files used for the implementation of
-many different types of games. As we continued developing our Main class and the JSON files it would interact with, we
-realized we had modeled more complexity than necessary to describe (and later implement) our planned features. In line
-with this realization, we chose to eliminate the Objective class (thus now notably absent from all of our diagrams) as it
-was entirely redundant and unnecessary. In general, we continued with this strategy of following our diagrammed plan and
-eliminating redundancies or unnecessary complexity until we had implemented all of our features planned for Assignment 2
-. Furthermore, after getting as far as having a working game, we tested the implementation of each significant new piece
-of code to ensure that we could catch any bugs and solve them before they became too obscure or difficult to find.
+relevant to our first two features as planned in Assignment 1. For us, this meant our **Main** class, **Room**, 
+**Item**, **Setting**, **Action**, and **Player**. This notably left out **TimeLimit** and **Obstacle** as classes that
+we plan on implementing as part of Assignment 3. In addition, we began work on the first iterations of JSON files used
+for the implementation of many different types of games. As we continued developing our **Main** class and the JSON
+files it would interact with, we realized we had modeled more complexity than necessary to describe (and later
+implement) our planned features. In line with this realization, we chose to eliminate the **Objective** class (thus now
+notably absent from all of our diagrams) as it was entirely redundant and unnecessary. In general, we continued with
+this strategy of following our diagrammed plan and eliminating redundancies or unnecessary complexity until we had
+implemented all of our features planned for Assignment 2. Furthermore, after getting as far as having a working game, we
+tested the implementation of each significant new piece of code to ensure that we could catch any bugs and solve them
+before they became too obscure or difficult to find.
 
 There were several key solutions we applied when implementing our system. First and foremost, we decided that the best
 way to make our game configurable or adaptable for new stories was to have it read and interpret JSON files that
 included all of the setting-specific information, such as room, item, or obstacle names. Next, we established that the
-simplest and most efficient method of continually reading the player's commands was to use a while loop within the Main
-class during runtime - any sort of command parser class seemed to be unnecessarily complex as well as involve more code
-being executed during runtime, likely making the game run slightly slower. Other key solutions were largely GUI-related:
-while our game does take place entirely within the terminal as specified by the assignment, we use ANSI colors to make
-the output shown to the player during the game more clearly readable and easily understood.
+simplest and most efficient method of continually reading the player's commands was to use a while loop within the
+**Main** class during runtime - any sort of command parser class seemed to be unnecessarily complex as well as involve
+more code being executed during runtime, likely making the game run slightly slower. Other key solutions were largely
+GUI-related: while our game does take place entirely within the terminal as specified by the assignment, we use ANSI
+colors to make the output shown to the player during the game more clearly readable and easily understood.
 
 The main Java class needed for executing the system in the source code can be found at the directory location:
 software-design-vu/src/main/java/Main.java
@@ -146,7 +155,8 @@ The Jar file can be found at the directory location:
 software-design-vu/out/artifacts/software_design_vu_2020_jar/software-design-vu-2020-jar.jar
 
 ![30-Second Demo](https://github.com/sarahpazik/software-design-vu/blob/Assignment2/softwareDemo.mov)
-This demo shows loading a JSON file and using the implemented commands of *help*, *look around*, *move to*, *inspect*, *pick up*, and *quit*.
+This demo shows loading a JSON file and using the implemented commands of *help*, *look around*, *move to*, *inspect*, 
+*pick up*, and *quit*.
 
 ## References
 
