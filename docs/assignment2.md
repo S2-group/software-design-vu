@@ -83,10 +83,20 @@ This continues in a cyclical way, with the player being able to move and pick up
 
 #### Item State Machine
 
-The item state machine represents the Item class.
+The item state machine represents the internal behavior of the **Item** class.
 
 ![Item State Machine Diagram](https://github.com/sarahpazik/software-design-vu/blob/Assignment2/Item%20State%20Machine%20Diagram.png)
-Maximum number of words for this section: 2500
+
+Similar to the Player State Machine, the feature in blue on the diagram are prescriptive and not yet implemented.
+
+The state machine diagram describes the possible states an item may have over the course of the game. The game begins with no items. The user is prompted to provide the name of a JSON file, which contains the information needed to initialize the items. An item being initialized is represented by the first arrow in the diagram, labeled initialize Item(), and then the following state. Upon entry into this state, the "Initial Item" is located in the room specified in the JSON file, and the boolean attributes *held* and *used* are set to false.
+
+If an item is picked up by the player, the item changes state to "Item in player inventory". Upon entry to this state, the attribute *held* is set to true, and now the item is in the player's inventory and no longer in the room. Now, every time the player moves location, the item's *location* is updated as well.
+
+From the "Item in player inventory" state, the Item can either be put down or used. If an item is put down, *held* changes to false, the *location* is the room it was put down in, and the item is no longer in the player's inventory. From this state the item can be picked up again to return to the "Item in player inventory" state.
+
+If the item is used from the "item in player inventory" state, the attribute *used* is set to true and the item is no longer needed, thus terminating the item.
+
 
 ## Sequence diagrams									
 Author(s): Ben
