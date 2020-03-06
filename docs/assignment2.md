@@ -102,9 +102,13 @@ If the item is used from the "item in player inventory" state, the attribute *us
 ## Sequence diagrams									
 Author(s): Ben
 
+#### Change Room Sequence Diagram
+
  ![Change Room Sequence Diagram](https://github.com/sarahpazik/software-design-vu/blob/Assignment2/Change%20Rooms%20Sequence%20Diagram.png)
 
 This diagram describes the interaction a user undertakes when moving their virtual character to another room in the game. First, the user types the command "move to \<room name\>" into the terminal. At this stage in program execution, control flow lies within a while loop in the main method. When this entry happens, the main class parses the input from the command line and sends it to the action class via the doAction() function. This function call involves passing two parameters, the player object and a tokenized version of the command string the user typed stored as a string array. Once here, the doAction() function processes the meaning of the command and executes it accordingly. First, it passes through a switch statement to begin to analyze the command. If it is an invalid command, the user will be informed of this, encouraged to use the “help” command, and control flow will return to the main method. Otherwise, as in this example, the user has typed a correct “move to” command. The function will first request the current room from the player object. Next it isolates the \<room name\> part of the user's command from the previously passed function parameter. It sends this string to the getNextRoomFromName() method of the original room object to access the next room. This method will return the proper room object from the room name string. However, if this new room name does not exist or is not accessible from the current room, it will return null. After this, if the room exists, it updates the current room field of the player object to this next room object by calling the player object’s setCurrentRoom() method with the new room object. Finally, the doAction() function prints out the contents of the new room object's 'script' field by accessing the new room object and calling the getScript() method on it. If the room is invalid, the doAction() function will print out a message to the user that this room is an invalid selection. Then, control flow returns to the main method. Now, the user will either see the script text stored in the new room that they have moved to that describes the room or the error message about the room being invalid. From here, the user can continue playing the game.
+
+#### Initial Setup Sequence Diagram
 
  ![Initial Setup Sequence Diagram](https://github.com/sarahpazik/software-design-vu/blob/Assignment2/Initial%20Setup%20Sequence%20Diagram.png)
 
