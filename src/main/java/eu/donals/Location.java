@@ -1,12 +1,9 @@
-/*
+package eu.donals;/*
 *   TODO:
 *       - add items to stages
 *
 *
 * */
-
-import java.util.Arrays;
-
 
 public class Location {
     private String name;
@@ -15,6 +12,7 @@ public class Location {
     private String[] items;
     private String[] neighbours;
 
+    // will change this to support multiple NPCs later
     private class NPC {
         private String name;
         private String about;
@@ -32,13 +30,6 @@ public class Location {
             this.returnDialog = returnDialog;
         }
     }
-
-    public void printStage() {
-        System.out.println(getName() + "\n" + getDescription() + "\n" + Arrays.toString(getItems()) + "\n" + Arrays.toString(getNeighbours()));
-    }
-
-    // ------- Get and Set methods ------- //
-    public void setName(String x) { this.name = x; }
 
     public String getName() { return name; }
     public String getDescription() { return description; }

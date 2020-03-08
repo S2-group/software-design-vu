@@ -1,3 +1,5 @@
+package eu.donals;
+
 public class InputParser {
     private Command command;
     private String argument;
@@ -10,6 +12,7 @@ public class InputParser {
         SAY,
         ANSWER,
         HELP,
+        INV,
         QUIT
     }
 

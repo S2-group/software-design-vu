@@ -2,12 +2,12 @@
   {
     "location": {
       "name": "Home",
-      "description": "You are at home, playing a video game on your brand new console, when an intruder barges in through the roof. It's Stinky Monkey, the most cruel console thief in the Universe.",
+      "description": "You are at home, playing a video game, when an Stinky monkey enters...",
       "npc": {
         "name": "Stinky Monkey",
         "about": "He looks quite intimidating and stupid at the same time.",
         "item": "",
-        "riddle": "Behold, it is a me, Stinky Monkey. I am here to take your precious console, and there is no way of stopping me unless you bring me a freshly made pizza.",
+        "riddle": "Behold, it is me, Stinky Monkey. I am here to take your precious console, and there is no way of stopping me unless you bring me a freshly made pizza.",
         "answer": "",
         "returnDialog": ""
       },

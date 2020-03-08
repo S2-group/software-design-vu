@@ -1,9 +1,13 @@
+package eu.donals;
+
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-public class LocationLoader {
+import java.util.List;
 
-    public static Location parseJsonObject(JSONObject location) {
+public class Loader {
+
+    private static Location parseLocationObject(JSONObject location) {
         JSONObject locationObject = (JSONObject) location.get("location");
 
         String name = (String) locationObject.get("name");
@@ -28,17 +32,22 @@ public class LocationLoader {
     }
 
     public Location getHomeLocation(JSONArray locationList) {
-        return LocationLoader.parseJsonObject((JSONObject) locationList.get(0));
+        return Loader.parseLocationObject((JSONObject) locationList.get(0));
     }
 
-    public Location parseJsonByName(String argument, JSONArray locationList) {
+    public Location parseLocationByName(String argument, JSONArray locationList) {
         for (Object obj : locationList) {
-            Location location = LocationLoader.parseJsonObject((JSONObject) obj);
+            Location location = Loader.parseLocationObject((JSONObject) obj);
 
             if (location.getName().equals(argument)) {
                 return location;
             }
         }
+        return null;
+    }
+
+    public List<String> parseImage() {
+        // TODO: implement me!
         return null;
     }
 
