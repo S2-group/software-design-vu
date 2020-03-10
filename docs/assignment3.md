@@ -1,10 +1,17 @@
 # Assignment 3
 
-Maximum number of words for this document: 17000
+Maximum number of words for this document: 18000
 
 **IMPORTANT**: In this assignment you will fully model and impement your system. The idea is that you improve your UML models and Java implementation by (i) applying (a subset of) the studied design patterns and (ii) adding any relevant implementation-specific details (e.g., classes with “technical purposes” which are not part of the domain of the system). The goal here is to improve the system in terms of maintainability, readability, evolvability, etc.    
 
 **Format**: establish formatting conventions when describing your models in this document. For example, you style the name of each class in bold, whereas the attributes, operations, and associations as underlined text, objects are in italic, etc.
+
+### Summary of changes of Assignment 2
+Author(s): `name of the team member(s) responsible for this section`
+
+Provide a bullet list summarizing all the changes you performed in Assignment 2 for addressing our feedback.
+
+Maximum number of words for this section: 1000
 
 ### Application of design patterns
 Author(s): `name of the team member(s) responsible for this section`
