@@ -1,1 +1,0 @@
-This folder will contain the single fat Jar resulting from the full build of your project.
