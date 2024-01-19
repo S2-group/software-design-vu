@@ -25,3 +25,6 @@ cmake-build-*/
 
 # All contents of the build folder
 build/
+
+# All contents of the out folder
+out/
