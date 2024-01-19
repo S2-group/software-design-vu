@@ -22,3 +22,6 @@ out/
 
 # All contents of .idea folder
 .idea/
+
+# All contents of .gradle folder
+.gradle/
