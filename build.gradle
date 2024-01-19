@@ -14,3 +14,13 @@ repositories {
 dependencies {
     testImplementation group: 'junit', name: 'junit', version: '4.13.1'
 }
+
+jar {
+    manifest {
+        attributes "Main-Class": "nl.vu.cs.softwaredesign.Main"
+    }
+
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
