@@ -20,8 +20,11 @@ out/
 # mpeltonen/sbt-idea plugin
 .idea_modules/
 
-# All contents of .idea folder
+# All contents of the .idea folder
 .idea/
 
-# All contents of .gradle folder
+# All contents of the .gradle folder
 .gradle/
+
+# All contents of the build folder
+build/
